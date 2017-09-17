@@ -184,14 +184,22 @@ type DocRewriter (docs: Map<string, FunctionDoc>, sg: StreamGen) =
 
 [<EntryPoint>]
 let main argv =
-    let apiDocs = readDocs "/home/surban/dev/plplot/doc/docbook/src/api.xml"
-    let cDocs = readDocs "/home/surban/dev/plplot/doc/docbook/src/api-c.xml"
+    printfn "dir: %s" (Directory.GetCurrentDirectory())
+    let srcPath = "../../../PLplotNet"
+
+    if argv.Length = 0 then
+        printfn "specify path to plplot doc directory, e.g. /home/user/plplot/doc/docbook/src"
+        exit 1
+
+    let docPath = argv.[0]   
+    let apiDocs = readDocs (Path.Combine (docPath, "api.xml"))
+    let cDocs = readDocs (Path.Combine (docPath, "api-c.xml"))
     let docs = (Map.toList apiDocs) @ (Map.toList cDocs) |> Map.ofList
 
     use workspace = new AdhocWorkspace()
     let generator = SyntaxGenerator.GetGenerator(workspace, LanguageNames.CSharp);
 
-    let nativeTmplSrc = Text.SourceText.From(File.ReadAllText("/home/surban/dev/plplot/bindings/net/NativeTmpl.cs"))
+    let nativeTmplSrc = Text.SourceText.From(File.ReadAllText(Path.Combine(srcPath, "NativeTmpl.cs")))
     let nativeTmpl = CSharpSyntaxTree.ParseText(nativeTmplSrc)
 
     let streamGenerator = StreamGen ()
@@ -200,11 +208,10 @@ let main argv =
     let streamGen = streamGenerator.Finish()
 
     let nativeGenSrc = Formatter.Format(nativeGen, workspace)          
-    File.WriteAllText("/home/surban/dev/plplot/bindings/net/NativeGenerated.cs", nativeGenSrc.ToFullString())
+    File.WriteAllText(Path.Combine(srcPath, "NativeGenerated.cs"), nativeGenSrc.ToFullString())
 
     let streamGenSrc = Formatter.Format(streamGen, workspace)          
-    File.WriteAllText("/home/surban/dev/plplot/bindings/net/PLStreamGenerated.cs", streamGenSrc.ToFullString())
-
+    File.WriteAllText(Path.Combine(srcPath, "PLStreamGenerated.cs"), streamGenSrc.ToFullString())
 
     0
     
