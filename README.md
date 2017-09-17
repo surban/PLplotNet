@@ -25,12 +25,12 @@ This package provides a complete, but unofficial, .Net binding for PLplot.
 Obtain the NuGet package from https://www.nuget.org/packages/PLplot/
 
 The native libraries (x64) for Windows are included in this package.
-For Linux PLplot must be installed on your system and libplplot.so must
-be in your LD_LIBRARY_PATH.
+For Linux, PLplot must be installed on your system and `libplplot.so` must
+be in your `LD_LIBRARY_PATH`.
 
 
 ## Usage
-Create a PLPlot.PLStream object and call its instance methods.
+Create a `PLPlot.PLStream` object and call its instance methods.
 
 See the examples in the `Samples` folder for more information.
 
