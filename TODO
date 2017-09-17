@@ -1,6 +1,4 @@
 TODO: 
 - Change marshalling of PLUTF8_STRING to UnmanagedType.LPUTF8String once this becomes available.
-- migrate to own project
 - test if bools work as intended
-- test if device list can be obtained
 
