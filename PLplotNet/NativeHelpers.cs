@@ -155,9 +155,9 @@ namespace PLplot
             p_menustr = new string[ndevs];
             p_devname = new string[ndevs];
             for (int dev=0; dev < ndevs; dev++)
-            {
-                p_menustr[dev] = Marshal.PtrToStringAnsi(menustrs + dev * Marshal.SizeOf<IntPtr>());
-                p_devname[dev] = Marshal.PtrToStringAnsi(devnames + dev * Marshal.SizeOf<IntPtr>());
+            {                
+                p_menustr[dev] = Marshal.PtrToStringAnsi(Marshal.ReadIntPtr(menustrs + dev * Marshal.SizeOf<IntPtr>()));
+                p_devname[dev] = Marshal.PtrToStringAnsi(Marshal.ReadIntPtr(devnames + dev * Marshal.SizeOf<IntPtr>()));
             }
 
             Marshal.FreeHGlobal(menustrs);

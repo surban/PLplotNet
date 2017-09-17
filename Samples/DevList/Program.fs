@@ -9,10 +9,10 @@ let main argv =
 
     let mutable titles = Array.empty
     let mutable devs = Array.empty
-    pl.gDevs(ref titles, ref devs)
+    pl.gDevs(&titles, &devs)
 
-    printfn "PLplot device list"
-    printfn "=================="
+    printfn "PLplot available devices"
+    printfn "========================"
     for title, dev in Array.zip titles devs do
         printfn "%s: %s" dev title
     
