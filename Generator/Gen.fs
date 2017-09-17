@@ -184,8 +184,8 @@ type DocRewriter (docs: Map<string, FunctionDoc>, sg: StreamGen) =
 
 [<EntryPoint>]
 let main argv =
-    printfn "dir: %s" (Directory.GetCurrentDirectory())
-    let srcPath = "../../../PLplotNet"
+    printfn "generating in %s" (Directory.GetCurrentDirectory())
+    let srcPath = "."
 
     if argv.Length = 0 then
         printfn "specify path to plplot doc directory, e.g. /home/user/plplot/doc/docbook/src"

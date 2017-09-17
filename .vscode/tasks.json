@@ -5,18 +5,20 @@
     "tasks": [
         {
             "taskName": "build",
-            "command": "dotnet build",
+            "command": "dotnet build PLplotNet",
             "type": "shell",
             "group": "build",
             "presentation": {
                 "reveal": "silent"
             },
-            "problemMatcher": "$msCompile"
+            "problemMatcher": "$msCompile",
         },
         {
-            "taskName": "run",
-            "command": "dotnet run",
-            "type": "shell"
+            "taskName": "generate",
+            "command": "cd PLplotNet; dotnet run -p ../Generator ../../plplot/doc/docbook/src",
+            "type": "shell",
+            "group": "build",
+            "problemMatcher": "$msCompile"
         }        
     ]
 }
