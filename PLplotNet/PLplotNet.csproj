@@ -7,6 +7,11 @@
 
     <RootNamespace>PLplot</RootNamespace>
     <AssemblyName>PLplotNet</AssemblyName>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>    
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <NoWarn>1587;1573;1591</NoWarn>
 
     <PackageId>PLplot</PackageId>
     <title>PLplot scientific plotting library</title>
@@ -43,7 +48,6 @@
 
     Examples are available at https://github.com/DeepMLNet/PLplotNet/Samples
     </description>   
-
     <Company>Sebastian Urban, PLplot developer community</Company>
     <authors>Sebastian Urban, PLplot developer community</authors>
     <owners>Sebastian Urban</owners>

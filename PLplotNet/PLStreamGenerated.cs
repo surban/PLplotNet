@@ -357,6 +357,20 @@ namespace PLplot
             }
         }
 
+        /// <summary>plerrx: Draw error bars in x direction</summary>
+        /// <param name="xmax">A vector containing the x coordinates of the right-hand endpoints of the error bars.</param>
+        /// <param name="xmin">A vector containing the x coordinates of the left-hand endpoints of the error bars.</param>
+        /// <param name="y">A vector containing the y coordinates of the error bars.</param>
+        /// <remarks>Draws a set of n error bars in x direction, the i'th error bar extending from xmin[i] to xmax[i] at y coordinate y[i]. The terminals of the error bars are of length equal to the minor tick length (settable using plsmin).</remarks>
+        public void errx(PLFLT[] xmin, PLFLT[] xmax, PLFLT[] y)
+        {
+            lock (libLock)
+            {
+                ActivateStream();
+                Native.errx(xmin, xmax, y);
+            }
+        }
+
         /// <summary>plerry: Draw error bars in the y direction</summary>
         /// <param name="x">A vector containing the x coordinates of the error bars.</param>
         /// <param name="ymax">A vector containing the y coordinates of the upper endpoints of the error bars.</param>

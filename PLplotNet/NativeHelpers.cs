@@ -143,15 +143,14 @@ namespace PLplot
             return x.Length;
         }                
 
-        private delegate void GetDevsFunc(ref IntPtr p_menustr, ref IntPtr p_devname, out int p_ndev);
+        private delegate void GetDevsFunc(ref IntPtr p_menustr, ref IntPtr p_devname, ref int p_ndev);
 
         private static void GetDevHelper(GetDevsFunc gd, out string[] p_menustr, out string[] p_devname)
         {
-            const int maxdevs = 100;
-            int ndevs = 0;
-            IntPtr menustrs = Marshal.AllocHGlobal(maxdevs * Marshal.SizeOf<IntPtr>());
-            IntPtr devnames = Marshal.AllocHGlobal(maxdevs * Marshal.SizeOf<IntPtr>());
-            gd(ref menustrs, ref devnames, out ndevs);
+            int ndevs = 100;
+            IntPtr menustrs = Marshal.AllocHGlobal(ndevs * Marshal.SizeOf<IntPtr>());
+            IntPtr devnames = Marshal.AllocHGlobal(ndevs * Marshal.SizeOf<IntPtr>());
+            gd(ref menustrs, ref devnames, ref ndevs);
 
             p_menustr = new string[ndevs];
             p_devname = new string[ndevs];

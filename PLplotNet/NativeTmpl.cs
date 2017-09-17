@@ -205,7 +205,7 @@ namespace PLplot
                                         [In, MarshalAs(UnmanagedType.LPArray)] PLFLT[] xmax,
                                         [In, MarshalAs(UnmanagedType.LPArray)] PLFLT[] y);
 
-        public static void _errx(PLFLT[] xmin, PLFLT[] xmax, PLFLT[] y)
+        public static void errx(PLFLT[] xmin, PLFLT[] xmax, PLFLT[] y)
         {
             _errx(GetSize(xmin, xmax, y), xmin, xmax, y);
         }                                    
@@ -1476,7 +1476,7 @@ namespace PLplot
 
         // Returns a list of file-oriented device names and their menu strings 
         [DllImport(DllName, EntryPoint="plgFileDevs")]
-        private static extern void _gFileDevs(ref IntPtr p_menustr, ref IntPtr p_devname, out int p_ndev);
+        private static extern void _gFileDevs(ref IntPtr p_menustr, ref IntPtr p_devname, ref int p_ndev);
 
         /// <summary>Returns a list of file-oriented device names and their menu strings</summary>
         /// <param name="p_devname">device name</param>
@@ -1488,7 +1488,7 @@ namespace PLplot
 
         // Returns a list of all device names and their menu strings
         [DllImport(DllName, EntryPoint="plgDevs")]
-        private static extern void _gDevs(ref IntPtr p_menustr, ref IntPtr p_devname, out int p_ndev);        
+        private static extern void _gDevs(ref IntPtr p_menustr, ref IntPtr p_devname, ref int p_ndev);        
 
         /// <summary>Returns a list of all device names and their menu strings</summary>
         /// <param name="p_devname">device name</param>

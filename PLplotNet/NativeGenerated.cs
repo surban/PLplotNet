@@ -285,7 +285,12 @@ namespace PLplot
                                                 [In, MarshalAs(UnmanagedType.LPArray)] PLFLT[] xmax,
                                                 [In, MarshalAs(UnmanagedType.LPArray)] PLFLT[] y);
 
-        public static void _errx(PLFLT[] xmin, PLFLT[] xmax, PLFLT[] y)
+        /// <summary>plerrx: Draw error bars in x direction</summary>
+        /// <param name="xmax">A vector containing the x coordinates of the right-hand endpoints of the error bars.</param>
+        /// <param name="xmin">A vector containing the x coordinates of the left-hand endpoints of the error bars.</param>
+        /// <param name="y">A vector containing the y coordinates of the error bars.</param>
+        /// <remarks>Draws a set of n error bars in x direction, the i'th error bar extending from xmin[i] to xmax[i] at y coordinate y[i]. The terminals of the error bars are of length equal to the minor tick length (settable using plsmin).</remarks>
+        public static void errx(PLFLT[] xmin, PLFLT[] xmax, PLFLT[] y)
         {
             _errx(GetSize(xmin, xmax, y), xmin, xmax, y);
         }
@@ -2236,7 +2241,7 @@ namespace PLplot
 
         /// <summary>Returns a list of file-oriented device names and their menu strings</summary>
         [DllImport(DllName, EntryPoint = "plgFileDevs")]
-        private static extern void _gFileDevs(ref IntPtr p_menustr, ref IntPtr p_devname, out int p_ndev);
+        private static extern void _gFileDevs(ref IntPtr p_menustr, ref IntPtr p_devname, ref int p_ndev);
 
         /// <summary>Returns a list of file-oriented device names and their menu strings</summary>
         /// <param name="p_devname">device name</param>
@@ -2248,7 +2253,7 @@ namespace PLplot
 
         /// <summary>Returns a list of all device names and their menu strings</summary>
         [DllImport(DllName, EntryPoint = "plgDevs")]
-        private static extern void _gDevs(ref IntPtr p_menustr, ref IntPtr p_devname, out int p_ndev);
+        private static extern void _gDevs(ref IntPtr p_menustr, ref IntPtr p_devname, ref int p_ndev);
 
         /// <summary>Returns a list of all device names and their menu strings</summary>
         /// <param name="p_devname">device name</param>

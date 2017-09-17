@@ -5,6 +5,12 @@ namespace PLplot
 {
 
     /// <summary>A PLplot stream.</summary>
+    /// <remarks>
+    /// A new PLplot stream is created when this class is instantiated.
+    /// The PLplot stream is ended when the instance is disposed.
+    /// An instance is thread-safe, however all calls from all
+    /// instances are serialized.
+    /// </remarks>
     public partial class PLStream : IDisposable
     {
         static object libLock = new object();

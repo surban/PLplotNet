@@ -4,7 +4,6 @@ using System.Runtime.InteropServices;
 
 
 
-/// <summary>PLplot</summary>
 namespace PLplot
 {
     // type aliases
@@ -785,7 +784,6 @@ namespace PLplot
                                     [In, MarshalAs(UnmanagedType.LPArray, SizeParamIndex=0)] PLFLT[] y);
 
     /// <summary>Callback function specifying the region that should be plotted in the shade plot</summary>
-    /// <param name="n">Number of elements in the x and y vectors.</param>
     /// <param name="x">x-coordinate to be tested for whether it is in the defined region.</param>
     /// <param name="y">y-coordinate to be tested for whether it is in the defined region.</param>
     /// <return>true if within defined area, otherwise false.</return>
