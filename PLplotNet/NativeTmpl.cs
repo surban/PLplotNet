@@ -1583,9 +1583,36 @@ namespace PLplot
 
         // Process options list using current options info.
         [DllImport(DllName, EntryPoint = "c_plparseopts")]
-        public static extern PLINT parseopts(ref int p_argc,
-                                             [In, MarshalAs(UnmanagedType.LPArray, ArraySubType = UnmanagedType.LPStr)] string[] argv,
-                                             Parse mode);
+        private static extern PLINT _parseopts(ref int p_argc,  IntPtr argv, ParseOpts mode);
+
+        public static PLINT parseopts(ref string[] argv, ParseOpts mode)
+        {
+            IntPtr[] p_argv = new IntPtr[argv.Length];
+            IntPtr pp_argv = Marshal.AllocHGlobal(argv.Length * Marshal.SizeOf<IntPtr>());
+            for (int i=0; i < argv.Length; i++)
+            {
+                p_argv[i] = Marshal.StringToHGlobalAnsi(argv[i]);                
+                Marshal.WriteIntPtr(pp_argv, i * Marshal.SizeOf<IntPtr>(), p_argv[i]);
+            }
+
+            int argc = argv.Length;
+            PLINT retval = _parseopts(ref argc, pp_argv, mode);
+
+            // for some reasons, PLplot sometimes returns argc=-1
+            if (argc < 0)
+                argc = 0;
+
+            argv = new string[argc];
+            for (int i=0; i < argc; i++)
+            {
+                IntPtr p = Marshal.ReadIntPtr(pp_argv, i * Marshal.SizeOf<IntPtr>());
+                argv[i] = Marshal.PtrToStringAnsi(p);
+            }
+            for (int i=0; i < p_argv.Length; i++)
+                Marshal.FreeHGlobal(p_argv[i]);
+
+            return retval;
+        }
 
         // Print usage & syntax message.
         [DllImport(DllName, EntryPoint = "plOptUsage")]

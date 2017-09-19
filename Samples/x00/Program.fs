@@ -5,6 +5,9 @@ open PLplot
 [<EntryPoint>]
 let main argv =
 
+    // create PLplot stream
+    use pl = new PLStream()
+
     // generate data
     let nsize = 101
     let xmin, xmax, ymin, ymax = 0., 1., 0., 100.
@@ -15,8 +18,11 @@ let main argv =
             x, y)
         |> Array.unzip
 
+    // Parse and process command line arguments
+    let mutable argv = argv
+    pl.parseopts( &argv, ParseOpts.Full ||| ParseOpts.NoProgram ) |> ignore
+
     // Initialize plplot
-    use pl = new PLStream()
     pl.init()
 
     // output version

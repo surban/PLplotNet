@@ -34,26 +34,23 @@ namespace PLplot
         WorldCoordinatesDefined = 3
     }
 
-    /// <summary>Option parsing options.</summary>
-    public enum Parse : PLINT
+    /// <summary>Command line parsing mode.</summary>
+    [Flags]
+    public enum ParseOpts : PLINT
     {
-        /// <summary>For backward compatibility</summary>
-        Partial = 0x0000, 
-        /// <summary>Process fully and exit if error</summary>
+        /// <summary>Full parsing of command line and all error messages enabled, including program exit when an error occurs. Anything on the command line that isn't recognized as a valid option or option argument is flagged as an error.</summary>
         Full = 0x0001, 
-        /// <summary>Don't issue messages</summary>
+        /// <summary>Turns off all output except in the case of errors.</summary>
         Quiet = 0x0002, 
-        /// <summary>Don't delete options after processing</summary>
+        /// <summary>Turns off deletion of processed arguments.</summary>
         NoDelete = 0x0004, 
         /// <summary>Show invisible options</summary>
         ShowAll = 0x0008, 
-        /// <summary>Obsolete</summary>
-        Override = 0x0010, 
-        /// <summary>Program name NOT in *argv[0]..</summary>
+        /// <summary>Specified if argv[0] is NOT a pointer to the program name.</summary>
         NoProgram = 0x0020, 
         /// <summary>Set if leading dash NOT required</summary>
         NoDash = 0x0040, 
-        /// <summary>Skip over unrecognized args</summary>
+        /// <summary>Set to quietly skip over any unrecognized arguments.</summary>
         Skip = 0x0080 
     }
 

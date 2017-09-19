@@ -2355,15 +2355,42 @@ namespace PLplot
         public static extern PLINT setopt([MarshalAs(UnmanagedType.LPStr)] string opt,
                                                   [MarshalAs(UnmanagedType.LPStr)] string optarg);
 
+        /// <summary>Process options list using current options info.</summary>
+        [DllImport(DllName, EntryPoint = "c_plparseopts")]
+        private static extern PLINT _parseopts(ref int p_argc, IntPtr argv, ParseOpts mode);
+
         /// <summary>plparseopts: Parse command-line arguments</summary>
         /// <param name="argv">A vector of character strings containing *p_argc command-line arguments.</param>
         /// <param name="mode">Parsing mode with the following possibilities:  PL_PARSE_FULL (1) -- Full parsing of command line and all error messages enabled, including program exit when an error occurs. Anything on the command line that isn't recognized as a valid option or option argument is flagged as an error.  PL_PARSE_QUIET (2) -- Turns off all output except in the case of errors.  PL_PARSE_NODELETE (4) -- Turns off deletion of processed arguments.  PL_PARSE_SHOWALL (8) -- Show invisible options  PL_PARSE_NOPROGRAM (32) -- Specified if argv[0] is NOT a pointer to the program name.  PL_PARSE_NODASH (64) -- Set if leading dash is NOT required.  PL_PARSE_SKIP (128) -- Set to quietly skip over any unrecognized arguments.</param>
-        /// <param name="p_argc">Number of arguments.</param>
         /// <remarks>Parse command-line arguments.</remarks>
-        [DllImport(DllName, EntryPoint = "c_plparseopts")]
-        public static extern PLINT parseopts(ref int p_argc,
-                                                     [In, MarshalAs(UnmanagedType.LPArray, ArraySubType = UnmanagedType.LPStr)] string[] argv,
-                                                     Parse mode);
+        public static PLINT parseopts(ref string[] argv, ParseOpts mode)
+        {
+            IntPtr[] p_argv = new IntPtr[argv.Length];
+            IntPtr pp_argv = Marshal.AllocHGlobal(argv.Length * Marshal.SizeOf<IntPtr>());
+            for (int i = 0; i < argv.Length; i++)
+            {
+                p_argv[i] = Marshal.StringToHGlobalAnsi(argv[i]);
+                Marshal.WriteIntPtr(pp_argv, i * Marshal.SizeOf<IntPtr>(), p_argv[i]);
+            }
+
+            int argc = argv.Length;
+            PLINT retval = _parseopts(ref argc, pp_argv, mode);
+
+            // for some reasons, PLplot sometimes returns argc=-1
+            if (argc < 0)
+                argc = 0;
+
+            argv = new string[argc];
+            for (int i = 0; i < argc; i++)
+            {
+                IntPtr p = Marshal.ReadIntPtr(pp_argv, i * Marshal.SizeOf<IntPtr>());
+                argv[i] = Marshal.PtrToStringAnsi(p);
+            }
+            for (int i = 0; i < p_argv.Length; i++)
+                Marshal.FreeHGlobal(p_argv[i]);
+
+            return retval;
+        }
 
         /// <summary>plOptUsage: Print usage and syntax message.</summary>
         /// <remarks>Prints the usage and syntax message. The message can also be displayed using the -h command line option. There is a default message describing the default PLplot options. The usage message is also modified by plSetUsage and plMergeOpts.</remarks>
