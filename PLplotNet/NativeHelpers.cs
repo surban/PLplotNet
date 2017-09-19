@@ -1,4 +1,6 @@
 using System;
+using System.IO;
+using System.Reflection;
 using System.Text;
 using System.Runtime.InteropServices;
 
@@ -70,7 +72,45 @@ namespace PLplot
         // library name
         const string DllName = "plplot";    
 
+        const string SupportDir = "plplot";
+
         const int MaxLength = 1024;
+
+        static Native()
+        {
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                // directory of executing program binary
+                string exeDir = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+
+                // On .Net core this assembly is not necessarily in the same directory as the
+                // application main executable, where the native plplot.dll has been copied 
+                // to (see build/PLplot.targets). We need to set PATH accordingly so that
+                // the loader will find the unmanaged DLL.
+                string oldPath = Environment.GetEnvironmentVariable("PATH");
+                string newPath = exeDir + ";" + oldPath;
+                Environment.SetEnvironmentVariable("PATH", newPath);
+
+                // The NuGet package ships with the PLplot DLLs and supporting font and
+                // color map files. These files get installed into the directory "plplot"
+                // relative to the application main executable (see build/PLplot.targets).
+                // For PLplot to find its support files, the environment variable 
+                // PLPLOT_LIB must be set accordingly.                
+                //
+                // We have to call the CRT function _putenv to update the global _environ 
+                // variable of the C runtime, since it is only populated at the start of
+                // the program and not updated from the Windows environment block.
+                string supPath = Path.Combine(exeDir, SupportDir);               
+                _putenv_s("PLPLOT_LIB", supPath);
+
+                //Console.WriteLine("Set PATH={0}", newPath);                
+                //Console.WriteLine("Set PLPLOT_LIB={0}", supPath);                
+            }
+        }
+
+        [DllImport("API-MS-WIN-CRT-ENVIRONMENT-L1-1-0.DLL", EntryPoint="_putenv_s", CallingConvention=CallingConvention.Cdecl)]
+        private static extern int _putenv_s([MarshalAs(UnmanagedType.LPStr)] string name, 
+                                            [MarshalAs(UnmanagedType.LPStr)] string value);
 
         private static void CheckRange(string param, PLINT minVal, PLINT smallerThan, PLINT value)
         {

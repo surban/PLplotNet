@@ -35,7 +35,7 @@
 
     Interactive Platforms: Windows GDI, X11
 
-    ==============================================================
+    ==============================
 
     This package provides a complete, but unofficial, .Net binding for PLplot.   
 
@@ -63,10 +63,25 @@
     <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
-      <Compile Include="Types.cs" />
-      <Compile Include="NativeHelpers.cs" />
-      <Compile Include="NativeGenerated.cs" />
-      <Compile Include="PLStream.cs" />
-      <Compile Include="PLStreamGenerated.cs" />
+    <Compile Include="Types.cs" />
+    <Compile Include="NativeHelpers.cs" />
+    <Compile Include="NativeGenerated.cs" />
+    <Compile Include="PLStream.cs" />
+    <Compile Include="PLStreamGenerated.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="build/PLplot.targets" PackagePath="build" />
+    <Content Include="build/*.dll" PackagePath="build">
+      <Link>%(FileName)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>           
+  </ItemGroup>
+  <ItemGroup>
+    <DataFiles Include="build/plplot/*.pal" />
+    <DataFiles Include="build/plplot/*.fnt" />
+    <Content Include="@(DataFiles)" PackagePath="build/plplot">
+      <Link>plplot/%(FileName)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>      
+  </ItemGroup>   
 </Project>
