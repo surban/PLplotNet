@@ -735,7 +735,7 @@ namespace PLplot
     } 
 
     /// <summary>Data for the pltr2 function (2d coordinate transformation arrays)</summary>
-    [StructLayout(LayoutKind.Sequential)]
+    [StructLayout(LayoutKind.Sequential, Pack=1)]
     internal struct _CGrid2
     {
         /// <summary>pointer to x matrix of floats</summary>

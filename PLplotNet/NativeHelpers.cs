@@ -113,7 +113,8 @@ namespace PLplot
 
     internal class TR2Marshaller
     {
-        GCHandle gcXg, gcYg, gcG;
+        MatrixMarshaller mXg, mYg;
+        GCHandle gcG;
         PLPointer pltr_data;
 
         public TR2Marshaller(PLFLT[,] xg, PLFLT[,] yg)
@@ -121,15 +122,15 @@ namespace PLplot
             if (xg.GetLength(0) != yg.GetLength(0) || xg.GetLength(1) != yg.GetLength(1))
                 throw new ArgumentException("argument matrices must have same dimensions");
 
-            gcXg = GCHandle.Alloc(xg, GCHandleType.Pinned);
-            gcYg = GCHandle.Alloc(yg, GCHandleType.Pinned);
+            mXg = new MatrixMarshaller(xg);
+            mYg = new MatrixMarshaller(yg);
 
             _CGrid2 g;
-            g.Xg = gcXg.AddrOfPinnedObject();
-            g.Yg = gcYg.AddrOfPinnedObject();
+            g.Xg = mXg.Ptr;
+            g.Yg = mYg.Ptr;
             g.Zg = IntPtr.Zero;
-            g.NX = xg.GetLength(0);
-            g.NY = xg.GetLength(1);
+            g.NX = mXg.NX;
+            g.NY = mXg.NY;
 
             gcG = GCHandle.Alloc(g, GCHandleType.Pinned);
             pltr_data = gcG.AddrOfPinnedObject();
@@ -137,8 +138,8 @@ namespace PLplot
 
         ~TR2Marshaller()
         {
-            gcXg.Free();
-            gcYg.Free();
+            (mXg as IDisposable).Dispose();
+            (mYg as IDisposable).Dispose();
             gcG.Free();
         }
 
