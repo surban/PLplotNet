@@ -15,7 +15,7 @@
         },
         {
             "taskName": "generate",
-            "command": "cd PLplotNet; dotnet run -p ../Generator ../../plplot/doc/docbook/src",
+            "command": "cd PLplotNet; dotnet run -p ../Generator ../../PLplot/doc/docbook/src",
             "type": "shell",
             "group": "build",
             "problemMatcher": "$msCompile"

@@ -12,7 +12,7 @@ open Microsoft.CodeAnalysis.Editing
 
 
 let skipStreamMethods =
-    ["end"; "end1"; "gstrm"; "mkstrm"; "sstrm"; "cpstrm"]
+    ["end"; "end1"; "mkstrm"; "sstrm"; "cpstrm"]
     |> Set.ofList
 
 

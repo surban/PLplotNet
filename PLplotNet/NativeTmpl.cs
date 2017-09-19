@@ -1555,6 +1555,7 @@ namespace PLplot
 
         /* Command line parsing utilities */
 
+        /*
         // Clear internal option table info structure.
         [DllImport(DllName, EntryPoint = "plClearOpts")]
         public static extern void ClearOpts();
@@ -1562,17 +1563,16 @@ namespace PLplot
         // Reset internal option table info structure.
         [DllImport(DllName, EntryPoint = "plResetOpts")]
         public static extern void ResetOpts();
-
-        /*
+        
         // Merge user option table into internal info structure.
         [DllImport(DllName, EntryPoint="plMergeOpts")]
         public static extern PLINT MergeOpts( PLOptionTable *options, [MarshalAs(UnmanagedType.LPStr)] string name, [MarshalAs(UnmanagedType.LPStr)] string *notes );
-        */
 
         // Set the strings used in usage and syntax messages.
         [DllImport(DllName, EntryPoint = "plSetUsage")]
         public static extern void SetUsage([MarshalAs(UnmanagedType.LPStr)] string program_string,
                                            [MarshalAs(UnmanagedType.LPStr)] string usage_string);
+        */
 
         // Process input strings, treating them as an option and argument pair.
         // The first is for the external API, the second the work routine declared
@@ -1620,6 +1620,7 @@ namespace PLplot
 
         /* Miscellaneous */
 
+        /*
         // Get the output file pointer
         [DllImport(DllName, EntryPoint = "plgfile")]
         public static extern void gfile(out FILE p_file);
@@ -1627,6 +1628,7 @@ namespace PLplot
         // Set the output file pointer
         [DllImport(DllName, EntryPoint = "plsfile")]
         public static extern void sfile(FILE file);
+        */
 
         // Get the escape character for text strings.
         [DllImport(DllName, EntryPoint = "plgesc")]
@@ -1665,6 +1667,7 @@ namespace PLplot
 
         /* Nice way to allocate space for a vectored 2d grid */
 
+        /*
         // Allocates a block of memory for use as a 2-d grid of PLFLT's.
         [DllImport(DllName, EntryPoint = "plAlloc2dGrid")]
         public static extern void Alloc2dGrid(out PLFLT_NC_MATRIX f, PLINT nx, PLINT ny);
@@ -1676,6 +1679,7 @@ namespace PLplot
         // Find the maximum and minimum of a 2d matrix allocated with plAllc2dGrid().
         [DllImport(DllName, EntryPoint = "plMinMax2dGrid")]
         public static extern void MinMax2dGrid(PLFLT_MATRIX f, PLINT nx, PLINT ny, out PLFLT fmax, out PLFLT fmin);
+        */
 
         // Wait for graphics input event and translate to world coordinates
         [DllImport(DllName, EntryPoint = "plGetCursor")]
@@ -1683,7 +1687,7 @@ namespace PLplot
 
         // Translates relative device coordinates to world coordinates.
         [DllImport(DllName, EntryPoint = "plTranslateCursor")]
-        public static extern PLINT TranslateCursor(out GraphicsIn gin);
+        public static extern PLINT TranslateCursor(ref GraphicsIn gin);
 
         // Set the pointer to the data used in driver initialisation
         [DllImport(DllName, EntryPoint = "plsdevdata")]

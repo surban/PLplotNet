@@ -748,6 +748,18 @@ namespace PLplot
             }
         }
 
+        /// <summary>plgstrm: Get current stream number</summary>
+        /// <param name="p_strm">Returned value of the current stream value.</param>
+        /// <remarks>Gets the number of the current output stream. See also plsstrm.</remarks>
+        public void gstrm(out PLINT p_strm)
+        {
+            lock (libLock)
+            {
+                ActivateStream();
+                Native.gstrm(out p_strm);
+            }
+        }
+
         /// <summary>plgver: Get the current library version number</summary>
         /// <param name="p_ver">Returned ascii character string (with preallocated length of 80 characters or more) containing the PLplot version number.</param>
         /// <remarks>Get the current library version number. Note: you must have allocated space for this (80 characters is safe).</remarks>
@@ -2649,41 +2661,6 @@ namespace PLplot
             }
         }
 
-        /// <summary>plClearOpts: Clear internal option table info structure.</summary>
-        /// <remarks>Clear the internal options table info structure. This removes any option added with plMergeOpts as well as all default entries.</remarks>
-        public void ClearOpts()
-        {
-            lock (libLock)
-            {
-                ActivateStream();
-                Native.ClearOpts();
-            }
-        }
-
-        /// <summary>plResetOpts: Reset internal option table info structure.</summary>
-        /// <remarks>Resets the internal command line options table to the default built in value. Any user options added with plMergeOpts will be cleared. See plparseopts for details of how to parse these options in a program.</remarks>
-        public void ResetOpts()
-        {
-            lock (libLock)
-            {
-                ActivateStream();
-                Native.ResetOpts();
-            }
-        }
-
-        /// <summary>plSetUsage: Set the ascii character strings used in usage and syntax messages.</summary>
-        /// <param name="program_string">An ascii character string to appear as the name of program.</param>
-        /// <param name="usage_string">An ascii character string to appear as the usage text.</param>
-        /// <remarks>Sets the program string and usage string displayed by the command line help option (-h) and by plOptUsage.</remarks>
-        public void SetUsage(string program_string, string usage_string)
-        {
-            lock (libLock)
-            {
-                ActivateStream();
-                Native.SetUsage(program_string, usage_string);
-            }
-        }
-
         /// <summary>plsetopt: Set any command-line option</summary>
         /// <param name="opt">An ascii character string containing the command-line option.</param>
         /// <param name="optarg">An ascii character string containing the argument of the command-line option.</param>
@@ -2721,29 +2698,6 @@ namespace PLplot
             }
         }
 
-        /// <summary>plgfile: Get output file handle</summary>
-        /// <remarks>Gets the current output file handle, if applicable.</remarks>
-        public void gfile(out FILE p_file)
-        {
-            lock (libLock)
-            {
-                ActivateStream();
-                Native.gfile(out p_file);
-            }
-        }
-
-        /// <summary>plsfile: Set output file handle</summary>
-        /// <param name="file">File pointer. The type (i.e. text or binary) doesn't matter on *ix systems. On systems where it might matter it should match the type of file that the output driver would produce, i.e. text for the postscript driver.</param>
-        /// <remarks>Sets the current output file handle, if applicable. If the file has has not been previously opened and is required by the driver, the user will be prompted for the file name. This routine, if used, must be called before initializing PLplot.</remarks>
-        public void sfile(FILE file)
-        {
-            lock (libLock)
-            {
-                ActivateStream();
-                Native.sfile(file);
-            }
-        }
-
         /// <summary>Get the escape character for text strings.</summary>
         public void gesc(out PLCHAR p_esc)
         {
@@ -2764,42 +2718,6 @@ namespace PLplot
             }
         }
 
-        /// <summary>plAlloc2dGrid: Allocate a block of memory for use as a matrix of type PLFLT_MATRIX.</summary>
-        /// <param name="f">If the allocation is a success, a pointer to a matrix (organized as an Iliffe column vector of pointers to row vectors) is returned. If the allocation is a failure, then the returned value of f will be NULL.</param>
-        /// <remarks>Allocates the memory for a matrix of type PLFLT_MATRIX (organized as an Iliffe column vector of pointers to row vectors). As a result the matrix can be accessed using C/C++ syntax like *f[i][j]. The memory associated with this matrix must be freed by calling plFree2dGrid once it is no longer required.</remarks>
-        public void Alloc2dGrid(out PLFLT_NC_MATRIX f, PLINT nx, PLINT ny)
-        {
-            lock (libLock)
-            {
-                ActivateStream();
-                Native.Alloc2dGrid(out f, nx, ny);
-            }
-        }
-
-        /// <summary>plFree2dGrid: Free the memory associated with a PLFLT matrix allocated using plAlloc2dGrid.</summary>
-        /// <param name="f">A matrix to be freed after allocation by plAlloc2dGrid and all use of the matrix has been completed.</param>
-        /// <remarks>Frees a block of memory allocated using plAlloc2dGrid.</remarks>
-        public void Free2dGrid(PLFLT_NC_MATRIX f, PLINT nx, PLINT ny)
-        {
-            lock (libLock)
-            {
-                ActivateStream();
-                Native.Free2dGrid(f, nx, ny);
-            }
-        }
-
-        /// <summary>plMinMax2dGrid: Find the minimum and maximum of a PLFLT matrix of type PLFLT_MATRIX allocated using plAlloc2dGrid.</summary>
-        /// <param name="f">A matrix to find the maximum / minimum of.</param>
-        /// <remarks>Find the minimum and maximum of a PLFLT matrix of type PLFLT_MATRIX allocated using plAlloc2dGrid.</remarks>
-        public void MinMax2dGrid(PLFLT_MATRIX f, PLINT nx, PLINT ny, out PLFLT fmax, out PLFLT fmin)
-        {
-            lock (libLock)
-            {
-                ActivateStream();
-                Native.MinMax2dGrid(f, nx, ny, out fmax, out fmin);
-            }
-        }
-
         /// <summary>plGetCursor: Wait for graphics input event and translate to world coordinates.</summary>
         /// <param name="gin">Pointer to PLGraphicsIn structure which will contain the output. The structure is not allocated by the routine and must exist before the function is called.</param>
         /// <remarks>Wait for graphics input event and translate to world coordinates. Returns 0 if no translation to world coordinates is possible.</remarks>
@@ -2815,12 +2733,12 @@ namespace PLplot
         /// <summary>plTranslateCursor: Convert device to world coordinates</summary>
         /// <param name="gin">Pointer to a PLGraphicsIn structure to hold the input and output coordinates.</param>
         /// <remarks>Convert from device to world coordinates. The variable gin must have members dX and dY set before the call.These represent the coordinates of the point as a fraction of the total drawing area. If the point passed in is on a window then the function returns 1, members wX and wY will be filled with the world coordinates of that point and the subwindow member will be filled with the index of the window on which the point falls. If the point falls on more than one window (because they overlap) then the window with the lowest index is used. If the point does not fall on a window then the function returns 0, wX and wY are set to 0 and subwindow remains unchanged.</remarks>
-        public PLINT TranslateCursor(out GraphicsIn gin)
+        public PLINT TranslateCursor(ref GraphicsIn gin)
         {
             lock (libLock)
             {
                 ActivateStream();
-                return Native.TranslateCursor(out gin);
+                return Native.TranslateCursor(ref gin);
             }
         }
 

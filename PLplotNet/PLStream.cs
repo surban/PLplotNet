@@ -25,6 +25,7 @@ namespace PLplot
                 throw new SystemException("cannot create PLplot stream");
         }
 
+        /// <summary>Ends the PLplot stream.</summary>
         ~PLStream()
         {
             if (!disposed)
@@ -39,7 +40,7 @@ namespace PLplot
         }
 
         /// <summary>The stream id of this stream as returned by plgstrm().</summary>    
-        int Id
+        public int Id
         {
             get 
             { 
@@ -56,12 +57,12 @@ namespace PLplot
             return String.Format("PLplot stream {0}", streamId);
         }
 
-        protected void ActivateStream()
+        private void ActivateStream()
         {
             Native.sstrm(Id);
         }
 
-        protected void EndStream()
+        private void EndStream()
         {
             lock (libLock)
             {
@@ -93,6 +94,7 @@ namespace PLplot
                 Native.cpstrm(iplsr.Id, flags);
             }
         }
+
     }
 
 }
