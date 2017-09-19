@@ -715,6 +715,41 @@ namespace PLplot
         Button5 = 0x1000 
     }
 
+
+    /// <summary>Data for the pltr1 function</summary>
+    [StructLayout(LayoutKind.Sequential)]
+    internal struct _CGrid
+    {
+        /// <summary>pointer to x array of floats</summary>
+        public IntPtr Xg;
+        /// <summary>pointer to y array of floats</summary>
+        public IntPtr Yg;
+        /// <summary>pointer to z array of floats</summary>
+        public IntPtr Zg;
+        /// <summary>number of x points</summary>
+        public PLINT NX;
+        /// <summary>number of y points</summary>
+        public PLINT NY;
+        /// <summary>number of z points</summary>
+        public PLINT NZ;
+    } 
+
+    /// <summary>Data for the pltr2 function (2d coordinate transformation arrays)</summary>
+    [StructLayout(LayoutKind.Sequential)]
+    internal struct _CGrid2
+    {
+        /// <summary>pointer to x matrix of floats</summary>
+        public IntPtr Xg;
+        /// <summary>pointer to y matrix of floats</summary>
+        public IntPtr Yg;
+        /// <summary>pointer to z matrix of floats</summary>
+        public IntPtr Zg;
+        /// <summary>number of x points</summary>
+        public PLINT NX;
+        /// <summary>number of y points</summary>
+        public PLINT NY;
+    }    
+
     /// <summary>PLplot Graphics Input structure</summary>
     [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
     public struct GraphicsIn

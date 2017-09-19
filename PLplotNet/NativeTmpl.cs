@@ -144,16 +144,15 @@ namespace PLplot
         /// <param name="ky">Start of y indices to consider</param>
         /// <param name="ly">End (exclusive) of y indices to consider</param>        
         /// <param name="pltr">A callback function that defines the transformation between the zero-based indices of the matrix f and the world coordinates.For the C case, transformation functions are provided in the PLplot library: pltr0 for the identity mapping, and pltr1 and pltr2 for arbitrary mappings respectively defined by vectors and matrices. In addition, C callback routines for the transformation can be supplied by the user such as the mypltr function in examples/c/x09c.c which provides a general linear transformation between index coordinates and world coordinates.For languages other than C you should consult  for the details concerning how PLTRANSFORM_callback arguments are interfaced. However, in general, a particular pattern of callback-associated arguments such as a tr vector with 6 elements; xg and yg vectors; or xg and yg matrices are respectively interfaced to a linear-transformation routine similar to the above mypltr function; pltr1; and pltr2. Furthermore, some of our more sophisticated bindings (see, e.g., ) support native language callbacks for handling index to world-coordinate transformations. Examples of these various approaches are given in examples/ltlanguagegtx09*, examples/ltlanguagegtx16*, examples/ltlanguagegtx20*, examples/ltlanguagegtx21*, and examples/ltlanguagegtx22*, for all our supported languages.</param>
-        /// <param name="pltr_data">Extra parameter to help pass information to pltr0, pltr1, pltr2, or whatever callback routine that is externally supplied.</param>
         /// <remarks>Draws a contour plot of the data in f[nx][ny], using the nlevel contour levels specified by clevel. Only the region of the matrix from kx to lx and from ky to ly is plotted out where all these index ranges are interpreted as one-based for historical reasons. A transformation routine pointed to by pltr with a generic pointer pltr_data for additional data required by the transformation routine is used to map indices within the matrix to the world coordinates.</remarks>
         public static void cont(PLFLT[,] f, PLINT kx, PLINT lx, PLINT ky, PLINT ly,
-                                PLFLT[] clevel, TransformFunc pltr, PLPointer pltr_data)
+                                PLFLT[] clevel, TransformFunc pltr)
         {
             using (var mat_f = new MatrixMarshaller(f))
             {
                 CheckRange("kx", 0, mat_f.NX, kx); CheckRange("lx", kx+1, mat_f.NX, lx);
                 CheckRange("ky", 0, mat_f.NY, ky); CheckRange("ly", ky+1, mat_f.NY, ly);
-                _cont(mat_f.Ptr, mat_f.NX, mat_f.NY, kx+1, lx+1, ky+1, ly+1, clevel, clevel.Length, pltr, pltr_data);
+                _cont(mat_f.Ptr, mat_f.NX, mat_f.NY, kx+1, lx+1, ky+1, ly+1, clevel, clevel.Length, pltr, IntPtr.Zero);
             }            
         }
 
@@ -1071,14 +1070,13 @@ namespace PLplot
                 PLINT sh_cmap, PLFLT sh_color, PLFLT sh_width,
                 PLINT min_color, PLFLT min_width,
                 PLINT max_color, PLFLT max_width,
-                FillFunc fill, PLBOOL rectangular,
-                TransformFunc pltr, PLPointer pltr_data)
+                PLBOOL rectangular, TransformFunc pltr)
         {
             using (var mat_a = new MatrixMarshaller(a))
             {
                 _shade(mat_a.Ptr, mat_a.NX, mat_a.NY, defined, xmin, xmax, ymin, ymax,
                     shade_min, shade_max, sh_cmap, sh_color, sh_width, min_color, min_width,
-                    max_color, max_width, fill, rectangular, pltr, pltr_data);
+                    max_color, max_width, new FillFunc(_fill), rectangular, pltr, IntPtr.Zero);
             }
         }                
 
@@ -1096,14 +1094,13 @@ namespace PLplot
                 PLFLT xmin, PLFLT xmax, PLFLT ymin, PLFLT ymax,
                 PLFLT[] clevel, PLFLT fill_width,
                 PLINT cont_color, PLFLT cont_width,
-                FillFunc fill, PLBOOL rectangular,
-                TransformFunc pltr, PLPointer pltr_data)
+                PLBOOL rectangular, TransformFunc pltr)
         {
             using (var mat_a = new MatrixMarshaller(a))
             {
                 _shades(mat_a.Ptr, mat_a.NX, mat_a.NY, defined, xmin, xmax, ymin, ymax,
-                    clevel, clevel.Length, fill_width, cont_color, cont_width, fill, rectangular,
-                    pltr, pltr_data);
+                    clevel, clevel.Length, fill_width, cont_color, cont_width, 
+                    new FillFunc(_fill), rectangular, pltr, IntPtr.Zero);
             }
         }                
 
@@ -1174,7 +1171,12 @@ namespace PLplot
 
         // Set the coordinate transform
         [DllImport(DllName, EntryPoint = "c_plstransform")]
-        public static extern void stransform(TransformFunc coordinate_transform, PLPointer coordinate_transform_data);
+        private static extern void _stransform(TransformFunc coordinate_transform, PLPointer coordinate_transform_data);
+
+        public static void stransform(TransformFunc coordinate_transform)
+        {
+            _stransform(coordinate_transform, IntPtr.Zero);
+        }
 
         // Prints out the same string repeatedly at the n points in world
         // coordinates given by the x and y arrays.  Supersedes plpoin and
@@ -1280,13 +1282,13 @@ namespace PLplot
         public static void imagefr(PLFLT[,] idata, 
                                    PLFLT xmin, PLFLT xmax, PLFLT ymin, PLFLT ymax, PLFLT zmin, PLFLT zmax,
                                    PLFLT valuemin, PLFLT valuemax,
-                                   TransformFunc pltr, PLPointer pltr_data)
+                                   TransformFunc pltr)
         {
             using (var mat_idata = new MatrixMarshaller(idata))
             {
                 _imagefr(mat_idata.Ptr, mat_idata.NX, mat_idata.NY, 
                          xmin, xmax, ymin, ymax, zmin, zmax, valuemin, valuemax, 
-                         pltr, pltr_data);
+                         pltr, IntPtr.Zero);
             }
         }                                   
 
@@ -1367,7 +1369,10 @@ namespace PLplot
 
         public static void svect(PLFLT[] arrowx, PLFLT[] arrowy, PLBOOL fill)
         {
-            _svect(arrowx, arrowy, GetSize(arrowx, arrowy), fill);
+            if (arrowx == null || arrowy == null)
+                _svect(null, null, 0, fill);
+            else
+                _svect(arrowx, arrowy, GetSize(arrowx, arrowy), fill);
         }
 
         // Sets the edges of the viewport to the specified absolute coordinates
@@ -1421,7 +1426,7 @@ namespace PLplot
                                          TransformFunc pltr, PLPointer pltr_data);
 
         public static void vect(PLFLT[,] u, PLFLT[,] v, PLFLT scale,
-                                TransformFunc pltr, PLPointer pltr_data)
+                                TransformFunc pltr)
         {
             using (var u_mat=new MatrixMarshaller(u))
             {
@@ -1429,7 +1434,7 @@ namespace PLplot
                 {
                     CheckSize(u, v);
                     _vect(u_mat.Ptr, v_mat.Ptr, u_mat.NX, u_mat.NY, scale,
-                          pltr, pltr_data);
+                          pltr, IntPtr.Zero);
                 }
             }
         }                                
@@ -1532,26 +1537,50 @@ namespace PLplot
 
         // Identity transformation.
         [DllImport(DllName, EntryPoint = "pltr0")]
-        public static extern void tr0(PLFLT x, PLFLT y, out PLFLT tx, out PLFLT ty, PLPointer pltr_data);
+        internal static extern void _tr0(PLFLT x, PLFLT y, out PLFLT tx, out PLFLT ty, PLPointer pltr_data);
 
         // Does linear interpolation from singly dimensioned coord arrays.
         [DllImport(DllName, EntryPoint = "pltr1")]
-        public static extern void tr1(PLFLT x, PLFLT y, out PLFLT tx, out PLFLT ty, PLPointer pltr_data);
+        internal static extern void _tr1(PLFLT x, PLFLT y, out PLFLT tx, out PLFLT ty, PLPointer pltr_data);
 
         // Does linear interpolation from doubly dimensioned coord arrays
         // (column dominant, as per normal C 2d arrays).
         [DllImport(DllName, EntryPoint = "pltr2")]
-        public static extern void tr2(PLFLT x, PLFLT y, out PLFLT tx, out PLFLT ty, PLPointer pltr_data);
+        internal static extern void _tr2(PLFLT x, PLFLT y, out PLFLT tx, out PLFLT ty, PLPointer pltr_data);
 
+        /// <summary>Make a identity transformation for matrix index to world coordinate mapping.</summary>
+        public static TransformFunc tr0()
+        {
+            return new TransformFunc(Native._tr0);
+        }
+
+        /// <summary>Make a linear interpolation transformation for matrix index to world coordinate mapping using singly dimensioned coordinate arrays.</summary>
+        /// <param name="xg">x coordinates of grid</param>
+        /// <param name="yg">y coordinates of grid</param>
+        public static TransformFunc tr1(PLFLT[] xg, PLFLT[] yg)
+        {
+            return (new TR1Marshaller(xg, yg)).Func;
+        }        
+
+        /// <summary>Make a linear interpolation transformation for grid to world mapping using doubly dimensioned coordinate arrays.</summary>
+        /// <param name="xg">x targets</param>
+        /// <param name="yg">y targets</param>
+        public static TransformFunc tr2(PLFLT[,] xg, PLFLT[,] yg)
+        {
+            return (new TR2Marshaller(xg, yg)).Func;
+        }        
+
+        /*
         // Just like pltr2() but uses pointer arithmetic to get coordinates from
         // 2d grid tables.
         [DllImport(DllName, EntryPoint = "pltr2p")]
-        public static extern void tr2p(PLFLT x, PLFLT y, out PLFLT tx, out PLFLT ty, PLPointer pltr_data);
+        public static extern void _tr2p(PLFLT x, PLFLT y, out PLFLT tx, out PLFLT ty, PLPointer pltr_data);
 
         // Does linear interpolation from doubly dimensioned coord arrays
         // (row dominant, i.e. Fortran ordering).
         [DllImport(DllName, EntryPoint = "pltr2f")]
-        public static extern void tr2f(PLFLT x, PLFLT y, out PLFLT tx, out PLFLT ty, PLPointer pltr_data);
+        public static extern void _tr2f(PLFLT x, PLFLT y, out PLFLT tx, out PLFLT ty, PLPointer pltr_data);
+        */
 
         /* Command line parsing utilities */
 

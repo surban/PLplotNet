@@ -263,14 +263,13 @@ namespace PLplot
         /// <param name="ky">Start of y indices to consider</param>
         /// <param name="ly">End (exclusive) of y indices to consider</param>        
         /// <param name="pltr">A callback function that defines the transformation between the zero-based indices of the matrix f and the world coordinates.For the C case, transformation functions are provided in the PLplot library: pltr0 for the identity mapping, and pltr1 and pltr2 for arbitrary mappings respectively defined by vectors and matrices. In addition, C callback routines for the transformation can be supplied by the user such as the mypltr function in examples/c/x09c.c which provides a general linear transformation between index coordinates and world coordinates.For languages other than C you should consult  for the details concerning how PLTRANSFORM_callback arguments are interfaced. However, in general, a particular pattern of callback-associated arguments such as a tr vector with 6 elements; xg and yg vectors; or xg and yg matrices are respectively interfaced to a linear-transformation routine similar to the above mypltr function; pltr1; and pltr2. Furthermore, some of our more sophisticated bindings (see, e.g., ) support native language callbacks for handling index to world-coordinate transformations. Examples of these various approaches are given in examples/ltlanguagegtx09*, examples/ltlanguagegtx16*, examples/ltlanguagegtx20*, examples/ltlanguagegtx21*, and examples/ltlanguagegtx22*, for all our supported languages.</param>
-        /// <param name="pltr_data">Extra parameter to help pass information to pltr0, pltr1, pltr2, or whatever callback routine that is externally supplied.</param>
         /// <remarks>Draws a contour plot of the data in f[nx][ny], using the nlevel contour levels specified by clevel. Only the region of the matrix from kx to lx and from ky to ly is plotted out where all these index ranges are interpreted as one-based for historical reasons. A transformation routine pointed to by pltr with a generic pointer pltr_data for additional data required by the transformation routine is used to map indices within the matrix to the world coordinates.</remarks>
-        public void cont(PLFLT[,] f, PLINT kx, PLINT lx, PLINT ky, PLINT ly, PLFLT[] clevel, TransformFunc pltr, PLPointer pltr_data)
+        public void cont(PLFLT[,] f, PLINT kx, PLINT lx, PLINT ky, PLINT ly, PLFLT[] clevel, TransformFunc pltr)
         {
             lock (libLock)
             {
                 ActivateStream();
-                Native.cont(f, kx, lx, ky, ly, clevel, pltr, pltr_data);
+                Native.cont(f, kx, lx, ky, ly, clevel, pltr);
             }
         }
 
@@ -1849,13 +1848,11 @@ namespace PLplot
         /// <summary>plshade: Shade individual region on the basis of value</summary>
         /// <param name="a">A matrix containing function values to plot. Should have dimensions of nx by ny.</param>
         /// <param name="defined">Callback function specifying the region that should be plotted in the shade plot. This function accepts x and y coordinates as input arguments and must return 1 if the point is to be included in the shade plot and 0 otherwise. If you want to plot the entire shade plot (the usual case), this argument should be set to NULL.</param>
-        /// <param name="fill">Routine used to fill the region. Use plfill. Future version of PLplot may have other fill routines.</param>
         /// <param name="max_color">Defines pen color, width used by the boundary of shaded region. The min values are used for the shade_min boundary, and the max values are used on the shade_max boundary. Set color and width to zero for no plotted boundaries.</param>
         /// <param name="max_width">Defines pen color, width used by the boundary of shaded region. The min values are used for the shade_min boundary, and the max values are used on the shade_max boundary. Set color and width to zero for no plotted boundaries.</param>
         /// <param name="min_color">Defines pen color, width used by the boundary of shaded region. The min values are used for the shade_min boundary, and the max values are used on the shade_max boundary. Set color and width to zero for no plotted boundaries.</param>
         /// <param name="min_width">Defines pen color, width used by the boundary of shaded region. The min values are used for the shade_min boundary, and the max values are used on the shade_max boundary. Set color and width to zero for no plotted boundaries.</param>
         /// <param name="pltr">A callback function that defines the transformation between the zero-based indices of the matrix a and world coordinates. If pltr is not supplied (e.g., is set to NULL in the C case), then the x indices of a are mapped to the range xmin through xmax and the y indices of a are mapped to the range ymin through ymax.For the C case, transformation functions are provided in the PLplot library: pltr0 for the identity mapping, and pltr1 and pltr2 for arbitrary mappings respectively defined by vectors and matrices. In addition, C callback routines for the transformation can be supplied by the user such as the mypltr function in examples/c/x09c.c which provides a general linear transformation between index coordinates and world coordinates.For languages other than C you should consult  for the details concerning how PLTRANSFORM_callback arguments are interfaced. However, in general, a particular pattern of callback-associated arguments such as a tr vector with 6 elements; xg and yg vectors; or xg and yg matrices are respectively interfaced to a linear-transformation routine similar to the above mypltr function; pltr1; and pltr2. Furthermore, some of our more sophisticated bindings (see, e.g., ) support native language callbacks for handling index to world-coordinate transformations. Examples of these various approaches are given in examples/ltlanguagegtx09*, examples/ltlanguagegtx16*, examples/ltlanguagegtx20*, examples/ltlanguagegtx21*, and examples/ltlanguagegtx22*, for all our supported languages.</param>
-        /// <param name="pltr_data">Extra parameter to help pass information to pltr0, pltr1, pltr2, or whatever routine that is externally supplied.</param>
         /// <param name="rectangular">Set rectangular to true if rectangles map to rectangles after coordinate transformation with pltrl. Otherwise, set rectangular to false. If rectangular is set to true, plshade tries to save time by filling large rectangles. This optimization fails if the coordinate transformation distorts the shape of rectangles. For example a plot in polar coordinates has to have rectangular set to false.</param>
         /// <param name="sh_cmap">Defines color map. If sh_cmap=0, then sh_color is interpreted as a cmap0 (integer) index. If sh_cmap=1, then sh_color is interpreted as a cmap1 argument in the range (0.0-1.0).</param>
         /// <param name="sh_color">Defines color map index with integer value if cmap0 or value in range (0.0-1.0) if cmap1.</param>
@@ -1864,12 +1861,12 @@ namespace PLplot
         /// <param name="shade_min">Defines the lower end of the interval to be shaded. If shade_max leq shade_min, plshade does nothing.</param>
         /// <remarks>Shade individual region on the basis of value. Use plshades if you want to shade a number of contiguous regions using continuous colors. In particular the edge contours are treated properly in plshades. If you attempt to do contiguous regions with plshade the contours at the edge of the shade are partially obliterated by subsequent plots of contiguous shaded regions.</remarks>
         public void shade(
-                        PLFLT[,] a, DefinedFunc defined, PLFLT xmin, PLFLT xmax, PLFLT ymin, PLFLT ymax, PLFLT shade_min, PLFLT shade_max, PLINT sh_cmap, PLFLT sh_color, PLFLT sh_width, PLINT min_color, PLFLT min_width, PLINT max_color, PLFLT max_width, FillFunc fill, PLBOOL rectangular, TransformFunc pltr, PLPointer pltr_data)
+                        PLFLT[,] a, DefinedFunc defined, PLFLT xmin, PLFLT xmax, PLFLT ymin, PLFLT ymax, PLFLT shade_min, PLFLT shade_max, PLINT sh_cmap, PLFLT sh_color, PLFLT sh_width, PLINT min_color, PLFLT min_width, PLINT max_color, PLFLT max_width, PLBOOL rectangular, TransformFunc pltr)
         {
             lock (libLock)
             {
                 ActivateStream();
-                Native.shade(a, defined, xmin, xmax, ymin, ymax, shade_min, shade_max, sh_cmap, sh_color, sh_width, min_color, min_width, max_color, max_width, fill, rectangular, pltr, pltr_data);
+                Native.shade(a, defined, xmin, xmax, ymin, ymax, shade_min, shade_max, sh_cmap, sh_color, sh_width, min_color, min_width, max_color, max_width, rectangular, pltr);
             }
         }
 
@@ -1879,19 +1876,17 @@ namespace PLplot
         /// <param name="cont_color">Defines cmap0 pen color used for contours defining edges of shaded regions. The pen color is only temporary set for the contour drawing. Set this value to zero or less if no shade edge contours are wanted.</param>
         /// <param name="cont_width">Defines line width used for contours defining edges of shaded regions. This value may not be honored by all drivers. The pen width is only temporary set for the contour drawing. Set this value to zero or less if no shade edge contours are wanted.</param>
         /// <param name="defined">Callback function specifying the region that should be plotted in the shade plot. This function accepts x and y coordinates as input arguments and must return 1 if the point is to be included in the shade plot and 0 otherwise. If you want to plot the entire shade plot (the usual case), this argument should be set to NULL.</param>
-        /// <param name="fill">Callback routine used to fill the region. Use plfill for this purpose.</param>
         /// <param name="fill_width">Defines the line width used by the fill pattern.</param>
         /// <param name="pltr">A callback function that defines the transformation between the zero-based indices of the matrix a and world coordinates. If pltr is not supplied (e.g., is set to NULL in the C case), then the x indices of a are mapped to the range xmin through xmax and the y indices of a are mapped to the range ymin through ymax.For the C case, transformation functions are provided in the PLplot library: pltr0 for the identity mapping, and pltr1 and pltr2 for arbitrary mappings respectively defined by vectors and matrices. In addition, C callback routines for the transformation can be supplied by the user such as the mypltr function in examples/c/x09c.c which provides a general linear transformation between index coordinates and world coordinates.For languages other than C you should consult  for the details concerning how PLTRANSFORM_callback arguments are interfaced. However, in general, a particular pattern of callback-associated arguments such as a tr vector with 6 elements; xg and yg vectors; or xg and yg matrices are respectively interfaced to a linear-transformation routine similar to the above mypltr function; pltr1; and pltr2. Furthermore, some of our more sophisticated bindings (see, e.g., ) support native language callbacks for handling index to world-coordinate transformations. Examples of these various approaches are given in examples/ltlanguagegtx09*, examples/ltlanguagegtx16*, examples/ltlanguagegtx20*, examples/ltlanguagegtx21*, and examples/ltlanguagegtx22*, for all our supported languages.</param>
-        /// <param name="pltr_data">Extra parameter to help pass information to pltr0, pltr1, pltr2, or whatever routine that is externally supplied.</param>
         /// <param name="rectangular">Set rectangular to true if rectangles map to rectangles after coordinate transformation with pltrl. Otherwise, set rectangular to false. If rectangular is set to true, plshade tries to save time by filling large rectangles. This optimization fails if the coordinate transformation distorts the shape of rectangles. For example a plot in polar coordinates has to have rectangular set to false.</param>
         /// <remarks>Shade regions on the basis of value. This is the high-level routine for making continuous color shaded plots with cmap1 while plshade should be used to plot individual shaded regions using either cmap0 or cmap1. examples/;ltlanguagegt/x16* shows how to use plshades for each of our supported languages.</remarks>
         public void shades(
-                        PLFLT[,] a, DefinedFunc defined, PLFLT xmin, PLFLT xmax, PLFLT ymin, PLFLT ymax, PLFLT[] clevel, PLFLT fill_width, PLINT cont_color, PLFLT cont_width, FillFunc fill, PLBOOL rectangular, TransformFunc pltr, PLPointer pltr_data)
+                        PLFLT[,] a, DefinedFunc defined, PLFLT xmin, PLFLT xmax, PLFLT ymin, PLFLT ymax, PLFLT[] clevel, PLFLT fill_width, PLINT cont_color, PLFLT cont_width, PLBOOL rectangular, TransformFunc pltr)
         {
             lock (libLock)
             {
                 ActivateStream();
-                Native.shades(a, defined, xmin, xmax, ymin, ymax, clevel, fill_width, cont_color, cont_width, fill, rectangular, pltr, pltr_data);
+                Native.shades(a, defined, xmin, xmax, ymin, ymax, clevel, fill_width, cont_color, cont_width, rectangular, pltr);
             }
         }
 
@@ -2095,14 +2090,13 @@ namespace PLplot
 
         /// <summary>plstransform: Set a global coordinate transform function</summary>
         /// <param name="coordinate_transform">A callback function that defines the transformation from the input (x, y) world coordinates to new PLplot world coordinates. If coordinate_transform is not supplied (e.g., is set to NULL in the C case), then no transform is applied.</param>
-        /// <param name="coordinate_transform_data">Optional extra data for coordinate_transform.</param>
         /// <remarks>This function can be used to define a coordinate transformation which affects all elements drawn within the current plot window. The coordinate_transform callback function is similar to that provided for the plmap and plmeridians functions. The coordinate_transform_data parameter may be used to pass extra data to coordinate_transform.</remarks>
-        public void stransform(TransformFunc coordinate_transform, PLPointer coordinate_transform_data)
+        public void stransform(TransformFunc coordinate_transform)
         {
             lock (libLock)
             {
                 ActivateStream();
-                Native.stransform(coordinate_transform, coordinate_transform_data);
+                Native.stransform(coordinate_transform);
             }
         }
 
@@ -2191,14 +2185,13 @@ namespace PLplot
         /// <summary>plimagefr: Plot a 2D matrix using cmap1</summary>
         /// <param name="idata">A matrix of values (intensities) to plot. Should have dimensions of nx by ny.</param>
         /// <param name="pltr">A callback function that defines the transformation between the zero-based indices of the matrix idata and world coordinates. If pltr is not supplied (e.g., is set to NULL in the C case), then the x indices of idata are mapped to the range xmin through xmax and the y indices of idata are mapped to the range ymin through ymax.For the C case, transformation functions are provided in the PLplot library: pltr0 for the identity mapping, and pltr1 and pltr2 for arbitrary mappings respectively defined by vectors and matrices. In addition, C callback routines for the transformation can be supplied by the user such as the mypltr function in examples/c/x09c.c which provides a general linear transformation between index coordinates and world coordinates.For languages other than C you should consult  for the details concerning how PLTRANSFORM_callback arguments are interfaced. However, in general, a particular pattern of callback-associated arguments such as a tr vector with 6 elements; xg and yg vectors; or xg and yg matrices are respectively interfaced to a linear-transformation routine similar to the above mypltr function; pltr1; and pltr2. Furthermore, some of our more sophisticated bindings (see, e.g., ) support native language callbacks for handling index to world-coordinate transformations. Examples of these various approaches are given in examples/ltlanguagegtx09*, examples/ltlanguagegtx16*, examples/ltlanguagegtx20*, examples/ltlanguagegtx21*, and examples/ltlanguagegtx22*, for all our supported languages.</param>
-        /// <param name="pltr_data">Extra parameter to help pass information to pltr0, pltr1, pltr2, or whatever routine is externally supplied.</param>
         /// <remarks>Plot a 2D matrix using cmap1.</remarks>
-        public void imagefr(PLFLT[,] idata, PLFLT xmin, PLFLT xmax, PLFLT ymin, PLFLT ymax, PLFLT zmin, PLFLT zmax, PLFLT valuemin, PLFLT valuemax, TransformFunc pltr, PLPointer pltr_data)
+        public void imagefr(PLFLT[,] idata, PLFLT xmin, PLFLT xmax, PLFLT ymin, PLFLT ymax, PLFLT zmin, PLFLT zmax, PLFLT valuemin, PLFLT valuemax, TransformFunc pltr)
         {
             lock (libLock)
             {
                 ActivateStream();
-                Native.imagefr(idata, xmin, xmax, ymin, ymax, zmin, zmax, valuemin, valuemax, pltr, pltr_data);
+                Native.imagefr(idata, xmin, xmax, ymin, ymax, zmin, zmax, valuemin, valuemax, pltr);
             }
         }
 
@@ -2389,15 +2382,14 @@ namespace PLplot
 
         /// <summary>plvect: Vector plot</summary>
         /// <param name="pltr">A callback function that defines the transformation between the zero-based indices of the matrices u and v and world coordinates.For the C case, transformation functions are provided in the PLplot library: pltr0 for the identity mapping, and pltr1 and pltr2 for arbitrary mappings respectively defined by vectors and matrices. In addition, C callback routines for the transformation can be supplied by the user such as the mypltr function in examples/c/x09c.c which provides a general linear transformation between index coordinates and world coordinates.For languages other than C you should consult  for the details concerning how PLTRANSFORM_callback arguments are interfaced. However, in general, a particular pattern of callback-associated arguments such as a tr vector with 6 elements; xg and yg vectors; or xg and yg matrices are respectively interfaced to a linear-transformation routine similar to the above mypltr function; pltr1; and pltr2. Furthermore, some of our more sophisticated bindings (see, e.g., ) support native language callbacks for handling index to world-coordinate transformations. Examples of these various approaches are given in examples/ltlanguagegtx09*, examples/ltlanguagegtx16*, examples/ltlanguagegtx20*, examples/ltlanguagegtx21*, and examples/ltlanguagegtx22*, for all our supported languages.</param>
-        /// <param name="pltr_data">Extra parameter to help pass information to pltr0, pltr1, pltr2, or whatever callback routine that is externally supplied.</param>
         /// <param name="scale">Parameter to control the scaling factor of the vectors for plotting. If scale = 0  then the scaling factor is automatically calculated for the data. If scale lt 0 then the scaling factor is automatically calculated for the data and then multiplied by -scale. If scale gt 0 then the scaling factor is set to scale.</param>
         /// <remarks>Draws a plot of vector data contained in the matrices  (u[nx][ny],v[nx][ny]) . The scaling factor for the vectors is given by scale. A transformation routine pointed to by pltr with a pointer pltr_data for additional data required by the transformation routine to map indices within the matrices to the world coordinates. The style of the vector arrow may be set using plsvect.</remarks>
-        public void vect(PLFLT[,] u, PLFLT[,] v, PLFLT scale, TransformFunc pltr, PLPointer pltr_data)
+        public void vect(PLFLT[,] u, PLFLT[,] v, PLFLT scale, TransformFunc pltr)
         {
             lock (libLock)
             {
                 ActivateStream();
-                Native.vect(u, v, scale, pltr, pltr_data);
+                Native.vect(u, v, scale, pltr);
             }
         }
 
@@ -2593,71 +2585,37 @@ namespace PLplot
             }
         }
 
-        /// <summary>pltr0: Identity transformation for matrix index to world coordinate mapping</summary>
-        /// <param name="pltr_data">A pointer to additional data that is passed as an argument to PLplot routines that potentially could use the pltr0 callback (i.e., plcont, plimagefr, plshade, plshades, and plvect); which then internally pass that argument on to this callback.</param>
-        /// <param name="tx">Transformed x value in world coordinates corresponding to x index of matrix.</param>
-        /// <param name="ty">Transformed y value in world coordinates corresponding to y index of matrix.</param>
-        /// <param name="x">X index of matrix.</param>
-        /// <param name="y">Y index of matrix.</param>
-        /// <remarks>Identity transformation for matrix index to world coordinate mapping. This routine can be used for the PLTRANSFORM_callback argument of plcont, plshade, plshades, plimagefr, or plvect.</remarks>
-        public void tr0(PLFLT x, PLFLT y, out PLFLT tx, out PLFLT ty, PLPointer pltr_data)
+        /// <summary>Make a identity transformation for matrix index to world coordinate mapping.</summary>
+        public TransformFunc tr0()
         {
             lock (libLock)
             {
                 ActivateStream();
-                Native.tr0(x, y, out tx, out ty, pltr_data);
+                return Native.tr0();
             }
         }
 
-        /// <summary>pltr1: Linear interpolation for matrix index to world coordinate mapping using singly dimensioned coordinate arrays</summary>
-        /// <param name="pltr_data">A pointer to additional data that is passed as an argument to PLplot routines that potentially could use the pltr1 callback (i.e., plcont, plimagefr, plshade, plshades, and plvect); which then internally pass that argument on to this callback.</param>
-        /// <param name="tx">Transformed x value in world coordinates corresponding to x index of matrix.</param>
-        /// <param name="ty">Transformed y value in world coordinates corresponding to y index of matrix.</param>
-        /// <param name="x">X index of matrix.</param>
-        /// <param name="y">Y index of matrix.</param>
-        /// <remarks>Linear interpolation for matrix index to world coordinate mapping using one-dimensional x and y coordinate arrays. This routine can be used for the PLTRANSFORM_callback argument of plcont, plshade, plshades, plimagefr, or plvect.</remarks>
-        public void tr1(PLFLT x, PLFLT y, out PLFLT tx, out PLFLT ty, PLPointer pltr_data)
+        /// <summary>Make a linear interpolation transformation for matrix index to world coordinate mapping using singly dimensioned coordinate arrays.</summary>
+        /// <param name="xg">x coordinates of grid</param>
+        /// <param name="yg">y coordinates of grid</param>
+        public TransformFunc tr1(PLFLT[] xg, PLFLT[] yg)
         {
             lock (libLock)
             {
                 ActivateStream();
-                Native.tr1(x, y, out tx, out ty, pltr_data);
+                return Native.tr1(xg, yg);
             }
         }
 
-        /// <summary>pltr2: Linear interpolation for grid to world mapping using doubly dimensioned coordinate arrays (row-major order as per normal C 2d arrays)</summary>
-        /// <param name="pltr_data">A pointer to additional data that is passed as an argument to PLplot routines that potentially could use the pltr2 callback (i.e., plcont, plimagefr, plshade, plshades, and plvect); which then internally pass that argument on to this callback.</param>
-        /// <param name="tx">Transformed x value in world coordinates corresponding to x index of matrix.</param>
-        /// <param name="ty">Transformed y value in world coordinates corresponding to y index of matrix.</param>
-        /// <param name="x">X index of matrix.</param>
-        /// <param name="y">Y index of matrix.</param>
-        /// <remarks>Linear interpolation for grid to world mapping using two-dimensional x and y coordinate arrays. This routine can be used for the PLTRANSFORM_callback argument of plcont, plshade, plshades, plimagefr, or plvect.</remarks>
-        public void tr2(PLFLT x, PLFLT y, out PLFLT tx, out PLFLT ty, PLPointer pltr_data)
+        /// <summary>Make a linear interpolation transformation for grid to world mapping using doubly dimensioned coordinate arrays.</summary>
+        /// <param name="xg">x targets</param>
+        /// <param name="yg">y targets</param>
+        public TransformFunc tr2(PLFLT[,] xg, PLFLT[,] yg)
         {
             lock (libLock)
             {
                 ActivateStream();
-                Native.tr2(x, y, out tx, out ty, pltr_data);
-            }
-        }
-
-        /// <summary>Just like pltr2() but uses pointer arithmetic to get coordinates from 2d grid tables.</summary>
-        public void tr2p(PLFLT x, PLFLT y, out PLFLT tx, out PLFLT ty, PLPointer pltr_data)
-        {
-            lock (libLock)
-            {
-                ActivateStream();
-                Native.tr2p(x, y, out tx, out ty, pltr_data);
-            }
-        }
-
-        /// <summary>Does linear interpolation from doubly dimensioned coord arrays (row dominant, i.e. Fortran ordering).</summary>
-        public void tr2f(PLFLT x, PLFLT y, out PLFLT tx, out PLFLT ty, PLPointer pltr_data)
-        {
-            lock (libLock)
-            {
-                ActivateStream();
-                Native.tr2f(x, y, out tx, out ty, pltr_data);
+                return Native.tr2(xg, yg);
             }
         }
 

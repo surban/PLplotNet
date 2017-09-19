@@ -65,6 +65,97 @@ namespace PLplot
         }        
     }
 
+    internal class TR1Marshaller
+    {
+        GCHandle gcXg, gcYg, gcG;
+        PLPointer pltr_data;
+
+        public TR1Marshaller(PLFLT[] xg, PLFLT[] yg)
+        {
+            if (xg.Length != yg.Length)
+                throw new ArgumentException("argument arrays must have same dimensions");
+
+            gcXg = GCHandle.Alloc(xg, GCHandleType.Pinned);
+            gcYg = GCHandle.Alloc(yg, GCHandleType.Pinned);
+
+            _CGrid g;
+            g.Xg = gcXg.AddrOfPinnedObject();
+            g.Yg = gcYg.AddrOfPinnedObject();
+            g.Zg = IntPtr.Zero;
+            g.NX = xg.Length;
+            g.NY = yg.Length;
+            g.NZ = 0;
+
+            gcG = GCHandle.Alloc(g, GCHandleType.Pinned);
+            pltr_data = gcG.AddrOfPinnedObject();
+        }
+
+        ~TR1Marshaller()
+        {
+            gcXg.Free();
+            gcYg.Free();
+            gcG.Free();
+        }
+
+        private void _Func(PLFLT x, PLFLT y, out PLFLT tx, out PLFLT ty, PLPointer unused)
+        {
+            Native._tr1(x, y, out tx, out ty, pltr_data);
+        }
+
+        public TransformFunc Func
+        {
+            get 
+            {
+                return new TransformFunc(_Func);
+            }
+        }
+    }
+
+    internal class TR2Marshaller
+    {
+        GCHandle gcXg, gcYg, gcG;
+        PLPointer pltr_data;
+
+        public TR2Marshaller(PLFLT[,] xg, PLFLT[,] yg)
+        {
+            if (xg.GetLength(0) != yg.GetLength(0) || xg.GetLength(1) != yg.GetLength(1))
+                throw new ArgumentException("argument matrices must have same dimensions");
+
+            gcXg = GCHandle.Alloc(xg, GCHandleType.Pinned);
+            gcYg = GCHandle.Alloc(yg, GCHandleType.Pinned);
+
+            _CGrid2 g;
+            g.Xg = gcXg.AddrOfPinnedObject();
+            g.Yg = gcYg.AddrOfPinnedObject();
+            g.Zg = IntPtr.Zero;
+            g.NX = xg.GetLength(0);
+            g.NY = xg.GetLength(1);
+
+            gcG = GCHandle.Alloc(g, GCHandleType.Pinned);
+            pltr_data = gcG.AddrOfPinnedObject();
+        }
+
+        ~TR2Marshaller()
+        {
+            gcXg.Free();
+            gcYg.Free();
+            gcG.Free();
+        }
+
+        private void _Func(PLFLT x, PLFLT y, out PLFLT tx, out PLFLT ty, PLPointer unused)
+        {
+            Native._tr2(x, y, out tx, out ty, pltr_data);
+        }
+
+        public TransformFunc Func
+        {
+            get 
+            {
+                return new TransformFunc(_Func);
+            }
+        }
+    }
+
 
     /// <summary>Native PLplot functions</summary>
     public static partial class Native
