@@ -17,37 +17,37 @@
     <PackageId>PLplot</PackageId>
     <title>PLplot cross-plattform scientific plotting library</title>
     <description>
-    PLplot is a cross-platform software package for creating scientific plots 
-    whose (UTF-8) plot symbols and text are limited in practice only by what 
-    Unicode-aware system fonts are installed on a user's computer.
+PLplot is a cross-platform software package for creating scientific plots 
+whose (UTF-8) plot symbols and text are limited in practice only by what 
+Unicode-aware system fonts are installed on a user's computer.
 
-    The PLplot core library can be used to create standard x-y plots, 
-    semi-log plots, log-log plots, contour plots, 3D surface plots, mesh plots, 
-    bar charts and pie charts. Multiple graphs (of the same or different sizes) 
-    may be placed on a single page, and multiple pages are allowed for those 
-    device formats that support them.
+The PLplot core library can be used to create standard x-y plots, 
+semi-log plots, log-log plots, contour plots, 3D surface plots, mesh plots, 
+bar charts and pie charts. Multiple graphs (of the same or different sizes) 
+may be placed on a single page, and multiple pages are allowed for those 
+device formats that support them.
 
-    Plot gallery: http://plplot.sourceforge.net/examples.php
+Plot gallery: http://plplot.sourceforge.net/examples.php
 
-    Documentation: http://plplot.sourceforge.net/docbook-manual/plplot-html-5.13.0/
+Documentation: http://plplot.sourceforge.net/docbook-manual/plplot-html-5.13.0/
 
-    Output file formats: PDF, PNG and others
+Output file formats: PDF, PNG and others
 
-    Interactive Platforms: Windows GDI, X11
+Interactive Platforms: Windows GDI, X11
 
-    ==============================
+==============================
 
-    This package provides a complete, but unofficial, .Net binding for PLplot.   
+This package provides a complete, but unofficial, .Net binding for PLplot.   
 
-    The native libraries (x64) for Windows are included in this package.
-    For Linux, PLplot must be installed on your system and libplplot.so must
-    be in your LD_LIBRARY_PATH.
+The native libraries (x64) for Windows are included in this package.
+For Linux, PLplot must be installed on your system and libplplot.so must
+be in your LD_LIBRARY_PATH.
 
-    Usage information: 
+Usage information: 
 
-    Create a PLPlot.PLStream object and call its instance methods.
+Create a PLPlot.PLStream object and call its instance methods.
 
-    Examples are available at https://github.com/DeepMLNet/PLplotNet/Samples
+Examples are available at https://github.com/DeepMLNet/PLplotNet/tree/master/Samples
     </description>   
     <Company>Sebastian Urban, PLplot developer community</Company>
     <authors>Sebastian Urban, PLplot developer community</authors>
