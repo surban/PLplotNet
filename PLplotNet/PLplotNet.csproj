@@ -54,7 +54,7 @@ Examples are available at https://github.com/DeepMLNet/PLplotNet/tree/master/Sam
     <owners>Sebastian Urban</owners>
     <Copyright>Copyright (C) 2017 Sebastian Urban, PLplot developer community</Copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <PackageLicenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html</PackageLicenseUrl>
+    <PackageLicenseUrl>https://www.gnu.org/licenses/old-licenses/lgpl-2.0.en.html</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/DeepMLNet/PLplotNet</PackageProjectUrl>
     <PackageTags>plplot plot plotting scientific pdf png svg xfig</PackageTags>
     <PackageOutputPath>../Packages/$(Configuration)/</PackageOutputPath>    
