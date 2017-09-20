@@ -1300,7 +1300,7 @@ namespace PLplot
         /// <param name="x">A vector containing the x coordinates of points.</param>
         /// <param name="y">A vector containing the y coordinates of points.</param>
         /// <remarks>Plot a glyph at the specified points. (This function is largely superseded by plstring which gives access to many[!] more glyphs.) code=-1  means try to just draw a point. Right now it's just a move and a draw at the same place. Not ideal, since a sufficiently intelligent output device may optimize it away, or there may be faster ways of doing it. This is OK for now, though, and offers a 4X speedup over drawing a Hershey font "point" (which is actually diamond shaped and therefore takes 4 strokes to draw). If 0 lt code lt 32, then a useful (but small subset) of Hershey symbols is plotted. If 32 lt= code lt= 127 the corresponding printable ASCII character is plotted.</remarks>
-        public void poin(PLFLT[] x, PLFLT[] y, PLINT code)
+        public void poin(PLFLT[] x, PLFLT[] y, char code)
         {
             lock (libLock)
             {
@@ -1315,7 +1315,7 @@ namespace PLplot
         /// <param name="y">A vector containing the y coordinates of points.</param>
         /// <param name="z">A vector containing the z coordinates of points.</param>
         /// <remarks>Plot a glyph at the specified 3D points. (This function is largely superseded by plstring3 which gives access to many[!] more glyphs.) Set up the call to this function similar to what is done for plline3. code=-1  means try to just draw a point. Right now it's just a move and a draw at the same place. Not ideal, since a sufficiently intelligent output device may optimize it away, or there may be faster ways of doing it. This is OK for now, though, and offers a 4X speedup over drawing a Hershey font "point" (which is actually diamond shaped and therefore takes 4 strokes to draw). If 0 lt code lt 32, then a useful (but small subset) of Hershey symbols is plotted. If 32 lt= code lt= 127 the corresponding printable ASCII character is plotted.</remarks>
-        public void poin3(PLFLT[] x, PLFLT[] y, PLFLT[] z, PLINT code)
+        public void poin3(PLFLT[] x, PLFLT[] y, PLFLT[] z, char code)
         {
             lock (libLock)
             {
@@ -2323,7 +2323,7 @@ namespace PLplot
         /// <param name="x">A vector containing the x coordinates of the points.</param>
         /// <param name="y">A vector containing the y coordinates of the points.</param>
         /// <remarks>Plot a glyph at the specified points. (This function is largely superseded by plstring which gives access to many[!] more glyphs.)</remarks>
-        public void sym(PLFLT[] x, PLFLT[] y, PLINT code)
+        public void sym(PLFLT[] x, PLFLT[] y, char code)
         {
             lock (libLock)
             {

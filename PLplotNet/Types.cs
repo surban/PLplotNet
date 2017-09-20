@@ -58,161 +58,200 @@ namespace PLplot
     public static class Color
     {
         /// <summary>Black</summary>
-        const PLINT Black = 0;
+        public const PLINT Black = 0;
         /// <summary>Red</summary>
-        const PLINT Red = 1;
+        public const PLINT Red = 1;
         /// <summary>Yellow</summary>
-        const PLINT Yellow = 2;
+        public const PLINT Yellow = 2;
         /// <summary>Green</summary>
-        const PLINT Green = 3;
+        public const PLINT Green = 3;
         /// <summary>Aquamarine</summary>
-        const PLINT Aquamarine = 4;
+        public const PLINT Aquamarine = 4;
         /// <summary>Pink</summary>
-        const PLINT Pink = 5;
+        public const PLINT Pink = 5;
         /// <summary>Wheat</summary>
-        const PLINT Wheat = 6;
+        public const PLINT Wheat = 6;
         /// <summary>Grey</summary>
-        const PLINT Grey = 7;
+        public const PLINT Grey = 7;
         /// <summary>Brown</summary>
-        const PLINT Brown = 8;
+        public const PLINT Brown = 8;
         /// <summary>Blue</summary>
-        const PLINT Blue = 9;
+        public const PLINT Blue = 9;
         /// <summary>BlueViolet</summary>
-        const PLINT BlueViolet = 10;
+        public const PLINT BlueViolet = 10;
         /// <summary>Cyan</summary>
-        const PLINT Cyan = 11;
+        public const PLINT Cyan = 11;
         /// <summary>Turquoise</summary>
-        const PLINT Turquoise = 12;
+        public const PLINT Turquoise = 12;
         /// <summary>Magenta</summary>
-        const PLINT Magenta = 13;
+        public const PLINT Magenta = 13;
         /// <summary>Salmon</summary>
-        const PLINT Salmon = 14;
+        public const PLINT Salmon = 14;
         /// <summary>White</summary>
-        const PLINT White = 15;
+        public const PLINT White = 15;
+    }
+
+    /// <summary>Symbols of plpoin, plsym and plstring.</summary>
+    public static class Symbol
+    {
+        /// <summary>Box</summary>
+        //public const char Box = (char)0;    
+        /// <summary>Dot</summary>
+        public const char Dot = (char)1;    
+        /// <summary>Plus</summary>
+        public const char Plus = (char)2;    
+        /// <summary>Multiply</summary>
+        public const char Multiply = (char)3;    
+        /// <summary>Circle</summary>
+        public const char Circle = (char)4;    
+        /// <summary>Times</summary>
+        public const char Times = (char)5;    
+        /// <summary>Box</summary>
+        public const char Box = (char)6;    
+        /// <summary>Triangle</summary>
+        public const char Triangle = (char)7;    
+        /// <summary>Plus within circle</summary>
+        public const char PlusCircle = (char)8;    
+        /// <summary>Dot within circle</summary>
+        public const char DotCircle = (char)9;    
+        /// <summary>Filled box</summary>
+        public const char FilledBox = (char)16;    
+        /// <summary>Bullet</summary>
+        public const char Bullet = (char)17;    
+        /// <summary>Star</summary>
+        public const char Star = (char)18;    
+        /// <summary>Left arrow</summary>
+        public const char LeftArrow = (char)28;    
+        /// <summary>Right arrow</summary>
+        public const char RightArrow = (char)29;    
+        /// <summary>Up arrow</summary>
+        public const char UpArrow = (char)30;    
+        /// <summary>Down arrow</summary>
+        public const char DownArrow = (char)31;              
     }
 
     /// <summary>Options for an X-axis or Y-axis.</summary>
     public static class XYAxisOpt
     {
         /// <summary>No options.</summary>
-        const string None = "";       
+        public const string None = "";       
         /// <summary>Draws axis, X-axis is horizontal line (y=0), and Y-axis is vertical line (x=0).</summary>
-        const string DrawAxis = "a";
+        public const string DrawAxis = "a";
         /// <summary>Draws left (for Y-axis) edge of frame.</summary>
-        const string DrawLeft = "b";
+        public const string DrawLeft = "b";
         /// <summary>Draws bottom (for X-axis) edge of frame.</summary>
-        const string DrawBottom = "b";
+        public const string DrawBottom = "b";
         /// <summary>Draws top (for X-axis) edge of frame.</summary>
-        const string DrawTop = "c";
+        public const string DrawTop = "c";
         /// <summary>Draws right (for Y-axis) edge of frame.</summary>
-        const string DrawRight = "c";
+        public const string DrawRight = "c";
         /// <summary>Plot labels as date / time. Values are assumed to be seconds since the epoch (as used by gmtime).</summary>
-        const string DateTime = "d";
+        public const string DateTime = "d";
         /// <summary>Always use fixed point numeric labels. </summary>
-        const string FixedPoint = "f";
+        public const string FixedPoint = "f";
         /// <summary>Draws a grid at the major tick interval. </summary>
-        const string MajorGrid = "g";
+        public const string MajorGrid = "g";
         /// <summary>Draws a grid at the minor tick interval. </summary>
-        const string MinorGrid = "h";
+        public const string MinorGrid = "h";
         /// <summary>Inverts tick marks, so they are drawn outwards, rather than inwards. </summary>
-        const string InvertTickMarks = "i";
+        public const string InvertTickMarks = "i";
         /// <summary>Labels axis logarithmically. This only affects the labels, not the data, and so it is necessary to compute the logarithms of data points before passing them to any of the drawing routines.</summary>
-        const string Log = "l";
+        public const string Log = "l";
         /// <summary>Writes numeric labels at major tick intervals in the unconventional location (above box for X, right of box for Y).</summary>
-        const string UnconventionalLabels = "m";
+        public const string UnconventionalLabels = "m";
         /// <summary>Writes numeric labels at major tick intervals in the conventional location (below box for X, left of box for Y).</summary>
-        const string ConventionalLabels = "n";
+        public const string ConventionalLabels = "n";
         /// <summary>Use custom labelling function to generate axis label text. The custom labelling function can be defined with the plslabelfunc command.</summary>
-        const string CustomLabels = "o";
+        public const string CustomLabels = "o";
         /// <summary>Enables subticks between major ticks, only valid if t is also specified. </summary>
-        const string SubTicks = "s";
+        public const string SubTicks = "s";
         /// <summary>Draws major ticks. </summary>
-        const string MajorTicks = "t";
+        public const string MajorTicks = "t";
         /// <summary>Draws left (for Y-axis) edge of frame without edge line.</summary>
-        const string DrawLeftWithoutEdgeLine = "u";
+        public const string DrawLeftWithoutEdgeLine = "u";
         /// <summary>Draws bottom (for X-axis) edge of frame without edge line.</summary>
-        const string DrawBottomWithoutEdgeLine = "u";
+        public const string DrawBottomWithoutEdgeLine = "u";
         /// <summary>Draws top (for X-axis) edge of frame without edge line.</summary>
-        const string DrawTopWithoutEdgeLine = "w";
+        public const string DrawTopWithoutEdgeLine = "w";
         /// <summary>Draws right (for Y-axis) edge of frame without edge line.</summary>
-        const string DrawRightWithoutEdgeLine = "w";
+        public const string DrawRightWithoutEdgeLine = "w";
         /// <summary>Draws major ticks (including the side effect of the numerical labels for the major ticks) except exclude drawing the major and minor tick marks.</summary>
-        const string MajorTicksWithoutMarks = "x";
+        public const string MajorTicksWithoutMarks = "x";
         /// <summary>Write numeric labels for the y axis parallel to the base of the graph, rather than parallel to the axis.</summary>
-        const string BaseParallelLabels = "v";        
+        public const string BaseParallelLabels = "v";        
     }
 
     /// <summary>Options for an Z-axis.</summary>
     public static class ZAxisOpt
     {
         /// <summary>No options.</summary>
-        const string None = "";
+        public const string None = "";
         /// <summary>Draws z axis to the left of the surface plot. </summary>
-        const string DrawLeft = "b";
+        public const string DrawLeft = "b";
         /// <summary>Draws z axis to the right of the surface plot. </summary>
-        const string DrawRight = "c";
+        public const string DrawRight = "c";
         /// <summary>Draws grid lines parallel to the x-y plane behind the figure. These lines are not drawn until after plot3d or plmesh are called because of the need for hidden line removal.</summary>
-        const string Grid = "d";
+        public const string Grid = "d";
         /// <summary>Plot labels as date / time. Values are assumed to be seconds since the epoch (as used by gmtime).</summary>
-        const string DateTime = "e";        
+        public const string DateTime = "e";        
         /// <summary>Always use fixed point numeric labels. </summary>
-        const string FixedPoint = "f";
+        public const string FixedPoint = "f";
         /// <summary>Inverts tick marks, so they are drawn outwards, rather than inwards. </summary>
-        const string InvertTickMarks = "i";
+        public const string InvertTickMarks = "i";
         /// <summary>Labels axis logarithmically. This only affects the labels, not the data, and so it is necessary to compute the logarithms of data points before passing them to any of the drawing routines.</summary>
-        const string Log = "l";
+        public const string Log = "l";
         /// <summary>Writes numeric labels at major tick intervals on the right-hand z axis.</summary>
-        const string RightHandLabels = "m";
+        public const string RightHandLabels = "m";
         /// <summary>Writes numeric labels at major tick intervals on the left-hand z axis.</summary>
-        const string LeftHandLabels = "n";
+        public const string LeftHandLabels = "n";
         /// <summary>Use custom labelling function to generate axis label text. The custom labelling function can be defined with the plslabelfunc command.</summary>
-        const string CustomLabels = "o";
+        public const string CustomLabels = "o";
         /// <summary>Enables subticks between major ticks, only valid if t is also specified. </summary>
-        const string SubTicks = "s";
+        public const string SubTicks = "s";
         /// <summary>Draws major ticks. </summary>
-        const string MajorTicks = "t";
+        public const string MajorTicks = "t";
         /// <summary>If this is specified, the text label is written beside the left-hand axis.</summary>
-        const string LabelLeft = "u";
+        public const string LabelLeft = "u";
         /// <summary>If this is specified, the text label is written beside the right-hand axis.</summary>
-        const string LabelRight = "v";        
+        public const string LabelRight = "v";        
     }    
 
     /// <summary>The side of the viewport along which the text is to be written.</summary>
     public static class Side
     {
         /// <summary>Bottom of viewport, text written parallel to edge.</summary>
-        const string BottomParallel = "b";
+        public const string BottomParallel = "b";
         /// <summary>Bottom of viewport, text written at right angles to edge.</summary>
-        const string BottomPerpendicular = "bv";
+        public const string BottomPerpendicular = "bv";
         /// <summary>Left of viewport, text written parallel to edge.</summary>
-        const string LeftParallel = "l";
+        public const string LeftParallel = "l";
         /// <summary>Left of viewport, text written at right angles to edge.</summary>
-        const string LeftPerpendicular = "lv";        
+        public const string LeftPerpendicular = "lv";        
         /// <summary>Right of viewport, text written parallel to edge.</summary>
-        const string RightParallel = "r";
+        public const string RightParallel = "r";
         /// <summary>Right of viewport, text written at right angles to edge.</summary>
-        const string RightPerpendicular = "rv";
+        public const string RightPerpendicular = "rv";
         /// <summary>Top of viewport, text written parallel to edge.</summary>
-        const string TopParallel = "t";
+        public const string TopParallel = "t";
         /// <summary>Top of viewport, text written at right angles to edge.</summary>
-        const string TopPerpendicular = "tv";
+        public const string TopPerpendicular = "tv";
     }
 
     /// <summary>The side of the viewport along which the text is to be written.</summary>
     public static class Side3
     {
         /// <summary>Label the X axis.</summary>
-        const string XAxis = "x";
+        public const string XAxis = "x";
         /// <summary>Label the Y axis.</summary>
-        const string YAxis = "y";
+        public const string YAxis = "y";
         /// <summary>Label the Z axis.</summary>
-        const string ZAxis = "z";
+        public const string ZAxis = "z";
         /// <summary>Label the “primary” axis. For Z this is the leftmost Z axis. For X it is the axis that starts at y-min. For Y it is the axis that starts at x-min.</summary>
-        const string PrimaryAxis = "p";        
+        public const string PrimaryAxis = "p";        
         /// <summary>Label the “secondary” axis.</summary>
-        const string SecondaryAxis = "s";
+        public const string SecondaryAxis = "s";
         /// <summary>Draw the text perpendicular to the axis.</summary>
-        const string Perpendicular = "v";
+        public const string Perpendicular = "v";
     }    
 
     /// <summary>Font characterization integer flags and masks.</summary>

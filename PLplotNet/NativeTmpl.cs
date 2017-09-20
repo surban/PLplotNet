@@ -801,7 +801,7 @@ namespace PLplot
                                          [In, MarshalAs(UnmanagedType.LPArray)] PLFLT[] y,
                                          PLINT code);
 
-        public static void poin(PLFLT[] x, PLFLT[] y, PLINT code)
+        public static void poin(PLFLT[] x, PLFLT[] y, char code)
         {
             _poin(GetSize(x, y), x, y, code);
         }
@@ -814,7 +814,7 @@ namespace PLplot
                                           [In, MarshalAs(UnmanagedType.LPArray)] PLFLT[] z,
                                           PLINT code);
 
-        public static void poin3(PLFLT[] x, PLFLT[] y, PLFLT[] z, PLINT code)
+        public static void poin3(PLFLT[] x, PLFLT[] y, PLFLT[] z, char code)
         {
             _poin3(GetSize(x, y, z), x, y, z, code);
         }
@@ -1398,7 +1398,7 @@ namespace PLplot
                                         [In, MarshalAs(UnmanagedType.LPArray)] PLFLT[] y,
                                         PLINT code);
 
-        public static void sym(PLFLT[] x, PLFLT[] y, PLINT code)
+        public static void sym(PLFLT[] x, PLFLT[] y, char code)
         {
             _sym(GetSize(x, y), x, y, code);
         }
