@@ -60,9 +60,6 @@ Examples are available at https://github.com/DeepMLNet/PLplotNet/tree/master/Sam
     <PackageOutputPath>../Packages/$(Configuration)/</PackageOutputPath>    
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Types.cs" />
     <Compile Include="NativeHelpers.cs" />
     <Compile Include="NativeGenerated.cs" />
