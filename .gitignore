@@ -2,3 +2,4 @@ bin
 obj
 /Packages
 /Publish.sh
+/Native/windows
