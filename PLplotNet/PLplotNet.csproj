@@ -10,8 +10,9 @@
     <AssemblyName>PLplotNet</AssemblyName>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>    
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <IncludeSymbols>true</IncludeSymbols>
-    <IncludeSource>true</IncludeSource>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>embedded</DebugType>
+    <EmbedAllSources>true</EmbedAllSources>
     <NoWarn>1587;1573;1591</NoWarn>
 
     <PackageId>PLplot</PackageId>
