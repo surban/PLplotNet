@@ -1,9 +1,0 @@
-- name: Home
-  href: index.md
-- name: Release Notes
-  href: ReleaseNotes.md  
-- name: Examples
-  href: Examples.md  
-- name: API Reference
-  href: api/
-  homepage: xref:PLplot.PLStream

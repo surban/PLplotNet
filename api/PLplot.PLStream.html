@@ -1,0 +1,1576 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PLStream
+   | PLplot for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PLStream
+   | PLplot for .NET ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLplot.PLStream">
+  
+  
+  <h1 id="PLplot_PLStream" data-uid="PLplot.PLStream" class="text-break">Class PLStream
+  </h1>
+  <div class="markdown level0 summary"><p>A PLplot stream.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PLStream</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="PLplot.html">PLplot</a></h6>
+  <h6><strong>Assembly</strong>: PLplotNet.dll</h6>
+  <h5 id="PLplot_PLStream_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PLStream : IDisposable</code></pre>
+  </div>
+  <h5 id="PLplot_PLStream_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>A new PLplot stream is created when this class is instantiated.
+The PLplot stream is ended when the instance is disposed.
+An instance is thread-safe, however all calls from all
+instances are serialized.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="PLplot_PLStream__ctor" data-uid="PLplot.PLStream.#ctor">
+          <a class="xref" href="PLplot.PLStream.-ctor.html#PLplot_PLStream__ctor">PLStream()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Creates a new PLplot stream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="PLplot_PLStream_Id" data-uid="PLplot.PLStream.Id">
+          <a class="xref" href="PLplot.PLStream.Id.html#PLplot_PLStream_Id">Id</a>
+        </td>
+        <td class="markdown level1 summary"><p>The stream id of this stream as returned by plgstrm().</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="PLplot_PLStream_adv_System_Int32_" data-uid="PLplot.PLStream.adv(System.Int32)">
+          <a class="xref" href="PLplot.PLStream.adv.html#PLplot_PLStream_adv_System_Int32_">adv(Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>pladv: Advance the (sub-)page</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_arc_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Boolean_" data-uid="PLplot.PLStream.arc(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Boolean)">
+          <a class="xref" href="PLplot.PLStream.arc.html#PLplot_PLStream_arc_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Boolean_">arc(Double, Double, Double, Double, Double, Double, Double, Boolean)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plarc: Draw a circular or elliptical arc</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_axes_System_Double_System_Double_System_String_System_Double_System_Int32_System_String_System_Double_System_Int32_" data-uid="PLplot.PLStream.axes(System.Double,System.Double,System.String,System.Double,System.Int32,System.String,System.Double,System.Int32)">
+          <a class="xref" href="PLplot.PLStream.axes.html#PLplot_PLStream_axes_System_Double_System_Double_System_String_System_Double_System_Int32_System_String_System_Double_System_Int32_">axes(Double, Double, String, Double, Int32, String, Double, Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plaxes: Draw a box with axes, etc. with arbitrary origin</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_bin_System_Double___System_Double___PLplot_Bin_" data-uid="PLplot.PLStream.bin(System.Double[],System.Double[],PLplot.Bin)">
+          <a class="xref" href="PLplot.PLStream.bin.html#PLplot_PLStream_bin_System_Double___System_Double___PLplot_Bin_">bin(Double[], Double[], Bin)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plbin: Plot a histogram from binned data</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_bop" data-uid="PLplot.PLStream.bop">
+          <a class="xref" href="PLplot.PLStream.bop.html#PLplot_PLStream_bop">bop()</a>
+        </td>
+        <td class="markdown level1 summary"><p>plbop: Begin a new page</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_box_System_String_System_Double_System_Int32_System_String_System_Double_System_Int32_" data-uid="PLplot.PLStream.box(System.String,System.Double,System.Int32,System.String,System.Double,System.Int32)">
+          <a class="xref" href="PLplot.PLStream.box.html#PLplot_PLStream_box_System_String_System_Double_System_Int32_System_String_System_Double_System_Int32_">box(String, Double, Int32, String, Double, Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plbox: Draw a box with axes, etc</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_box3_System_String_System_String_System_Double_System_Int32_System_String_System_String_System_Double_System_Int32_System_String_System_String_System_Double_System_Int32_" data-uid="PLplot.PLStream.box3(System.String,System.String,System.Double,System.Int32,System.String,System.String,System.Double,System.Int32,System.String,System.String,System.Double,System.Int32)">
+          <a class="xref" href="PLplot.PLStream.box3.html#PLplot_PLStream_box3_System_String_System_String_System_Double_System_Int32_System_String_System_String_System_Double_System_Int32_System_String_System_String_System_Double_System_Int32_">box3(String, String, Double, Int32, String, String, Double, Int32, String, String, Double, Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plbox3: Draw a box with axes, etc, in 3-d</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_btime_System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__System_Double__System_Double_" data-uid="PLplot.PLStream.btime(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Double@,System.Double)">
+          <a class="xref" href="PLplot.PLStream.btime.html#PLplot_PLStream_btime_System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__System_Double__System_Double_">btime(out Int32, out Int32, out Int32, out Int32, out Int32, out Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plbtime: Calculate broken-down time from continuous time for the current stream</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_calc_world_System_Double_System_Double_System_Double__System_Double__System_Int32__" data-uid="PLplot.PLStream.calc_world(System.Double,System.Double,System.Double@,System.Double@,System.Int32@)">
+          <a class="xref" href="PLplot.PLStream.calc_world.html#PLplot_PLStream_calc_world_System_Double_System_Double_System_Double__System_Double__System_Int32__">calc_world(Double, Double, out Double, out Double, out Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plcalc_world: Calculate world coordinates and corresponding window index from relative device coordinates</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_clear" data-uid="PLplot.PLStream.clear">
+          <a class="xref" href="PLplot.PLStream.clear.html#PLplot_PLStream_clear">clear()</a>
+        </td>
+        <td class="markdown level1 summary"><p>plclear: Clear current (sub)page</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_cmd_System_Int32_System_IntPtr_" data-uid="PLplot.PLStream.cmd(System.Int32,System.IntPtr)">
+          <a class="xref" href="PLplot.PLStream.cmd.html#PLplot_PLStream_cmd_System_Int32_System_IntPtr_">cmd(Int32, IntPtr)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Front-end to driver escape function.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_col0_System_Int32_" data-uid="PLplot.PLStream.col0(System.Int32)">
+          <a class="xref" href="PLplot.PLStream.col0.html#PLplot_PLStream_col0_System_Int32_">col0(Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plcol0: Set color, cmap0</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_col1_System_Double_" data-uid="PLplot.PLStream.col1(System.Double)">
+          <a class="xref" href="PLplot.PLStream.col1.html#PLplot_PLStream_col1_System_Double_">col1(Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plcol1: Set color, cmap1</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_colorbar_System_Double__System_Double__PLplot_Colorbar_PLplot_Position_System_Double_System_Double_System_Double_System_Double_System_Int32_System_Int32_System_Int32_System_Double_System_Double_System_Int32_System_Double_PLplot_ColorbarLabel___System_String___System_String___System_Double___System_Int32___System_Double_0__0___" data-uid="PLplot.PLStream.colorbar(System.Double@,System.Double@,PLplot.Colorbar,PLplot.Position,System.Double,System.Double,System.Double,System.Double,System.Int32,System.Int32,System.Int32,System.Double,System.Double,System.Int32,System.Double,PLplot.ColorbarLabel[],System.String[],System.String[],System.Double[],System.Int32[],System.Double[0:,0:])">
+          <a class="xref" href="PLplot.PLStream.colorbar.html#PLplot_PLStream_colorbar_System_Double__System_Double__PLplot_Colorbar_PLplot_Position_System_Double_System_Double_System_Double_System_Double_System_Int32_System_Int32_System_Int32_System_Double_System_Double_System_Int32_System_Double_PLplot_ColorbarLabel___System_String___System_String___System_Double___System_Int32___System_Double_0__0___">colorbar(out Double, out Double, Colorbar, Position, Double, Double, Double, Double, Int32, Int32, Int32, Double, Double, Int32, Double, ColorbarLabel[], String[], String[], Double[], Int32[], Double[,])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plcolorbar: Plot color bar for image, shade or gradient plots</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_configtime_System_Double_System_Double_System_Double_System_Int32_System_Boolean_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Double_" data-uid="PLplot.PLStream.configtime(System.Double,System.Double,System.Double,System.Int32,System.Boolean,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Double)">
+          <a class="xref" href="PLplot.PLStream.configtime.html#PLplot_PLStream_configtime_System_Double_System_Double_System_Double_System_Int32_System_Boolean_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Double_">configtime(Double, Double, Double, Int32, Boolean, Int32, Int32, Int32, Int32, Int32, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plconfigtime: Configure the transformation between continuous and broken-down time for the current stream</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_cont_System_Double_0__0___System_Int32_System_Int32_System_Int32_System_Int32_System_Double___PLplot_TransformFunc_" data-uid="PLplot.PLStream.cont(System.Double[0:,0:],System.Int32,System.Int32,System.Int32,System.Int32,System.Double[],PLplot.TransformFunc)">
+          <a class="xref" href="PLplot.PLStream.cont.html#PLplot_PLStream_cont_System_Double_0__0___System_Int32_System_Int32_System_Int32_System_Int32_System_Double___PLplot_TransformFunc_">cont(Double[,], Int32, Int32, Int32, Int32, Double[], TransformFunc)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plcont: Contour plot</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_cpstrm_PLplot_PLStream_System_Boolean_" data-uid="PLplot.PLStream.cpstrm(PLplot.PLStream,System.Boolean)">
+          <a class="xref" href="PLplot.PLStream.cpstrm.html#PLplot_PLStream_cpstrm_PLplot_PLStream_System_Boolean_">cpstrm(PLStream, Boolean)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plcpstrm: Copy state parameters from the reference stream to the current stream</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_ctime_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Double_System_Double__" data-uid="PLplot.PLStream.ctime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Double,System.Double@)">
+          <a class="xref" href="PLplot.PLStream.ctime.html#PLplot_PLStream_ctime_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Double_System_Double__">ctime(Int32, Int32, Int32, Int32, Int32, Double, out Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plctime: Calculate continuous time from broken-down time for the current stream</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_did2pc_System_Double__System_Double__System_Double__System_Double__" data-uid="PLplot.PLStream.did2pc(System.Double@,System.Double@,System.Double@,System.Double@)">
+          <a class="xref" href="PLplot.PLStream.did2pc.html#PLplot_PLStream_did2pc_System_Double__System_Double__System_Double__System_Double__">did2pc(out Double, out Double, out Double, out Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Converts input values from relative device coordinates to relative plot coordinates.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_dip2dc_System_Double__System_Double__System_Double__System_Double__" data-uid="PLplot.PLStream.dip2dc(System.Double@,System.Double@,System.Double@,System.Double@)">
+          <a class="xref" href="PLplot.PLStream.dip2dc.html#PLplot_PLStream_dip2dc_System_Double__System_Double__System_Double__System_Double__">dip2dc(out Double, out Double, out Double, out Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Converts input values from relative plot coordinates to relative device coordinates.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_env_System_Double_System_Double_System_Double_System_Double_PLplot_AxesScale_PLplot_AxisBox_" data-uid="PLplot.PLStream.env(System.Double,System.Double,System.Double,System.Double,PLplot.AxesScale,PLplot.AxisBox)">
+          <a class="xref" href="PLplot.PLStream.env.html#PLplot_PLStream_env_System_Double_System_Double_System_Double_System_Double_PLplot_AxesScale_PLplot_AxisBox_">env(Double, Double, Double, Double, AxesScale, AxisBox)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plenv: Set up standard window and draw box</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_env0_System_Double_System_Double_System_Double_System_Double_PLplot_AxesScale_PLplot_AxisBox_" data-uid="PLplot.PLStream.env0(System.Double,System.Double,System.Double,System.Double,PLplot.AxesScale,PLplot.AxisBox)">
+          <a class="xref" href="PLplot.PLStream.env0.html#PLplot_PLStream_env0_System_Double_System_Double_System_Double_System_Double_PLplot_AxesScale_PLplot_AxisBox_">env0(Double, Double, Double, Double, AxesScale, AxisBox)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plenv0: Same as plenv but if in multiplot mode does not advance the subpage, instead clears it</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_eop" data-uid="PLplot.PLStream.eop">
+          <a class="xref" href="PLplot.PLStream.eop.html#PLplot_PLStream_eop">eop()</a>
+        </td>
+        <td class="markdown level1 summary"><p>pleop: Eject current page</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_errx_System_Double___System_Double___System_Double___" data-uid="PLplot.PLStream.errx(System.Double[],System.Double[],System.Double[])">
+          <a class="xref" href="PLplot.PLStream.errx.html#PLplot_PLStream_errx_System_Double___System_Double___System_Double___">errx(Double[], Double[], Double[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plerrx: Draw error bars in x direction</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_erry_System_Double___System_Double___System_Double___" data-uid="PLplot.PLStream.erry(System.Double[],System.Double[],System.Double[])">
+          <a class="xref" href="PLplot.PLStream.erry.html#PLplot_PLStream_erry_System_Double___System_Double___System_Double___">erry(Double[], Double[], Double[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plerry: Draw error bars in the y direction</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_famadv" data-uid="PLplot.PLStream.famadv">
+          <a class="xref" href="PLplot.PLStream.famadv.html#PLplot_PLStream_famadv">famadv()</a>
+        </td>
+        <td class="markdown level1 summary"><p>plfamadv: Advance to the next family file on the next new page</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_fill_System_Double___System_Double___" data-uid="PLplot.PLStream.fill(System.Double[],System.Double[])">
+          <a class="xref" href="PLplot.PLStream.fill.html#PLplot_PLStream_fill_System_Double___System_Double___">fill(Double[], Double[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plfill: Draw filled polygon</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_fill3_System_Double___System_Double___System_Double___" data-uid="PLplot.PLStream.fill3(System.Double[],System.Double[],System.Double[])">
+          <a class="xref" href="PLplot.PLStream.fill3.html#PLplot_PLStream_fill3_System_Double___System_Double___System_Double___">fill3(Double[], Double[], Double[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plfill3: Draw filled polygon in 3D</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_Finalize" data-uid="PLplot.PLStream.Finalize">
+          <a class="xref" href="PLplot.PLStream.Finalize.html#PLplot_PLStream_Finalize">Finalize()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Ends the PLplot stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_flush" data-uid="PLplot.PLStream.flush">
+          <a class="xref" href="PLplot.PLStream.flush.html#PLplot_PLStream_flush">flush()</a>
+        </td>
+        <td class="markdown level1 summary"><p>plflush: Flushes the output stream</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_font_PLplot_FontFlag_" data-uid="PLplot.PLStream.font(PLplot.FontFlag)">
+          <a class="xref" href="PLplot.PLStream.font.html#PLplot_PLStream_font_PLplot_FontFlag_">font(FontFlag)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plfont: Set font</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_fontld_System_Int32_" data-uid="PLplot.PLStream.fontld(System.Int32)">
+          <a class="xref" href="PLplot.PLStream.fontld.html#PLplot_PLStream_fontld_System_Int32_">fontld(Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plfontld: Load Hershey fonts</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gchr_System_Double__System_Double__" data-uid="PLplot.PLStream.gchr(System.Double@,System.Double@)">
+          <a class="xref" href="PLplot.PLStream.gchr.html#PLplot_PLStream_gchr_System_Double__System_Double__">gchr(out Double, out Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgchr: Get character default height and current (scaled) height</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gcmap1_range_System_Double__System_Double__" data-uid="PLplot.PLStream.gcmap1_range(System.Double@,System.Double@)">
+          <a class="xref" href="PLplot.PLStream.gcmap1_range.html#PLplot_PLStream_gcmap1_range_System_Double__System_Double__">gcmap1_range(out Double, out Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgcmap1_range: Get the cmap1 argument range for continuous color plots</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gcol0_System_Int32_System_Int32__System_Int32__System_Int32__" data-uid="PLplot.PLStream.gcol0(System.Int32,System.Int32@,System.Int32@,System.Int32@)">
+          <a class="xref" href="PLplot.PLStream.gcol0.html#PLplot_PLStream_gcol0_System_Int32_System_Int32__System_Int32__System_Int32__">gcol0(Int32, out Int32, out Int32, out Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgcol0: Returns 8-bit RGB values for given color index from cmap0</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gcol0a_System_Int32_System_Int32__System_Int32__System_Int32__System_Double__" data-uid="PLplot.PLStream.gcol0a(System.Int32,System.Int32@,System.Int32@,System.Int32@,System.Double@)">
+          <a class="xref" href="PLplot.PLStream.gcol0a.html#PLplot_PLStream_gcol0a_System_Int32_System_Int32__System_Int32__System_Int32__System_Double__">gcol0a(Int32, out Int32, out Int32, out Int32, out Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgcol0a: Returns 8-bit RGB values and PLFLT alpha transparency value for given color index from cmap0</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gcolbg_System_Int32__System_Int32__System_Int32__" data-uid="PLplot.PLStream.gcolbg(System.Int32@,System.Int32@,System.Int32@)">
+          <a class="xref" href="PLplot.PLStream.gcolbg.html#PLplot_PLStream_gcolbg_System_Int32__System_Int32__System_Int32__">gcolbg(out Int32, out Int32, out Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgcolbg: Returns the background color (cmap0[0]) by 8-bit RGB value</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gcolbga_System_Int32__System_Int32__System_Int32__System_Double__" data-uid="PLplot.PLStream.gcolbga(System.Int32@,System.Int32@,System.Int32@,System.Double@)">
+          <a class="xref" href="PLplot.PLStream.gcolbga.html#PLplot_PLStream_gcolbga_System_Int32__System_Int32__System_Int32__System_Double__">gcolbga(out Int32, out Int32, out Int32, out Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgcolbga: Returns the background color (cmap0[0]) by 8-bit RGB value and PLFLT alpha transparency value</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gcompression_System_Int32__" data-uid="PLplot.PLStream.gcompression(System.Int32@)">
+          <a class="xref" href="PLplot.PLStream.gcompression.html#PLplot_PLStream_gcompression_System_Int32__">gcompression(out Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgcompression: Get the current device-compression setting</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gdev_System_String__" data-uid="PLplot.PLStream.gdev(System.String@)">
+          <a class="xref" href="PLplot.PLStream.gdev.html#PLplot_PLStream_gdev_System_String__">gdev(out String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgdev: Get the current device (keyword) name</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gDevs_System_String____System_String____" data-uid="PLplot.PLStream.gDevs(System.String[]@,System.String[]@)">
+          <a class="xref" href="PLplot.PLStream.gDevs.html#PLplot_PLStream_gDevs_System_String____System_String____">gDevs(out String[], out String[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a list of all device names and their menu strings</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gdidev_System_Double__System_Double__System_Double__System_Double__" data-uid="PLplot.PLStream.gdidev(System.Double@,System.Double@,System.Double@,System.Double@)">
+          <a class="xref" href="PLplot.PLStream.gdidev.html#PLplot_PLStream_gdidev_System_Double__System_Double__System_Double__System_Double__">gdidev(out Double, out Double, out Double, out Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgdidev: Get parameters that define current device-space window</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gdiori_System_Double__" data-uid="PLplot.PLStream.gdiori(System.Double@)">
+          <a class="xref" href="PLplot.PLStream.gdiori.html#PLplot_PLStream_gdiori_System_Double__">gdiori(out Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgdiori: Get plot orientation</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gdiplt_System_Double__System_Double__System_Double__System_Double__" data-uid="PLplot.PLStream.gdiplt(System.Double@,System.Double@,System.Double@,System.Double@)">
+          <a class="xref" href="PLplot.PLStream.gdiplt.html#PLplot_PLStream_gdiplt_System_Double__System_Double__System_Double__System_Double__">gdiplt(out Double, out Double, out Double, out Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgdiplt: Get parameters that define current plot-space window</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gdrawmode" data-uid="PLplot.PLStream.gdrawmode">
+          <a class="xref" href="PLplot.PLStream.gdrawmode.html#PLplot_PLStream_gdrawmode">gdrawmode()</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgdrawmode: Get drawing mode (depends on device support!)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gesc_System_Char__" data-uid="PLplot.PLStream.gesc(System.Char@)">
+          <a class="xref" href="PLplot.PLStream.gesc.html#PLplot_PLStream_gesc_System_Char__">gesc(out Char)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Get the escape character for text strings.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_GetCursor_PLplot_GraphicsIn__" data-uid="PLplot.PLStream.GetCursor(PLplot.GraphicsIn@)">
+          <a class="xref" href="PLplot.PLStream.GetCursor.html#PLplot_PLStream_GetCursor_PLplot_GraphicsIn__">GetCursor(out GraphicsIn)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plGetCursor: Wait for graphics input event and translate to world coordinates.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gfam_System_Int32__System_Int32__System_Int32__" data-uid="PLplot.PLStream.gfam(System.Int32@,System.Int32@,System.Int32@)">
+          <a class="xref" href="PLplot.PLStream.gfam.html#PLplot_PLStream_gfam_System_Int32__System_Int32__System_Int32__">gfam(out Int32, out Int32, out Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgfam: Get family file parameters</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gfci_PLplot_FCI__" data-uid="PLplot.PLStream.gfci(PLplot.FCI@)">
+          <a class="xref" href="PLplot.PLStream.gfci.html#PLplot_PLStream_gfci_PLplot_FCI__">gfci(out FCI)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgfci: Get FCI (font characterization integer)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gFileDevs_System_String____System_String____" data-uid="PLplot.PLStream.gFileDevs(System.String[]@,System.String[]@)">
+          <a class="xref" href="PLplot.PLStream.gFileDevs.html#PLplot_PLStream_gFileDevs_System_String____System_String____">gFileDevs(out String[], out String[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>Returns a list of file-oriented device names and their menu strings</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gfnam_System_String__" data-uid="PLplot.PLStream.gfnam(System.String@)">
+          <a class="xref" href="PLplot.PLStream.gfnam.html#PLplot_PLStream_gfnam_System_String__">gfnam(out String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgfnam: Get output file name</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gfont_PLplot_FontFamily__PLplot_FontStyle__PLplot_FontWeight__" data-uid="PLplot.PLStream.gfont(PLplot.FontFamily@,PLplot.FontStyle@,PLplot.FontWeight@)">
+          <a class="xref" href="PLplot.PLStream.gfont.html#PLplot_PLStream_gfont_PLplot_FontFamily__PLplot_FontStyle__PLplot_FontWeight__">gfont(out FontFamily, out FontStyle, out FontWeight)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgfont: Get family, style and weight of the current font</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_glevel_PLplot_RunLevel__" data-uid="PLplot.PLStream.glevel(PLplot.RunLevel@)">
+          <a class="xref" href="PLplot.PLStream.glevel.html#PLplot_PLStream_glevel_PLplot_RunLevel__">glevel(out RunLevel)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plglevel: Get the (current) run level</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gpage_System_Double__System_Double__System_Int32__System_Int32__System_Int32__System_Int32__" data-uid="PLplot.PLStream.gpage(System.Double@,System.Double@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">
+          <a class="xref" href="PLplot.PLStream.gpage.html#PLplot_PLStream_gpage_System_Double__System_Double__System_Int32__System_Int32__System_Int32__System_Int32__">gpage(out Double, out Double, out Int32, out Int32, out Int32, out Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgpage: Get page parameters</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gra" data-uid="PLplot.PLStream.gra">
+          <a class="xref" href="PLplot.PLStream.gra.html#PLplot_PLStream_gra">gra()</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgra: Switch to graphics screen</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gradient_System_Double___System_Double___System_Double_" data-uid="PLplot.PLStream.gradient(System.Double[],System.Double[],System.Double)">
+          <a class="xref" href="PLplot.PLStream.gradient.html#PLplot_PLStream_gradient_System_Double___System_Double___System_Double_">gradient(Double[], Double[], Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgradient: Draw linear gradient inside polygon</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_griddata_System_Double___System_Double___System_Double___System_Double___System_Double___System_Double_0__0___PLplot_Grid_System_Double_" data-uid="PLplot.PLStream.griddata(System.Double[],System.Double[],System.Double[],System.Double[],System.Double[],System.Double[0:,0:],PLplot.Grid,System.Double)">
+          <a class="xref" href="PLplot.PLStream.griddata.html#PLplot_PLStream_griddata_System_Double___System_Double___System_Double___System_Double___System_Double___System_Double_0__0___PLplot_Grid_System_Double_">griddata(Double[], Double[], Double[], Double[], Double[], Double[,], Grid, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgriddata: Grid data from irregularly sampled data</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gspa_System_Double__System_Double__System_Double__System_Double__" data-uid="PLplot.PLStream.gspa(System.Double@,System.Double@,System.Double@,System.Double@)">
+          <a class="xref" href="PLplot.PLStream.gspa.html#PLplot_PLStream_gspa_System_Double__System_Double__System_Double__System_Double__">gspa(out Double, out Double, out Double, out Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgspa: Get current subpage parameters</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gstrm_System_Int32__" data-uid="PLplot.PLStream.gstrm(System.Int32@)">
+          <a class="xref" href="PLplot.PLStream.gstrm.html#PLplot_PLStream_gstrm_System_Int32__">gstrm(out Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgstrm: Get current stream number</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gver_System_String__" data-uid="PLplot.PLStream.gver(System.String@)">
+          <a class="xref" href="PLplot.PLStream.gver.html#PLplot_PLStream_gver_System_String__">gver(out String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgver: Get the current library version number</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gvpd_System_Double__System_Double__System_Double__System_Double__" data-uid="PLplot.PLStream.gvpd(System.Double@,System.Double@,System.Double@,System.Double@)">
+          <a class="xref" href="PLplot.PLStream.gvpd.html#PLplot_PLStream_gvpd_System_Double__System_Double__System_Double__System_Double__">gvpd(out Double, out Double, out Double, out Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgvpd: Get viewport limits in normalized device coordinates</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gvpw_System_Double__System_Double__System_Double__System_Double__" data-uid="PLplot.PLStream.gvpw(System.Double@,System.Double@,System.Double@,System.Double@)">
+          <a class="xref" href="PLplot.PLStream.gvpw.html#PLplot_PLStream_gvpw_System_Double__System_Double__System_Double__System_Double__">gvpw(out Double, out Double, out Double, out Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgvpw: Get viewport limits in world coordinates</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gxax_System_Int32__System_Int32__" data-uid="PLplot.PLStream.gxax(System.Int32@,System.Int32@)">
+          <a class="xref" href="PLplot.PLStream.gxax.html#PLplot_PLStream_gxax_System_Int32__System_Int32__">gxax(out Int32, out Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgxax: Get x axis parameters</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gyax_System_Int32__System_Int32__" data-uid="PLplot.PLStream.gyax(System.Int32@,System.Int32@)">
+          <a class="xref" href="PLplot.PLStream.gyax.html#PLplot_PLStream_gyax_System_Int32__System_Int32__">gyax(out Int32, out Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgyax: Get y axis parameters</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_gzax_System_Int32__System_Int32__" data-uid="PLplot.PLStream.gzax(System.Int32@,System.Int32@)">
+          <a class="xref" href="PLplot.PLStream.gzax.html#PLplot_PLStream_gzax_System_Int32__System_Int32__">gzax(out Int32, out Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plgzax: Get z axis parameters</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_hist_System_Double___System_Double_System_Double_System_Int32_PLplot_Hist_" data-uid="PLplot.PLStream.hist(System.Double[],System.Double,System.Double,System.Int32,PLplot.Hist)">
+          <a class="xref" href="PLplot.PLStream.hist.html#PLplot_PLStream_hist_System_Double___System_Double_System_Double_System_Int32_PLplot_Hist_">hist(Double[], Double, Double, Int32, Hist)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plhist: Plot a histogram from unbinned data</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_hlsrgb_System_Double_System_Double_System_Double_System_Double__System_Double__System_Double__" data-uid="PLplot.PLStream.hlsrgb(System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@)">
+          <a class="xref" href="PLplot.PLStream.hlsrgb.html#PLplot_PLStream_hlsrgb_System_Double_System_Double_System_Double_System_Double__System_Double__System_Double__">hlsrgb(Double, Double, Double, out Double, out Double, out Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plhlsrgb: Convert HLS color to RGB</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_image_System_Double_0__0___System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.PLStream.image(System.Double[0:,0:],System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.image.html#PLplot_PLStream_image_System_Double_0__0___System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_">image(Double[,], Double, Double, Double, Double, Double, Double, Double, Double, Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plimage: Plot a 2D matrix using cmap1 with automatic color adjustment</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_imagefr_System_Double_0__0___System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_PLplot_TransformFunc_" data-uid="PLplot.PLStream.imagefr(System.Double[0:,0:],System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,PLplot.TransformFunc)">
+          <a class="xref" href="PLplot.PLStream.imagefr.html#PLplot_PLStream_imagefr_System_Double_0__0___System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_PLplot_TransformFunc_">imagefr(Double[,], Double, Double, Double, Double, Double, Double, Double, Double, TransformFunc)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plimagefr: Plot a 2D matrix using cmap1</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_init" data-uid="PLplot.PLStream.init">
+          <a class="xref" href="PLplot.PLStream.init.html#PLplot_PLStream_init">init()</a>
+        </td>
+        <td class="markdown level1 summary"><p>plinit: Initialize PLplot</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_join_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.PLStream.join(System.Double,System.Double,System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.join.html#PLplot_PLStream_join_System_Double_System_Double_System_Double_System_Double_">join(Double, Double, Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>pljoin: Draw a line between two points</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_lab_System_String_System_String_System_String_" data-uid="PLplot.PLStream.lab(System.String,System.String,System.String)">
+          <a class="xref" href="PLplot.PLStream.lab.html#PLplot_PLStream_lab_System_String_System_String_System_String_">lab(String, String, String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>pllab: Simple routine to write labels</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_legend_System_Double__System_Double__PLplot_Legend_PLplot_Position_System_Double_System_Double_System_Double_System_Int32_System_Int32_PLplot_LineStyle_System_Int32_System_Int32_PLplot_LegendEntry___System_Double_System_Double_System_Double_System_Double_System_Int32___System_String___System_Int32___PLplot_Pattern___System_Double___System_Double___System_Int32___PLplot_LineStyle___System_Double___System_Int32___System_Double___System_Int32___System_String___" data-uid="PLplot.PLStream.legend(System.Double@,System.Double@,PLplot.Legend,PLplot.Position,System.Double,System.Double,System.Double,System.Int32,System.Int32,PLplot.LineStyle,System.Int32,System.Int32,PLplot.LegendEntry[],System.Double,System.Double,System.Double,System.Double,System.Int32[],System.String[],System.Int32[],PLplot.Pattern[],System.Double[],System.Double[],System.Int32[],PLplot.LineStyle[],System.Double[],System.Int32[],System.Double[],System.Int32[],System.String[])">
+          <a class="xref" href="PLplot.PLStream.legend.html#PLplot_PLStream_legend_System_Double__System_Double__PLplot_Legend_PLplot_Position_System_Double_System_Double_System_Double_System_Int32_System_Int32_PLplot_LineStyle_System_Int32_System_Int32_PLplot_LegendEntry___System_Double_System_Double_System_Double_System_Double_System_Int32___System_String___System_Int32___PLplot_Pattern___System_Double___System_Double___System_Int32___PLplot_LineStyle___System_Double___System_Int32___System_Double___System_Int32___System_String___">legend(out Double, out Double, Legend, Position, Double, Double, Double, Int32, Int32, LineStyle, Int32, Int32, LegendEntry[], Double, Double, Double, Double, Int32[], String[], Int32[], Pattern[], Double[], Double[], Int32[], LineStyle[], Double[], Int32[], Double[], Int32[], String[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>pllegend: Plot legend using discretely annotated filled boxes, lines, and/or lines of symbols</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_lightsource_System_Double_System_Double_System_Double_" data-uid="PLplot.PLStream.lightsource(System.Double,System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.lightsource.html#PLplot_PLStream_lightsource_System_Double_System_Double_System_Double_">lightsource(Double, Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>pllightsource: Sets the 3D position of the light source</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_line_System_Double___System_Double___" data-uid="PLplot.PLStream.line(System.Double[],System.Double[])">
+          <a class="xref" href="PLplot.PLStream.line.html#PLplot_PLStream_line_System_Double___System_Double___">line(Double[], Double[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plline: Draw a line</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_line3_System_Double___System_Double___System_Double___" data-uid="PLplot.PLStream.line3(System.Double[],System.Double[],System.Double[])">
+          <a class="xref" href="PLplot.PLStream.line3.html#PLplot_PLStream_line3_System_Double___System_Double___System_Double___">line3(Double[], Double[], Double[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plline3: Draw a line in 3 space</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_lsty_PLplot_LineStyle_" data-uid="PLplot.PLStream.lsty(PLplot.LineStyle)">
+          <a class="xref" href="PLplot.PLStream.lsty.html#PLplot_PLStream_lsty_PLplot_LineStyle_">lsty(LineStyle)</a>
+        </td>
+        <td class="markdown level1 summary"><p>pllsty: Select line style</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_map_PLplot_MapFunc_System_String_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.PLStream.map(PLplot.MapFunc,System.String,System.Double,System.Double,System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.map.html#PLplot_PLStream_map_PLplot_MapFunc_System_String_System_Double_System_Double_System_Double_System_Double_">map(MapFunc, String, Double, Double, Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plmap: Plot continental outline or shapefile data in world coordinates</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_mapfill_PLplot_MapFunc_System_String_System_Double_System_Double_System_Double_System_Double_System_Int32___" data-uid="PLplot.PLStream.mapfill(PLplot.MapFunc,System.String,System.Double,System.Double,System.Double,System.Double,System.Int32[])">
+          <a class="xref" href="PLplot.PLStream.mapfill.html#PLplot_PLStream_mapfill_PLplot_MapFunc_System_String_System_Double_System_Double_System_Double_System_Double_System_Int32___">mapfill(MapFunc, String, Double, Double, Double, Double, Int32[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plmapfill: Plot all or a subset of Shapefile data, filling the polygons</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_mapline_PLplot_MapFunc_System_String_System_Double_System_Double_System_Double_System_Double_System_Int32___" data-uid="PLplot.PLStream.mapline(PLplot.MapFunc,System.String,System.Double,System.Double,System.Double,System.Double,System.Int32[])">
+          <a class="xref" href="PLplot.PLStream.mapline.html#PLplot_PLStream_mapline_PLplot_MapFunc_System_String_System_Double_System_Double_System_Double_System_Double_System_Int32___">mapline(MapFunc, String, Double, Double, Double, Double, Int32[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plmapline: Plot all or a subset of Shapefile data using lines in world coordinates</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_mapstring_PLplot_MapFunc_System_String_System_String_System_Double_System_Double_System_Double_System_Double_System_Int32___" data-uid="PLplot.PLStream.mapstring(PLplot.MapFunc,System.String,System.String,System.Double,System.Double,System.Double,System.Double,System.Int32[])">
+          <a class="xref" href="PLplot.PLStream.mapstring.html#PLplot_PLStream_mapstring_PLplot_MapFunc_System_String_System_String_System_Double_System_Double_System_Double_System_Double_System_Int32___">mapstring(MapFunc, String, String, Double, Double, Double, Double, Int32[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plmapstring: Plot all or a subset of Shapefile data using strings or points in world coordinates</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_maptex_PLplot_MapFunc_System_String_System_Double_System_Double_System_Double_System_String_System_Double_System_Double_System_Double_System_Double_System_Int32_" data-uid="PLplot.PLStream.maptex(PLplot.MapFunc,System.String,System.Double,System.Double,System.Double,System.String,System.Double,System.Double,System.Double,System.Double,System.Int32)">
+          <a class="xref" href="PLplot.PLStream.maptex.html#PLplot_PLStream_maptex_PLplot_MapFunc_System_String_System_Double_System_Double_System_Double_System_String_System_Double_System_Double_System_Double_System_Double_System_Int32_">maptex(MapFunc, String, Double, Double, Double, String, Double, Double, Double, Double, Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plmaptex: Draw text at points defined by Shapefile data in world coordinates</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_meridians_PLplot_MapFunc_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.PLStream.meridians(PLplot.MapFunc,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.meridians.html#PLplot_PLStream_meridians_PLplot_MapFunc_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_">meridians(MapFunc, Double, Double, Double, Double, Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plmeridians: Plot latitude and longitude lines</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_mesh_System_Double___System_Double___System_Double_0__0___PLplot_Mesh_" data-uid="PLplot.PLStream.mesh(System.Double[],System.Double[],System.Double[0:,0:],PLplot.Mesh)">
+          <a class="xref" href="PLplot.PLStream.mesh.html#PLplot_PLStream_mesh_System_Double___System_Double___System_Double_0__0___PLplot_Mesh_">mesh(Double[], Double[], Double[,], Mesh)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plmesh: Plot surface mesh</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_meshc_System_Double___System_Double___System_Double_0__0___PLplot_MeshContour_System_Double___" data-uid="PLplot.PLStream.meshc(System.Double[],System.Double[],System.Double[0:,0:],PLplot.MeshContour,System.Double[])">
+          <a class="xref" href="PLplot.PLStream.meshc.html#PLplot_PLStream_meshc_System_Double___System_Double___System_Double_0__0___PLplot_MeshContour_System_Double___">meshc(Double[], Double[], Double[,], MeshContour, Double[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plmeshc: Magnitude colored plot surface mesh with contour</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_mtex_System_String_System_Double_System_Double_System_Double_System_String_" data-uid="PLplot.PLStream.mtex(System.String,System.Double,System.Double,System.Double,System.String)">
+          <a class="xref" href="PLplot.PLStream.mtex.html#PLplot_PLStream_mtex_System_String_System_Double_System_Double_System_Double_System_String_">mtex(String, Double, Double, Double, String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plmtex: Write text relative to viewport boundaries</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_mtex3_System_String_System_Double_System_Double_System_Double_System_String_" data-uid="PLplot.PLStream.mtex3(System.String,System.Double,System.Double,System.Double,System.String)">
+          <a class="xref" href="PLplot.PLStream.mtex3.html#PLplot_PLStream_mtex3_System_String_System_Double_System_Double_System_Double_System_String_">mtex3(String, Double, Double, Double, String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plmtex3: Write text relative to viewport boundaries in 3D plots</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_OptUsage" data-uid="PLplot.PLStream.OptUsage">
+          <a class="xref" href="PLplot.PLStream.OptUsage.html#PLplot_PLStream_OptUsage">OptUsage()</a>
+        </td>
+        <td class="markdown level1 summary"><p>plOptUsage: Print usage and syntax message.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_parseopts_System_String____PLplot_ParseOpts_" data-uid="PLplot.PLStream.parseopts(System.String[]@,PLplot.ParseOpts)">
+          <a class="xref" href="PLplot.PLStream.parseopts.html#PLplot_PLStream_parseopts_System_String____PLplot_ParseOpts_">parseopts(ref String[], ParseOpts)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plparseopts: Parse command-line arguments</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_pat_System_Int32___System_Int32___" data-uid="PLplot.PLStream.pat(System.Int32[],System.Int32[])">
+          <a class="xref" href="PLplot.PLStream.pat.html#PLplot_PLStream_pat_System_Int32___System_Int32___">pat(Int32[], Int32[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plpat: Set area line fill pattern</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_path_System_Int32_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.PLStream.path(System.Int32,System.Double,System.Double,System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.path.html#PLplot_PLStream_path_System_Int32_System_Double_System_Double_System_Double_System_Double_">path(Int32, Double, Double, Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plpath: Draw a line between two points, accounting for coordinate transforms</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_plot3d_System_Double___System_Double___System_Double_0__0___PLplot_Mesh_System_Boolean_" data-uid="PLplot.PLStream.plot3d(System.Double[],System.Double[],System.Double[0:,0:],PLplot.Mesh,System.Boolean)">
+          <a class="xref" href="PLplot.PLStream.plot3d.html#PLplot_PLStream_plot3d_System_Double___System_Double___System_Double_0__0___PLplot_Mesh_System_Boolean_">plot3d(Double[], Double[], Double[,], Mesh, Boolean)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plot3d: Plot 3-d surface plot</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_plot3dc_System_Double___System_Double___System_Double_0__0___PLplot_MeshContour_System_Double___" data-uid="PLplot.PLStream.plot3dc(System.Double[],System.Double[],System.Double[0:,0:],PLplot.MeshContour,System.Double[])">
+          <a class="xref" href="PLplot.PLStream.plot3dc.html#PLplot_PLStream_plot3dc_System_Double___System_Double___System_Double_0__0___PLplot_MeshContour_System_Double___">plot3dc(Double[], Double[], Double[,], MeshContour, Double[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plot3dc: Magnitude colored plot surface with contour</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_plot3dcl_System_Double___System_Double___System_Double_0__0___PLplot_MeshContour_System_Double___System_Int32_System_Int32___System_Int32___" data-uid="PLplot.PLStream.plot3dcl(System.Double[],System.Double[],System.Double[0:,0:],PLplot.MeshContour,System.Double[],System.Int32,System.Int32[],System.Int32[])">
+          <a class="xref" href="PLplot.PLStream.plot3dcl.html#PLplot_PLStream_plot3dcl_System_Double___System_Double___System_Double_0__0___PLplot_MeshContour_System_Double___System_Int32_System_Int32___System_Int32___">plot3dcl(Double[], Double[], Double[,], MeshContour, Double[], Int32, Int32[], Int32[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plot3dcl: Magnitude colored plot surface with contour for z[x][y] with y index limits</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_poin_System_Double___System_Double___System_Char_" data-uid="PLplot.PLStream.poin(System.Double[],System.Double[],System.Char)">
+          <a class="xref" href="PLplot.PLStream.poin.html#PLplot_PLStream_poin_System_Double___System_Double___System_Char_">poin(Double[], Double[], Char)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plpoin: Plot a glyph at the specified points</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_poin3_System_Double___System_Double___System_Double___System_Char_" data-uid="PLplot.PLStream.poin3(System.Double[],System.Double[],System.Double[],System.Char)">
+          <a class="xref" href="PLplot.PLStream.poin3.html#PLplot_PLStream_poin3_System_Double___System_Double___System_Double___System_Char_">poin3(Double[], Double[], Double[], Char)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plpoin3: Plot a glyph at the specified 3D points</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_poly3_System_Double___System_Double___System_Double___System_Boolean___System_Boolean_" data-uid="PLplot.PLStream.poly3(System.Double[],System.Double[],System.Double[],System.Boolean[],System.Boolean)">
+          <a class="xref" href="PLplot.PLStream.poly3.html#PLplot_PLStream_poly3_System_Double___System_Double___System_Double___System_Boolean___System_Boolean_">poly3(Double[], Double[], Double[], Boolean[], Boolean)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plpoly3: Draw a polygon in 3 space</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_prec_System_Int32_System_Int32_" data-uid="PLplot.PLStream.prec(System.Int32,System.Int32)">
+          <a class="xref" href="PLplot.PLStream.prec.html#PLplot_PLStream_prec_System_Int32_System_Int32_">prec(Int32, Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plprec: Set precision in numeric labels</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_psty_PLplot_Pattern_" data-uid="PLplot.PLStream.psty(PLplot.Pattern)">
+          <a class="xref" href="PLplot.PLStream.psty.html#PLplot_PLStream_psty_PLplot_Pattern_">psty(Pattern)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plpsty: Select area fill pattern</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_ptex_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_" data-uid="PLplot.PLStream.ptex(System.Double,System.Double,System.Double,System.Double,System.Double,System.String)">
+          <a class="xref" href="PLplot.PLStream.ptex.html#PLplot_PLStream_ptex_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_">ptex(Double, Double, Double, Double, Double, String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plptex: Write text inside the viewport</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_ptex3_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_" data-uid="PLplot.PLStream.ptex3(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.String)">
+          <a class="xref" href="PLplot.PLStream.ptex3.html#PLplot_PLStream_ptex3_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_">ptex3(Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plptex3: Write text inside the viewport of a 3D plot</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_randd" data-uid="PLplot.PLStream.randd">
+          <a class="xref" href="PLplot.PLStream.randd.html#PLplot_PLStream_randd">randd()</a>
+        </td>
+        <td class="markdown level1 summary"><p>plrandd: Random number generator returning a real random number in the range [0,1]</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_replot" data-uid="PLplot.PLStream.replot">
+          <a class="xref" href="PLplot.PLStream.replot.html#PLplot_PLStream_replot">replot()</a>
+        </td>
+        <td class="markdown level1 summary"><p>plreplot: Replays contents of plot buffer to current device/file</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_rgbhls_System_Double_System_Double_System_Double_System_Double__System_Double__System_Double__" data-uid="PLplot.PLStream.rgbhls(System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@)">
+          <a class="xref" href="PLplot.PLStream.rgbhls.html#PLplot_PLStream_rgbhls_System_Double_System_Double_System_Double_System_Double__System_Double__System_Double__">rgbhls(Double, Double, Double, out Double, out Double, out Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plrgbhls: Convert RGB color to HLS</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sabort_PLplot_AbortHandler_" data-uid="PLplot.PLStream.sabort(PLplot.AbortHandler)">
+          <a class="xref" href="PLplot.PLStream.sabort.html#PLplot_PLStream_sabort_PLplot_AbortHandler_">sabort(AbortHandler)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsabort: Set abort handler</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sbopH_PLplot_BopHandler_System_IntPtr_" data-uid="PLplot.PLStream.sbopH(PLplot.BopHandler,System.IntPtr)">
+          <a class="xref" href="PLplot.PLStream.sbopH.html#PLplot_PLStream_sbopH_PLplot_BopHandler_System_IntPtr_">sbopH(BopHandler, IntPtr)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets an optional user bop handler</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sButtonEH_PLplot_ButtonHandler_System_IntPtr_" data-uid="PLplot.PLStream.sButtonEH(PLplot.ButtonHandler,System.IntPtr)">
+          <a class="xref" href="PLplot.PLStream.sButtonEH.html#PLplot_PLStream_sButtonEH_PLplot_ButtonHandler_System_IntPtr_">sButtonEH(ButtonHandler, IntPtr)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Set the function pointer for the (mouse) button event handler</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_schr_System_Double_System_Double_" data-uid="PLplot.PLStream.schr(System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.schr.html#PLplot_PLStream_schr_System_Double_System_Double_">schr(Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plschr: Set character size</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_scmap0_System_Int32___System_Int32___System_Int32___" data-uid="PLplot.PLStream.scmap0(System.Int32[],System.Int32[],System.Int32[])">
+          <a class="xref" href="PLplot.PLStream.scmap0.html#PLplot_PLStream_scmap0_System_Int32___System_Int32___System_Int32___">scmap0(Int32[], Int32[], Int32[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plscmap0: Set cmap0 colors by 8-bit RGB values</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_scmap0a_System_Int32___System_Int32___System_Int32___System_Double___" data-uid="PLplot.PLStream.scmap0a(System.Int32[],System.Int32[],System.Int32[],System.Double[])">
+          <a class="xref" href="PLplot.PLStream.scmap0a.html#PLplot_PLStream_scmap0a_System_Int32___System_Int32___System_Int32___System_Double___">scmap0a(Int32[], Int32[], Int32[], Double[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plscmap0a: Set cmap0 colors by 8-bit RGB values and PLFLT alpha transparency value</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_scmap0n_System_Int32_" data-uid="PLplot.PLStream.scmap0n(System.Int32)">
+          <a class="xref" href="PLplot.PLStream.scmap0n.html#PLplot_PLStream_scmap0n_System_Int32_">scmap0n(Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plscmap0n: Set number of colors in cmap0</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_scmap1_System_Int32___System_Int32___System_Int32___" data-uid="PLplot.PLStream.scmap1(System.Int32[],System.Int32[],System.Int32[])">
+          <a class="xref" href="PLplot.PLStream.scmap1.html#PLplot_PLStream_scmap1_System_Int32___System_Int32___System_Int32___">scmap1(Int32[], Int32[], Int32[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plscmap1: Set opaque RGB cmap1 colors values</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_scmap1_range_System_Double_System_Double_" data-uid="PLplot.PLStream.scmap1_range(System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.scmap1_range.html#PLplot_PLStream_scmap1_range_System_Double_System_Double_">scmap1_range(Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plscmap1_range: Set the cmap1 argument range for continuous color plots</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_scmap1a_System_Int32___System_Int32___System_Int32___System_Double___" data-uid="PLplot.PLStream.scmap1a(System.Int32[],System.Int32[],System.Int32[],System.Double[])">
+          <a class="xref" href="PLplot.PLStream.scmap1a.html#PLplot_PLStream_scmap1a_System_Int32___System_Int32___System_Int32___System_Double___">scmap1a(Int32[], Int32[], Int32[], Double[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plscmap1a: Set semitransparent cmap1 RGBA colors.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_scmap1l_PLplot_ColorSpace_System_Double___System_Double___System_Double___System_Double___System_Boolean___" data-uid="PLplot.PLStream.scmap1l(PLplot.ColorSpace,System.Double[],System.Double[],System.Double[],System.Double[],System.Boolean[])">
+          <a class="xref" href="PLplot.PLStream.scmap1l.html#PLplot_PLStream_scmap1l_PLplot_ColorSpace_System_Double___System_Double___System_Double___System_Double___System_Boolean___">scmap1l(ColorSpace, Double[], Double[], Double[], Double[], Boolean[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plscmap1l: Set cmap1 colors using a piece-wise linear relationship</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_scmap1la_PLplot_ColorSpace_System_Double___System_Double___System_Double___System_Double___System_Double___System_Boolean___" data-uid="PLplot.PLStream.scmap1la(PLplot.ColorSpace,System.Double[],System.Double[],System.Double[],System.Double[],System.Double[],System.Boolean[])">
+          <a class="xref" href="PLplot.PLStream.scmap1la.html#PLplot_PLStream_scmap1la_PLplot_ColorSpace_System_Double___System_Double___System_Double___System_Double___System_Double___System_Boolean___">scmap1la(ColorSpace, Double[], Double[], Double[], Double[], Double[], Boolean[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plscmap1la: Set cmap1 colors and alpha transparency using a piece-wise linear relationship</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_scmap1n_System_Int32_" data-uid="PLplot.PLStream.scmap1n(System.Int32)">
+          <a class="xref" href="PLplot.PLStream.scmap1n.html#PLplot_PLStream_scmap1n_System_Int32_">scmap1n(Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plscmap1n: Set number of colors in cmap1</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_scol0_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="PLplot.PLStream.scol0(System.Int32,System.Int32,System.Int32,System.Int32)">
+          <a class="xref" href="PLplot.PLStream.scol0.html#PLplot_PLStream_scol0_System_Int32_System_Int32_System_Int32_System_Int32_">scol0(Int32, Int32, Int32, Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plscol0: Set 8-bit RGB values for given cmap0 color index</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_scol0a_System_Int32_System_Int32_System_Int32_System_Int32_System_Double_" data-uid="PLplot.PLStream.scol0a(System.Int32,System.Int32,System.Int32,System.Int32,System.Double)">
+          <a class="xref" href="PLplot.PLStream.scol0a.html#PLplot_PLStream_scol0a_System_Int32_System_Int32_System_Int32_System_Int32_System_Double_">scol0a(Int32, Int32, Int32, Int32, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plscol0a: Set 8-bit RGB values and PLFLT alpha transparency value for given cmap0 color index</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_scolbg_System_Int32_System_Int32_System_Int32_" data-uid="PLplot.PLStream.scolbg(System.Int32,System.Int32,System.Int32)">
+          <a class="xref" href="PLplot.PLStream.scolbg.html#PLplot_PLStream_scolbg_System_Int32_System_Int32_System_Int32_">scolbg(Int32, Int32, Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plscolbg: Set the background color by 8-bit RGB value</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_scolbga_System_Int32_System_Int32_System_Int32_System_Double_" data-uid="PLplot.PLStream.scolbga(System.Int32,System.Int32,System.Int32,System.Double)">
+          <a class="xref" href="PLplot.PLStream.scolbga.html#PLplot_PLStream_scolbga_System_Int32_System_Int32_System_Int32_System_Double_">scolbga(Int32, Int32, Int32, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plscolbga: Set the background color by 8-bit RGB value and PLFLT alpha transparency value.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_scolor_System_Int32_" data-uid="PLplot.PLStream.scolor(System.Int32)">
+          <a class="xref" href="PLplot.PLStream.scolor.html#PLplot_PLStream_scolor_System_Int32_">scolor(Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plscolor: Used to globally turn color output on/off</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_scompression_System_Int32_" data-uid="PLplot.PLStream.scompression(System.Int32)">
+          <a class="xref" href="PLplot.PLStream.scompression.html#PLplot_PLStream_scompression_System_Int32_">scompression(Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plscompression: Set device-compression level</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sdev_System_String_" data-uid="PLplot.PLStream.sdev(System.String)">
+          <a class="xref" href="PLplot.PLStream.sdev.html#PLplot_PLStream_sdev_System_String_">sdev(String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsdev: Set the device (keyword) name</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sdevdata_System_IntPtr_" data-uid="PLplot.PLStream.sdevdata(System.IntPtr)">
+          <a class="xref" href="PLplot.PLStream.sdevdata.html#PLplot_PLStream_sdevdata_System_IntPtr_">sdevdata(IntPtr)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Set the pointer to the data used in driver initialisation</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sdidev_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.PLStream.sdidev(System.Double,System.Double,System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.sdidev.html#PLplot_PLStream_sdidev_System_Double_System_Double_System_Double_System_Double_">sdidev(Double, Double, Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsdidev: Set parameters that define current device-space window</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sdimap_System_Int32_System_Int32_System_Int32_System_Int32_System_Double_System_Double_" data-uid="PLplot.PLStream.sdimap(System.Int32,System.Int32,System.Int32,System.Int32,System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.sdimap.html#PLplot_PLStream_sdimap_System_Int32_System_Int32_System_Int32_System_Int32_System_Double_System_Double_">sdimap(Int32, Int32, Int32, Int32, Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsdimap: Set up transformation from metafile coordinates</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sdiori_System_Double_" data-uid="PLplot.PLStream.sdiori(System.Double)">
+          <a class="xref" href="PLplot.PLStream.sdiori.html#PLplot_PLStream_sdiori_System_Double_">sdiori(Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsdiori: Set plot orientation</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sdiplt_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.PLStream.sdiplt(System.Double,System.Double,System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.sdiplt.html#PLplot_PLStream_sdiplt_System_Double_System_Double_System_Double_System_Double_">sdiplt(Double, Double, Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsdiplt: Set parameters that define current plot-space window</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sdiplz_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.PLStream.sdiplz(System.Double,System.Double,System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.sdiplz.html#PLplot_PLStream_sdiplz_System_Double_System_Double_System_Double_System_Double_">sdiplz(Double, Double, Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsdiplz: Set parameters incrementally (zoom mode) that define current plot-space window</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sdrawmode_PLplot_DrawMode_" data-uid="PLplot.PLStream.sdrawmode(PLplot.DrawMode)">
+          <a class="xref" href="PLplot.PLStream.sdrawmode.html#PLplot_PLStream_sdrawmode_PLplot_DrawMode_">sdrawmode(DrawMode)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsdrawmode: Set drawing mode (depends on device support!)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_seed_System_UInt32_" data-uid="PLplot.PLStream.seed(System.UInt32)">
+          <a class="xref" href="PLplot.PLStream.seed.html#PLplot_PLStream_seed_System_UInt32_">seed(UInt32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plseed: Set seed for internal random number generator.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_seopH_PLplot_EopHandler_System_IntPtr_" data-uid="PLplot.PLStream.seopH(PLplot.EopHandler,System.IntPtr)">
+          <a class="xref" href="PLplot.PLStream.seopH.html#PLplot_PLStream_seopH_PLplot_EopHandler_System_IntPtr_">seopH(EopHandler, IntPtr)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Sets an optional user eop handler</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sesc_System_Char_" data-uid="PLplot.PLStream.sesc(System.Char)">
+          <a class="xref" href="PLplot.PLStream.sesc.html#PLplot_PLStream_sesc_System_Char_">sesc(Char)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsesc: Set the escape character for text strings</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_setcontlabelformat_System_Int32_System_Int32_" data-uid="PLplot.PLStream.setcontlabelformat(System.Int32,System.Int32)">
+          <a class="xref" href="PLplot.PLStream.setcontlabelformat.html#PLplot_PLStream_setcontlabelformat_System_Int32_System_Int32_">setcontlabelformat(Int32, Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>pl_setcontlabelformat: Set format of numerical label for contours</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_setcontlabelparam_System_Double_System_Double_System_Double_System_Int32_" data-uid="PLplot.PLStream.setcontlabelparam(System.Double,System.Double,System.Double,System.Int32)">
+          <a class="xref" href="PLplot.PLStream.setcontlabelparam.html#PLplot_PLStream_setcontlabelparam_System_Double_System_Double_System_Double_System_Int32_">setcontlabelparam(Double, Double, Double, Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>pl_setcontlabelparam: Set parameters of contour labelling other than format of numerical label</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_setopt_System_String_System_String_" data-uid="PLplot.PLStream.setopt(System.String,System.String)">
+          <a class="xref" href="PLplot.PLStream.setopt.html#PLplot_PLStream_setopt_System_String_System_String_">setopt(String, String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsetopt: Set any command-line option</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sexit_PLplot_ExitHandler_" data-uid="PLplot.PLStream.sexit(PLplot.ExitHandler)">
+          <a class="xref" href="PLplot.PLStream.sexit.html#PLplot_PLStream_sexit_PLplot_ExitHandler_">sexit(ExitHandler)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsexit: Set exit handler</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sfam_System_Int32_System_Int32_System_Int32_" data-uid="PLplot.PLStream.sfam(System.Int32,System.Int32,System.Int32)">
+          <a class="xref" href="PLplot.PLStream.sfam.html#PLplot_PLStream_sfam_System_Int32_System_Int32_System_Int32_">sfam(Int32, Int32, Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsfam: Set family file parameters</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sfci_PLplot_FCI_" data-uid="PLplot.PLStream.sfci(PLplot.FCI)">
+          <a class="xref" href="PLplot.PLStream.sfci.html#PLplot_PLStream_sfci_PLplot_FCI_">sfci(FCI)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsfci: Set FCI (font characterization integer)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sfnam_System_String_" data-uid="PLplot.PLStream.sfnam(System.String)">
+          <a class="xref" href="PLplot.PLStream.sfnam.html#PLplot_PLStream_sfnam_System_String_">sfnam(String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsfnam: Set output file name</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sfont_PLplot_FontFamily_PLplot_FontStyle_PLplot_FontWeight_" data-uid="PLplot.PLStream.sfont(PLplot.FontFamily,PLplot.FontStyle,PLplot.FontWeight)">
+          <a class="xref" href="PLplot.PLStream.sfont.html#PLplot_PLStream_sfont_PLplot_FontFamily_PLplot_FontStyle_PLplot_FontWeight_">sfont(FontFamily, FontStyle, FontWeight)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsfont: Set family, style and weight of the current font</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_shade_System_Double_0__0___PLplot_DefinedFunc_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Int32_System_Double_System_Double_System_Int32_System_Double_System_Int32_System_Double_System_Boolean_PLplot_TransformFunc_" data-uid="PLplot.PLStream.shade(System.Double[0:,0:],PLplot.DefinedFunc,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32,System.Double,System.Double,System.Int32,System.Double,System.Int32,System.Double,System.Boolean,PLplot.TransformFunc)">
+          <a class="xref" href="PLplot.PLStream.shade.html#PLplot_PLStream_shade_System_Double_0__0___PLplot_DefinedFunc_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Int32_System_Double_System_Double_System_Int32_System_Double_System_Int32_System_Double_System_Boolean_PLplot_TransformFunc_">shade(Double[,], DefinedFunc, Double, Double, Double, Double, Double, Double, Int32, Double, Double, Int32, Double, Int32, Double, Boolean, TransformFunc)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plshade: Shade individual region on the basis of value</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_shades_System_Double_0__0___PLplot_DefinedFunc_System_Double_System_Double_System_Double_System_Double_System_Double___System_Double_System_Int32_System_Double_System_Boolean_PLplot_TransformFunc_" data-uid="PLplot.PLStream.shades(System.Double[0:,0:],PLplot.DefinedFunc,System.Double,System.Double,System.Double,System.Double,System.Double[],System.Double,System.Int32,System.Double,System.Boolean,PLplot.TransformFunc)">
+          <a class="xref" href="PLplot.PLStream.shades.html#PLplot_PLStream_shades_System_Double_0__0___PLplot_DefinedFunc_System_Double_System_Double_System_Double_System_Double_System_Double___System_Double_System_Int32_System_Double_System_Boolean_PLplot_TransformFunc_">shades(Double[,], DefinedFunc, Double, Double, Double, Double, Double[], Double, Int32, Double, Boolean, TransformFunc)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plshades: Shade regions on the basis of value</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sKeyEH_PLplot_KeyHandler_System_IntPtr_" data-uid="PLplot.PLStream.sKeyEH(PLplot.KeyHandler,System.IntPtr)">
+          <a class="xref" href="PLplot.PLStream.sKeyEH.html#PLplot_PLStream_sKeyEH_PLplot_KeyHandler_System_IntPtr_">sKeyEH(KeyHandler, IntPtr)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Set the function pointer for the keyboard event handler</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_slabelfunc_PLplot_LabelFunc_System_IntPtr_" data-uid="PLplot.PLStream.slabelfunc(PLplot.LabelFunc,System.IntPtr)">
+          <a class="xref" href="PLplot.PLStream.slabelfunc.html#PLplot_PLStream_slabelfunc_PLplot_LabelFunc_System_IntPtr_">slabelfunc(LabelFunc, IntPtr)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plslabelfunc: Assign a function to use for generating custom axis labels</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_smaj_System_Double_System_Double_" data-uid="PLplot.PLStream.smaj(System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.smaj.html#PLplot_PLStream_smaj_System_Double_System_Double_">smaj(Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsmaj: Set length of major ticks</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_smem_System_Int32_System_Int32_System_IntPtr_" data-uid="PLplot.PLStream.smem(System.Int32,System.Int32,System.IntPtr)">
+          <a class="xref" href="PLplot.PLStream.smem.html#PLplot_PLStream_smem_System_Int32_System_Int32_System_IntPtr_">smem(Int32, Int32, IntPtr)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsmem: Set the memory area to be plotted (RGB)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_smema_System_Int32_System_Int32_System_IntPtr_" data-uid="PLplot.PLStream.smema(System.Int32,System.Int32,System.IntPtr)">
+          <a class="xref" href="PLplot.PLStream.smema.html#PLplot_PLStream_smema_System_Int32_System_Int32_System_IntPtr_">smema(Int32, Int32, IntPtr)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsmema: Set the memory area to be plotted (RGBA)</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_smin_System_Double_System_Double_" data-uid="PLplot.PLStream.smin(System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.smin.html#PLplot_PLStream_smin_System_Double_System_Double_">smin(Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsmin: Set length of minor ticks</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sori_PLplot_Orientation_" data-uid="PLplot.PLStream.sori(PLplot.Orientation)">
+          <a class="xref" href="PLplot.PLStream.sori.html#PLplot_PLStream_sori_PLplot_Orientation_">sori(Orientation)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsori: Set orientation</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_spage_System_Double_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="PLplot.PLStream.spage(System.Double,System.Double,System.Int32,System.Int32,System.Int32,System.Int32)">
+          <a class="xref" href="PLplot.PLStream.spage.html#PLplot_PLStream_spage_System_Double_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_">spage(Double, Double, Int32, Int32, Int32, Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plspage: Set page parameters</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_spal0_System_String_" data-uid="PLplot.PLStream.spal0(System.String)">
+          <a class="xref" href="PLplot.PLStream.spal0.html#PLplot_PLStream_spal0_System_String_">spal0(String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plspal0: Set the cmap0 palette using the specified cmap0*.pal format file</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_spal1_System_String_System_Boolean_" data-uid="PLplot.PLStream.spal1(System.String,System.Boolean)">
+          <a class="xref" href="PLplot.PLStream.spal1.html#PLplot_PLStream_spal1_System_String_System_Boolean_">spal1(String, Boolean)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plspal1: Set the cmap1 palette using the specified cmap1*.pal format file</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_spause_System_Boolean_" data-uid="PLplot.PLStream.spause(System.Boolean)">
+          <a class="xref" href="PLplot.PLStream.spause.html#PLplot_PLStream_spause_System_Boolean_">spause(Boolean)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plspause: Set the pause (on end-of-page) status</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_ssub_System_Int32_System_Int32_" data-uid="PLplot.PLStream.ssub(System.Int32,System.Int32)">
+          <a class="xref" href="PLplot.PLStream.ssub.html#PLplot_PLStream_ssub_System_Int32_System_Int32_">ssub(Int32, Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plssub: Set the number of subpages in x and y</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_ssym_System_Double_System_Double_" data-uid="PLplot.PLStream.ssym(System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.ssym.html#PLplot_PLStream_ssym_System_Double_System_Double_">ssym(Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plssym: Set symbol size</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_star_System_Int32_System_Int32_" data-uid="PLplot.PLStream.star(System.Int32,System.Int32)">
+          <a class="xref" href="PLplot.PLStream.star.html#PLplot_PLStream_star_System_Int32_System_Int32_">star(Int32, Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plstar: Initialization</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_start_System_String_System_Int32_System_Int32_" data-uid="PLplot.PLStream.start(System.String,System.Int32,System.Int32)">
+          <a class="xref" href="PLplot.PLStream.start.html#PLplot_PLStream_start_System_String_System_Int32_System_Int32_">start(String, Int32, Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plstart: Initialization</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_stransform_PLplot_TransformFunc_" data-uid="PLplot.PLStream.stransform(PLplot.TransformFunc)">
+          <a class="xref" href="PLplot.PLStream.stransform.html#PLplot_PLStream_stransform_PLplot_TransformFunc_">stransform(TransformFunc)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plstransform: Set a global coordinate transform function</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_string2_System_Double___System_Double___System_String_" data-uid="PLplot.PLStream.string2(System.Double[],System.Double[],System.String)">
+          <a class="xref" href="PLplot.PLStream.string2.html#PLplot_PLStream_string2_System_Double___System_Double___System_String_">string2(Double[], Double[], String)</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_string3_System_Double___System_Double___System_Double___System_String_" data-uid="PLplot.PLStream.string3(System.Double[],System.Double[],System.Double[],System.String)">
+          <a class="xref" href="PLplot.PLStream.string3.html#PLplot_PLStream_string3_System_Double___System_Double___System_Double___System_String_">string3(Double[], Double[], Double[], String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plstring3: Plot a glyph at the specified 3D points</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_stripa_System_Int32_PLplot_Pen_System_Double_System_Double_" data-uid="PLplot.PLStream.stripa(System.Int32,PLplot.Pen,System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.stripa.html#PLplot_PLStream_stripa_System_Int32_PLplot_Pen_System_Double_System_Double_">stripa(Int32, Pen, Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plstripa: Add a point to a strip chart</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_stripc_System_Int32__System_String_System_String_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Boolean_System_Boolean_System_Int32_System_Int32_System_Int32___PLplot_LineStyle___System_String___System_String_System_String_System_String_" data-uid="PLplot.PLStream.stripc(System.Int32@,System.String,System.String,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Boolean,System.Boolean,System.Int32,System.Int32,System.Int32[],PLplot.LineStyle[],System.String[],System.String,System.String,System.String)">
+          <a class="xref" href="PLplot.PLStream.stripc.html#PLplot_PLStream_stripc_System_Int32__System_String_System_String_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Boolean_System_Boolean_System_Int32_System_Int32_System_Int32___PLplot_LineStyle___System_String___System_String_System_String_System_String_">stripc(out Int32, String, String, Double, Double, Double, Double, Double, Double, Double, Boolean, Boolean, Int32, Int32, Int32[], LineStyle[], String[], String, String, String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plstripc: Create a 4-pen strip chart</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_stripd_System_Int32_" data-uid="PLplot.PLStream.stripd(System.Int32)">
+          <a class="xref" href="PLplot.PLStream.stripd.html#PLplot_PLStream_stripd_System_Int32_">stripd(Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plstripd: Deletes and releases memory used by a strip chart</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_styl_System_Int32___System_Int32___" data-uid="PLplot.PLStream.styl(System.Int32[],System.Int32[])">
+          <a class="xref" href="PLplot.PLStream.styl.html#PLplot_PLStream_styl_System_Int32___System_Int32___">styl(Int32[], Int32[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plstyl: Set line style</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_surf3d_System_Double___System_Double___System_Double_0__0___PLplot_Surf_System_Double___" data-uid="PLplot.PLStream.surf3d(System.Double[],System.Double[],System.Double[0:,0:],PLplot.Surf,System.Double[])">
+          <a class="xref" href="PLplot.PLStream.surf3d.html#PLplot_PLStream_surf3d_System_Double___System_Double___System_Double_0__0___PLplot_Surf_System_Double___">surf3d(Double[], Double[], Double[,], Surf, Double[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsurf3d: Plot shaded 3-d surface plot</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_surf3dl_System_Double___System_Double___System_Double_0__0___PLplot_Surf_System_Double___System_Int32_System_Int32___System_Int32___" data-uid="PLplot.PLStream.surf3dl(System.Double[],System.Double[],System.Double[0:,0:],PLplot.Surf,System.Double[],System.Int32,System.Int32[],System.Int32[])">
+          <a class="xref" href="PLplot.PLStream.surf3dl.html#PLplot_PLStream_surf3dl_System_Double___System_Double___System_Double_0__0___PLplot_Surf_System_Double___System_Int32_System_Int32___System_Int32___">surf3dl(Double[], Double[], Double[,], Surf, Double[], Int32, Int32[], Int32[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsurf3dl: Plot shaded 3-d surface plot for z[x][y] with y index limits</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_svect_System_Double___System_Double___System_Boolean_" data-uid="PLplot.PLStream.svect(System.Double[],System.Double[],System.Boolean)">
+          <a class="xref" href="PLplot.PLStream.svect.html#PLplot_PLStream_svect_System_Double___System_Double___System_Boolean_">svect(Double[], Double[], Boolean)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsvect: Set arrow style for vector plots</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_svpa_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.PLStream.svpa(System.Double,System.Double,System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.svpa.html#PLplot_PLStream_svpa_System_Double_System_Double_System_Double_System_Double_">svpa(Double, Double, Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsvpa: Specify viewport in absolute coordinates</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sxax_System_Int32_System_Int32_" data-uid="PLplot.PLStream.sxax(System.Int32,System.Int32)">
+          <a class="xref" href="PLplot.PLStream.sxax.html#PLplot_PLStream_sxax_System_Int32_System_Int32_">sxax(Int32, Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsxax: Set x axis parameters</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sxwin_System_Int32_" data-uid="PLplot.PLStream.sxwin(System.Int32)">
+          <a class="xref" href="PLplot.PLStream.sxwin.html#PLplot_PLStream_sxwin_System_Int32_">sxwin(Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>Set inferior X window</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_syax_System_Int32_System_Int32_" data-uid="PLplot.PLStream.syax(System.Int32,System.Int32)">
+          <a class="xref" href="PLplot.PLStream.syax.html#PLplot_PLStream_syax_System_Int32_System_Int32_">syax(Int32, Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsyax: Set y axis parameters</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_sym_System_Double___System_Double___System_Char_" data-uid="PLplot.PLStream.sym(System.Double[],System.Double[],System.Char)">
+          <a class="xref" href="PLplot.PLStream.sym.html#PLplot_PLStream_sym_System_Double___System_Double___System_Char_">sym(Double[], Double[], Char)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plsym: Plot a glyph at the specified points</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_szax_System_Int32_System_Int32_" data-uid="PLplot.PLStream.szax(System.Int32,System.Int32)">
+          <a class="xref" href="PLplot.PLStream.szax.html#PLplot_PLStream_szax_System_Int32_System_Int32_">szax(Int32, Int32)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plszax: Set z axis parameters</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_text" data-uid="PLplot.PLStream.text">
+          <a class="xref" href="PLplot.PLStream.text.html#PLplot_PLStream_text">text()</a>
+        </td>
+        <td class="markdown level1 summary"><p>pltext: Switch to text screen</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_timefmt_System_String_" data-uid="PLplot.PLStream.timefmt(System.String)">
+          <a class="xref" href="PLplot.PLStream.timefmt.html#PLplot_PLStream_timefmt_System_String_">timefmt(String)</a>
+        </td>
+        <td class="markdown level1 summary"><p>pltimefmt: Set format for date / time labels</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_ToString" data-uid="PLplot.PLStream.ToString">
+          <a class="xref" href="PLplot.PLStream.ToString.html#PLplot_PLStream_ToString">ToString()</a>
+        </td>
+        <td class="markdown level1 summary"></td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_tr0" data-uid="PLplot.PLStream.tr0">
+          <a class="xref" href="PLplot.PLStream.tr0.html#PLplot_PLStream_tr0">tr0()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Make a identity transformation for matrix index to world coordinate mapping.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_tr1_System_Double___System_Double___" data-uid="PLplot.PLStream.tr1(System.Double[],System.Double[])">
+          <a class="xref" href="PLplot.PLStream.tr1.html#PLplot_PLStream_tr1_System_Double___System_Double___">tr1(Double[], Double[])</a>
+        </td>
+        <td class="markdown level1 summary"><p>Make a linear interpolation transformation for matrix index to world coordinate mapping using singly dimensioned coordinate arrays.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_tr2_System_Double_0__0___System_Double_0__0___" data-uid="PLplot.PLStream.tr2(System.Double[0:,0:],System.Double[0:,0:])">
+          <a class="xref" href="PLplot.PLStream.tr2.html#PLplot_PLStream_tr2_System_Double_0__0___System_Double_0__0___">tr2(Double[,], Double[,])</a>
+        </td>
+        <td class="markdown level1 summary"><p>Make a linear interpolation transformation for grid to world mapping using doubly dimensioned coordinate arrays.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_TranslateCursor_PLplot_GraphicsIn__" data-uid="PLplot.PLStream.TranslateCursor(PLplot.GraphicsIn@)">
+          <a class="xref" href="PLplot.PLStream.TranslateCursor.html#PLplot_PLStream_TranslateCursor_PLplot_GraphicsIn__">TranslateCursor(ref GraphicsIn)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plTranslateCursor: Convert device to world coordinates</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_vasp_System_Double_" data-uid="PLplot.PLStream.vasp(System.Double)">
+          <a class="xref" href="PLplot.PLStream.vasp.html#PLplot_PLStream_vasp_System_Double_">vasp(Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plvasp: Specify viewport using aspect ratio only</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_vect_System_Double_0__0___System_Double_0__0___System_Double_PLplot_TransformFunc_" data-uid="PLplot.PLStream.vect(System.Double[0:,0:],System.Double[0:,0:],System.Double,PLplot.TransformFunc)">
+          <a class="xref" href="PLplot.PLStream.vect.html#PLplot_PLStream_vect_System_Double_0__0___System_Double_0__0___System_Double_PLplot_TransformFunc_">vect(Double[,], Double[,], Double, TransformFunc)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plvect: Vector plot</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_vpas_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.PLStream.vpas(System.Double,System.Double,System.Double,System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.vpas.html#PLplot_PLStream_vpas_System_Double_System_Double_System_Double_System_Double_System_Double_">vpas(Double, Double, Double, Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plvpas: Specify viewport using coordinates and aspect ratio</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_vpor_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.PLStream.vpor(System.Double,System.Double,System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.vpor.html#PLplot_PLStream_vpor_System_Double_System_Double_System_Double_System_Double_">vpor(Double, Double, Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plvpor: Specify viewport using normalized subpage coordinates</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_vsta" data-uid="PLplot.PLStream.vsta">
+          <a class="xref" href="PLplot.PLStream.vsta.html#PLplot_PLStream_vsta">vsta()</a>
+        </td>
+        <td class="markdown level1 summary"><p>plvsta: Select standard viewport</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_w3d_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.PLStream.w3d(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.w3d.html#PLplot_PLStream_w3d_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_">w3d(Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plw3d: Configure the transformations required for projecting a 3D surface on a 2D window</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_width_System_Double_" data-uid="PLplot.PLStream.width(System.Double)">
+          <a class="xref" href="PLplot.PLStream.width.html#PLplot_PLStream_width_System_Double_">width(Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plwidth: Set pen width</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_wind_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.PLStream.wind(System.Double,System.Double,System.Double,System.Double)">
+          <a class="xref" href="PLplot.PLStream.wind.html#PLplot_PLStream_wind_System_Double_System_Double_System_Double_System_Double_">wind(Double, Double, Double, Double)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plwind: Specify window</p>
+</td>
+      </tr>
+      <tr>
+        <td id="PLplot_PLStream_xormod_System_Boolean_System_Boolean__" data-uid="PLplot.PLStream.xormod(System.Boolean,System.Boolean@)">
+          <a class="xref" href="PLplot.PLStream.xormod.html#PLplot_PLStream_xormod_System_Boolean_System_Boolean__">xormod(Boolean, out Boolean)</a>
+        </td>
+        <td class="markdown level1 summary"><p>plxormod: Enter or leave xor mode</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="PLplot_PLStream_System_IDisposable_Dispose" data-uid="PLplot.PLStream.System#IDisposable#Dispose">
+          <a class="xref" href="PLplot.PLStream.System-IDisposable-Dispose.html#PLplot_PLStream_System_IDisposable_Dispose">IDisposable.Dispose()</a>
+        </td>
+        <td class="markdown level1 summary"><p>Ends the PLplot stream.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream.md&amp;value=---%0Auid%3A%20PLplot.PLStream%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L21" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

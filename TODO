@@ -1,4 +1,0 @@
-TODO: 
-- Change marshalling of PLUTF8_STRING to UnmanagedType.LPUTF8String once this becomes available.
-- test if bools work as intended
-

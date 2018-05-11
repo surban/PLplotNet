@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PLplot for .NET | PLplot for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="PLplot for .NET | PLplot for .NET ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="plplot-for-net">PLplot for .NET</h1>
+
+<p><a href="https://ci.appveyor.com/project/surban/plplotnet"><img src="https://ci.appveyor.com/api/projects/status/byma2lmdgl54m3h9?svg=true" alt="Build status"></a></p>
+<p><a href="http://plplot.sourceforge.net/">PLplot</a> is a cross-platform software package for creating scientific plots whose (UTF-8) plot symbols and text are limited in practice only by what Unicode-aware system fonts are installed on a user's computer.
+The open-source PLplot software is primarily licensed under the <a href="http://www.gnu.org/licenses/lgpl.html">LGPL</a>.</p>
+<p>The PLplot core library can be used to create standard x-y plots, semi-log plots, log-log plots, contour plots, 3D surface plots, mesh plots, bar charts and pie charts. Multiple graphs (of the same or different sizes) may be placed on a single page, and multiple pages are allowed for those device formats that support them.</p>
+<p>The following output file formats are supported: PDF, PNG, JPEG, PostScript.</p>
+<p><a href="http://plplot.sourceforge.net/examples.php">Click here to see a full gallery of PLplot's abilities.</a></p>
+<p><img src="images/22_4.png" alt="Example plot"></p>
+<h2 id="net-standard-20-bindings">.NET Standard 2.0 bindings</h2>
+<p>This project provides a complete, but unofficial, .NET binding for PLplot.
+It allows you to use PLplot from C#, F#, Visual Basic or any other .NET language.
+We are targeting .NET Standard 2.0 and have tested the bindings on Linux and Windows.</p>
+<p>The simplest way of installing the package is to run the following command from inside your project directory.</p>
+<p><code>dotnet add package PLplot</code></p>
+<p>Alternatively you can download the NuGet package from <a href="https://www.nuget.org/packages/PLplot">https://www.nuget.org/packages/PLplot</a>.</p>
+<p>The native libraries (x64) for Windows are included, so you don't have to worry about them.
+The only requirement is the <a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads">Microsoft Visual C++ Redistributable 2017</a>.</p>
+<p>For Linux, PLplot must be preinstalled on your system, i.e. we are expecting to find <code>libplplot.so.15</code> in your <code>LD_LIBRARY_PATH</code>.
+Usually a recent package from your favorite distribution will work fine.</p>
+<h2 id="documentation">Documentation</h2>
+<p>Check out <a href="Examples.html">the introductory examples</a> to get started.</p>
+<p>The <a href="http://plplot.sourceforge.net/docbook-manual/plplot-html-5.13.0/">official PLplot manual</a> explains how to use the library in great detail.
+All principles described therein also apply to the .NET library.</p>
+<p>We also provide <a class="xref" href="api/PLplot.PLStream.html">mostly complete reference documentation</a>.</p>
+<h2 id="source-code">Source code</h2>
+<p>Source code is available at <a href="https://github.com/surban/PLplotNet">https://github.com/surban/PLplotNet</a>.
+Please use GitHub to report trouble with the library and send me your pull request.</p>
+<hr>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/PLplotNet/blob/master/Docs/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Method ptex
+   | PLplot for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Method ptex
+   | PLplot for .NET ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLplot.Native.ptex*">
+
+<h1 id="PLplot_Native_ptex_" data-uid="PLplot.Native.ptex*">Method ptex
+</h1>
+<div class="markdown level0 summary"></div>
+<div class="markdown level0 conceptual"></div>
+
+
+
+<a id="PLplot_Native_ptex_" data-uid="PLplot.Native.ptex*"></a>
+<h4 id="PLplot_Native_ptex_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_" data-uid="PLplot.Native.ptex(System.Double,System.Double,System.Double,System.Double,System.Double,System.String)">ptex(Double, Double, Double, Double, Double, String)</h4>
+<div class="markdown level1 summary"><p>plptex: Write text inside the viewport</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void ptex(double x, double y, double dx, double dy, double just, string text)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">x</span></td>
+      <td><p>x coordinate of reference point of string.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">y</span></td>
+      <td><p>y coordinate of reference point of string.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">dx</span></td>
+      <td><p>Together with dy, this specifies the inclination of the string. The baseline of the string is parallel to a line joining  (x, y)  to  (x+dx, y+dy) .</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">dy</span></td>
+      <td><p>Together with dx, this specifies the inclination of the string.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">just</span></td>
+      <td><p>Specifies the position of the string relative to its reference point. If just=0. , the reference point is at the left and if just=1. , it is at the right of the string. Other values of just give intermediate justifications.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.String</span></td>
+      <td><span class="parametername">text</span></td>
+      <td><p>A UTF-8 character string to be written out.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 id="PLplot_Native_ptex_System_Double_System_Double_System_Double_System_Double_System_Double_System_String__remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p>Writes text at a specified position and inclination within the viewport. Text is clipped at the viewport boundaries. The reference point of a string lies along a line passing through the string at half the height of a capital letter. The position of the reference point along this line is determined by just, the reference point is placed at world coordinates  (x, y)  within the viewport. The inclination of the string is specified in terms of differences of world coordinates making it easy to write text parallel to a line in a graph.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

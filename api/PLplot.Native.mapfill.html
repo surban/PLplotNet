@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Method mapfill
+   | PLplot for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Method mapfill
+   | PLplot for .NET ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLplot.Native.mapfill*">
+
+<h1 id="PLplot_Native_mapfill_" data-uid="PLplot.Native.mapfill*">Method mapfill
+</h1>
+<div class="markdown level0 summary"></div>
+<div class="markdown level0 conceptual"></div>
+
+<span class="small pull-right mobile-hide">
+  <span class="divider">|</span>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_Native_mapfill_PLplot_MapFunc_System_String_System_Double_System_Double_System_Double_System_Double_System_Int32___.md&amp;value=---%0Auid%3A%20PLplot.Native.mapfill(PLplot.MapFunc%2CSystem.String%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+</span>
+<span class="small pull-right mobile-hide">
+  <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/NativeGenerated.cs/#L1002">View Source</a>
+</span>
+<a id="PLplot_Native_mapfill_" data-uid="PLplot.Native.mapfill*"></a>
+<h4 id="PLplot_Native_mapfill_PLplot_MapFunc_System_String_System_Double_System_Double_System_Double_System_Double_System_Int32___" data-uid="PLplot.Native.mapfill(PLplot.MapFunc,System.String,System.Double,System.Double,System.Double,System.Double,System.Int32[])">mapfill(MapFunc, String, Double, Double, Double, Double, Int32[])</h4>
+<div class="markdown level1 summary"><p>plmapfill: Plot all or a subset of Shapefile data, filling the polygons</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void mapfill(MapFunc mapform, string name, double minx, double maxx, double miny, double maxy, int[] plotentries)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="PLplot.MapFunc.html">MapFunc</a></td>
+      <td><span class="parametername">mapform</span></td>
+      <td><p>A user supplied function to transform the coordinates given in the shapefile into a plot coordinate system. By using this transform, we can change from a longitude, latitude coordinate to a polar stereographic project, for example. Initially, x[0]..[n-1] are the longitudes and y[0]..y[n-1] are the corresponding latitudes. After the call to mapform(), x[] and y[] should be replaced by the corresponding plot coordinates. If no transform is desired, mapform can be replaced by NULL.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.String</span></td>
+      <td><span class="parametername">name</span></td>
+      <td><p>An ascii character string specifying the file name of a set of Shapefile files without the file extension.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">minx</span></td>
+      <td><p>The minimum x value to be plotted. This must be in the same units as used by the Shapefile. You could use a very large negative number to plot everything, but you can improve performance by limiting the area drawn. The units must match those of the Shapefile projection, which may be for example longitude or distance. The value of minx must be less than the value of maxx.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">maxx</span></td>
+      <td><p>The maximum x value to be plotted. You could use a very large number to plot everything, but you can improve performance by limiting the area drawn.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">miny</span></td>
+      <td><p>The minimum y value to be plotted. This must be in the same units as used by the Shapefile. You could use a very large negative number to plot everything, but you can improve performance by limiting the area drawn. The units must match those of the Shapefile projection, which may be for example latitude or distance. The value of miny must be less than the value of maxy.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">maxy</span></td>
+      <td><p>The maximum y value to be plotted. You could use a very large number to plot everything, but you can improve performance by limiting the area drawn.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Int32</span>[]</td>
+      <td><span class="parametername">plotentries</span></td>
+      <td><p>A vector containing the zero-based indices of the Shapefile elements which will be drawn. Setting plotentries to NULL will plot all elements of the Shapefile.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 id="PLplot_Native_mapfill_PLplot_MapFunc_System_String_System_Double_System_Double_System_Double_System_Double_System_Int32____remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p>As per plmapline, however the items are filled in the same way as plfill.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_Native_mapfill_.md&amp;value=---%0Auid%3A%20PLplot.Native.mapfill*%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/NativeGenerated.cs/#L1002" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

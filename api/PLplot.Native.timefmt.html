@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Method timefmt
+   | PLplot for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Method timefmt
+   | PLplot for .NET ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLplot.Native.timefmt*">
+
+<h1 id="PLplot_Native_timefmt_" data-uid="PLplot.Native.timefmt*">Method timefmt
+</h1>
+<div class="markdown level0 summary"></div>
+<div class="markdown level0 conceptual"></div>
+
+
+
+<a id="PLplot_Native_timefmt_" data-uid="PLplot.Native.timefmt*"></a>
+<h4 id="PLplot_Native_timefmt_System_String_" data-uid="PLplot.Native.timefmt(System.String)">timefmt(String)</h4>
+<div class="markdown level1 summary"><p>pltimefmt: Set format for date / time labels</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void timefmt(string fmt)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.String</span></td>
+      <td><span class="parametername">fmt</span></td>
+      <td><p>An ascii character string which is interpreted similarly to the format specifier of typical system strftime routines except that PLplot ignores locale and also supplies some useful extensions in the context of plotting. All text in the string is printed as-is other than conversion specifications which take the form of a '%' character followed by further conversion specification character. The conversion specifications which are similar to those provided by system strftime routines are the following: %a: The abbreviated (English) weekday name. %A: The full (English) weekday name. %b: The abbreviated (English) month name. %B: The full (English) month name. %c: Equivalent to %a %b %d %T %Y (non-ISO). %C: The century number (year/100) as a 2-digit integer. %d: The day of the month as a decimal number (range 01 to 31). %D: Equivalent to %m/%d/%y (non-ISO). %e: Like %d, but a leading zero is replaced by a space. %F: Equivalent to %Y-%m-%d (the ISO 8601 date format). %h: Equivalent to %b. %H: The hour as a decimal number using a 24-hour clock (range 00 to 23). %I: The hour as a decimal number using a 12-hour clock (range 01 to 12). %j: The day of the year as a decimal number (range 001 to 366). %k: The hour (24-hour clock) as a decimal number (range 0 to 23); single digits are preceded by a blank. (See also %H.) %l: The hour (12-hour clock) as a decimal number (range 1 to 12); single digits are preceded by a blank. (See also %I.) %m: The month as a decimal number (range 01 to 12). %M: The minute as a decimal number (range 00 to 59). %n: A newline character. %p: Either &quot;AM&quot; or &quot;PM&quot; according to the given time value. Noon is treated as &quot;PM&quot; and midnight as &quot;AM&quot;. %r: Equivalent to %I:%M:%S %p. %R: The time in 24-hour notation (%H:%M). For a version including the seconds, see %T below. %s: The number of seconds since the Epoch, 1970-01-01 00:00:00 +0000 (UTC). %S: The second as a decimal number (range 00 to 60). (The range is up to 60 to allow for occasional leap seconds.) %t: A tab character. %T: The time in 24-hour notation (%H:%M:%S). %u: The day of the week as a decimal, range 1 to 7, Monday being 1. See also %w. %U: The week number of the current year as a decimal number, range 00 to 53, starting with the first Sunday as the first day of week 01. See also %V and %W. %v: Equivalent to %e-%b-%Y. %V: The ISO 8601 week number of the current year as a decimal number, range 01 to 53, where week 1 is the first week that has at least 4 days in the new year. See also %U and %W. %w: The day of the week as a decimal, range 0 to 6, Sunday being 0. See also %u. %W: The week number of the current year as a decimal number, range 00 to 53, starting with the first Monday as the first day of week 01. %x: Equivalent to %a %b %d %Y. %X: Equivalent to %T. %y: The year as a decimal number without a century (range 00 to 99). %Y: The year as a decimal number including a century. %z: The UTC time-zone string = &quot;+0000&quot;. %Z: The UTC time-zone abbreviation = &quot;UTC&quot;. %+: The UTC date and time in default format of the Unix date command which is equivalent to %a %b %d %T %Z %Y. %%: A literal &quot;%&quot; character.  The conversion specifications which are extensions to those normally provided by system strftime routines are the following: %(0-9): The fractional part of the seconds field (including leading decimal point) to the specified accuracy. Thus %S%3 would give seconds to millisecond accuracy (00.000). %.: The fractional part of the seconds field (including leading decimal point) to the maximum available accuracy. Thus %S%. would give seconds with fractional part up to 9 decimal places if available.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 id="PLplot_Native_timefmt_System_String__remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p>Sets the format for date / time labels. To enable date / time format labels see the options to plbox, plbox3, and plenv.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

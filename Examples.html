@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>PLplot examples | PLplot for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="PLplot examples | PLplot for .NET ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="plplot-examples">PLplot examples</h1>
+
+<h2 id="simple-line-plot">Simple line plot</h2>
+<p>The following code demonstrates how to create a simple line plot from F#.
+All PLplot operations are invoked through an instance of a <a class="xref" href="api/PLplot.PLStream.html">PLStream object</a>.</p>
+<pre><code class="lang-fsharp">open System
+open PLplot
+
+[&lt;EntryPoint&gt;]
+let main argv =
+    // create PLplot stream
+    use pl = new PLStream()
+
+    // generate data
+    let nsize = 101
+    let xmin, xmax, ymin, ymax = 0., 1., 0., 100.
+    let x, y =
+        Array.init nsize (fun i -&gt;
+            let x = float i / float (nsize - 1)
+            let y = ymax * x * x
+            x, y)
+        |&gt; Array.unzip
+
+    // Parse and process command line arguments.
+    // This grabs PLplot-specific arguments, such as output device, from the
+    // command line.
+    let mutable argv = argv
+    pl.parseopts( &amp;argv, ParseOpts.Full ||| ParseOpts.NoProgram ) |&gt; ignore
+
+    // Initialize plplot
+    pl.init()
+
+    // Create a labelled box to hold the plot.
+    pl.env( xmin, xmax, ymin, ymax, AxesScale.Independent, AxisBox.BoxTicksLabelsAxes )
+    pl.lab( &quot;x&quot;, &quot;y=100 x#u2#d&quot;, &quot;Simple PLplot demo of a 2D line plot&quot; )
+
+    // Plot the data that was prepared above.
+    pl.line( x, y )
+
+    // PLplot is automatically closed when pl is disposed.
+    0
+</code></pre>
+<p>The project must reference the PLplot package.
+This can be done by executing the following command inside the project directory.</p>
+<p><code>dotnet add package PLplot</code></p>
+<p>When run, the above program produces the following output.</p>
+<p><img src="images/00.png" alt="Example plot"></p>
+<p>Don't worry, the colors can be customized easily using the <a class="xref" href="api/PLplot.PLStream.spal0.html">spal0 function</a>.
+Read the <a href="http://plplot.sourceforge.net/docbook-manual/plplot-html-5.13.0/color.html">official guide</a> for more information.</p>
+<h2 id="more-examples">More examples</h2>
+<p>Further examples are located in the project repository at <a href="https://github.com/surban/PLplotNet/tree/master/Samples">https://github.com/surban/PLplotNet/tree/master/Samples</a>.</p>
+<p>The <a href="http://plplot.sourceforge.net/examples.php">native PLplot example gallery</a> demonstrates all possible plot types the library has to offer.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/PLplotNet/blob/master/Docs/Examples.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

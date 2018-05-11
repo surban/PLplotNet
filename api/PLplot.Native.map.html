@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Method map
+   | PLplot for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Method map
+   | PLplot for .NET ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLplot.Native.map*">
+
+<h1 id="PLplot_Native_map_" data-uid="PLplot.Native.map*">Method map
+</h1>
+<div class="markdown level0 summary"></div>
+<div class="markdown level0 conceptual"></div>
+
+
+
+<a id="PLplot_Native_map_" data-uid="PLplot.Native.map*"></a>
+<h4 id="PLplot_Native_map_PLplot_MapFunc_System_String_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.Native.map(PLplot.MapFunc,System.String,System.Double,System.Double,System.Double,System.Double)">map(MapFunc, String, Double, Double, Double, Double)</h4>
+<div class="markdown level1 summary"><p>plmap: Plot continental outline or shapefile data in world coordinates</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void map(MapFunc mapform, string name, double minx, double maxx, double miny, double maxy)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a class="xref" href="PLplot.MapFunc.html">MapFunc</a></td>
+      <td><span class="parametername">mapform</span></td>
+      <td><p>A user supplied function to transform the original map data coordinates to a new coordinate system. The PLplot-supplied map data is provided as latitudes and longitudes; other Shapefile data may be provided in other coordinate systems as can be found in their .prj plain text files. For example, by using this transform we can change from a longitude, latitude coordinate to a polar stereographic projection. Initially, x[0]..[n-1] are the original x coordinates (longitudes for the PLplot-supplied data) and y[0]..y[n-1] are the corresponding y coordinates (latitudes for the PLplot supplied data). After the call to mapform(), x[] and y[] should be replaced by the corresponding plot coordinates. If no transform is desired, mapform can be replaced by NULL.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.String</span></td>
+      <td><span class="parametername">name</span></td>
+      <td><p>An ascii character string specifying the type of map plotted. This is either one of the PLplot built-in maps or the file name of a set of Shapefile files without the file extensions. For the PLplot built-in maps the possible values are: &quot;globe&quot; -- continental outlines &quot;usa&quot; -- USA and state boundaries &quot;cglobe&quot; -- continental outlines and countries &quot;usaglobe&quot; -- USA, state boundaries and continental outlines</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">minx</span></td>
+      <td><p>The minimum x value of map elements to be drawn. For the built in maps this is a measure of longitude. For Shapefiles the units must match the projection. The value of minx must be less than the value of maxx. Specifying a useful limit for these limits provides a useful optimization for complex or detailed maps.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">maxx</span></td>
+      <td><p>The maximum x value of map elements to be drawn</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">miny</span></td>
+      <td><p>The minimum y value of map elements to be drawn. For the built in maps this is a measure of latitude. For Shapefiles the units must match the projection. The value of miny must be less than the value of maxy.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">maxy</span></td>
+      <td><p>The maximum y value of map elements to be drawn.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 id="PLplot_Native_map_PLplot_MapFunc_System_String_System_Double_System_Double_System_Double_System_Double__remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p>Plots continental outlines or shapefile data in world coordinates. A demonstration of how to use this function to create different projections can be found in examples/c/x19c. PLplot is provided with basic coastal outlines and USA state borders. These can be used irrespective of whether Shapefile support is built into PLplot. With Shapefile support this function can also be used with user Shapefiles, in which case it will plot the entire contents of a Shapefile joining each point of each Shapefile element with a line. Shapefiles have become a popular standard for geographical data and data in this format can be easily found from a number of online sources. Shapefile data is actually provided as three or more files with the same filename, but different extensions. The .shp and .shx files are required for plotting Shapefile data with PLplot.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

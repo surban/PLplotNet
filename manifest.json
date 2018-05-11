@@ -1,0 +1,6393 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/projects/plplotnet/Docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "Examples.md",
+      "output": {
+        ".html": {
+          "relative_path": "Examples.html",
+          "hash": "auWbG+scNz2Enw8NL/pJZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ReleaseNotes.md",
+      "output": {
+        ".html": {
+          "relative_path": "ReleaseNotes.html",
+          "hash": "tZCZm1mojrY/XZXtyed+BQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.AbortHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.AbortHandler.html",
+          "hash": "fq8x/NOvgzRwx3pq0PUkbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.AxesScale.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.AxesScale.html",
+          "hash": "OVPOhtERVbV33YnY9nLt3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Axis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Axis.html",
+          "hash": "hGbdWnp5Qnqeojd3MRi5OA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.AxisBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.AxisBox.html",
+          "hash": "niMbgtUMOfx3BLxcgSrkdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Bin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Bin.html",
+          "hash": "+/Rl16Rz5yOvc6brjPTohg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.BopHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.BopHandler.html",
+          "hash": "nmf84nrA8I0qBaZs9XOdpQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ButtonHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ButtonHandler.html",
+          "hash": "2weebo7lTiZgXc0ByhMYSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Color.Black.html",
+          "hash": "DJ0Fk/KQFBOxsDImq0djWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Color.Red.html",
+          "hash": "7R7t5WxqXe9mVyK9/J936Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Color.Yellow.html",
+          "hash": "Nbt2sx8y+amErBSCqXxeyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Color.Green.html",
+          "hash": "JITc3LSMd7m7Erz0rx+P7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Color.Aquamarine.html",
+          "hash": "L8DPZYzZeJLW3TvUCEWK2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Color.Pink.html",
+          "hash": "tmwkCKPACbOCdhFXiQBv4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Color.Wheat.html",
+          "hash": "Fy39/LOgq+fwJozkLQUjzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Color.Grey.html",
+          "hash": "x/cOrEBDApbPiyxYcEZ5XQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Color.Brown.html",
+          "hash": "5qOa1cTgAfvH2yIoAldELw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Color.Blue.html",
+          "hash": "0DuENVYEgOORKLTfFCoIkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Color.BlueViolet.html",
+          "hash": "togaYcZI0YmTl+4b+T5hcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Color.Cyan.html",
+          "hash": "jZNB8tS9CVP9JggkBf9nmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Color.Turquoise.html",
+          "hash": "JqGir8G5NtTTJMmDL8raiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Color.Magenta.html",
+          "hash": "hIFF460t23lU8Kq9shonjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Color.Salmon.html",
+          "hash": "y/JchBALWq0dViosw1RgJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Color.White.html",
+          "hash": "/Hv6ZhHVs86h9r9t3Czisw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Color.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Color.html",
+          "hash": "QiDCUq4ZlkrwPKyLVakd/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ColorSpace.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ColorSpace.html",
+          "hash": "c/+t2ClJVwvazgEJThy/cA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Colorbar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Colorbar.html",
+          "hash": "OKfYAt/KVLmKNpJiprNfyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ColorbarLabel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ColorbarLabel.html",
+          "hash": "O0qdvcuZ9Pt97JlK6SK8Tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.DefinedFunc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.DefinedFunc.html",
+          "hash": "3ePjvyIqiwapgv5HS1VZjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.DrawMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.DrawMode.html",
+          "hash": "YqjBm3jFa6hzcZC+EBwqCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.EopHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.EopHandler.html",
+          "hash": "fXnews0AMC+l2dvqSlFbgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ExitHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ExitHandler.html",
+          "hash": "0rzan1PF13D7pFbbkykymg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.FCI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.FCI.html",
+          "hash": "F1+JCM7qJxirtB0VNxnIog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.FillFunc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.FillFunc.html",
+          "hash": "zEWdrQwHFLgDGCtbbFVSGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.FontFamily.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.FontFamily.html",
+          "hash": "cQY8dXROP7WRJOEr5SVMTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.FontFlag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.FontFlag.html",
+          "hash": "T74XsVsob3SUiR12Frix5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.FontStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.FontStyle.html",
+          "hash": "ieDZm1+fBOu5A1eY9SJR2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.FontWeight.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.FontWeight.html",
+          "hash": "vfeKFY0cQDyuJ1O8pypI6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.GraphicsIn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.GraphicsIn.html",
+          "hash": "eGixa94y4MAudosZRfV+jA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Grid.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Grid.html",
+          "hash": "kKS035+qqJD5Kad0Fbbnig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Hist.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Hist.html",
+          "hash": "owbL3BTnPgIFhZF+6k9pjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.KeyButtonMask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.KeyButtonMask.html",
+          "hash": "Cf+ppzdTcvCkqkE4UoPlNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.KeyHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.KeyHandler.html",
+          "hash": "cAcKut+zimdRWO3QNsz2Lg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.LabelFunc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.LabelFunc.html",
+          "hash": "Zq95JykNAGIQWWsWa9Ia+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Legend.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Legend.html",
+          "hash": "dbuG4kyCJ2k7yDIRIPI9cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.LegendEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.LegendEntry.html",
+          "hash": "2Ke+835822LUB3sf+jyaFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.LineStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.LineStyle.html",
+          "hash": "YYXsGMpkCOS72pLW4u2x2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.LocateHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.LocateHandler.html",
+          "hash": "vX6lTB4n/mIvfD4+bNkzDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.MapFunc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.MapFunc.html",
+          "hash": "rSfMYtBq5g/CO2Cu9V7eNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Mesh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Mesh.html",
+          "hash": "EyF8VX/E3f1tMjXSLcXcPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.MeshContour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.MeshContour.html",
+          "hash": "EOhPMx3JYfsVExOJCGreCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.tr0.html",
+          "hash": "dp3kPOfVzNBMzZq6ZksheQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.tr1.html",
+          "hash": "Jz5Uc9+IAfzAliPp7I6yCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.tr2.html",
+          "hash": "KXY65qRBqbfNVBoUFjxm5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.setopt.html",
+          "hash": "HxeDbqeF83XzGrJGOiEwjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.parseopts.html",
+          "hash": "nTQzKyrAGJqJD4vy6dzCXg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.OptUsage.html",
+          "hash": "c7pDbVspu6Qe0fqzboXlAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gesc.html",
+          "hash": "DbtiDelZmUDzma6Q0c/sNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.cmd.html",
+          "hash": "wBwju7Ex485yLK/1tLegog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.GetCursor.html",
+          "hash": "qJkddjw4n7x+SKVCfr6mwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.TranslateCursor.html",
+          "hash": "4cZmLdWatofYWQYb8wQ63Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sdevdata.html",
+          "hash": "N74ij8y7bX+k/jbDaNpIfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.ssub.html",
+          "hash": "h4UFrvZtVRGuncg0MWGy7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.ssym.html",
+          "hash": "3kyAHl1FBKkrodKFie984A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.star.html",
+          "hash": "zP0PRn0L6QgmTmFN10Zatw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.start.html",
+          "hash": "gRw8kqDYIZpoiB9hUN8CmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.stransform.html",
+          "hash": "ZReW617w5omvW/UXwcerig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.string2.html",
+          "hash": "3rt0ReoPxp7UTxWObSXlBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.string3.html",
+          "hash": "mLWtG36GRbLnCOgyX3TK6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.stripa.html",
+          "hash": "adfuE8E5pCq3DrfRIFvhpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.stripc.html",
+          "hash": "uXNK9yMRzIQqLhhrGZkOtw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.stripd.html",
+          "hash": "se2MgQD6mXD7EQ2jmaTjWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.imagefr.html",
+          "hash": "9gX8mS7Jo6gJtqJe1ql21g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.image.html",
+          "hash": "LV+y5CtQq3vM2xLvPYxHYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.styl.html",
+          "hash": "qpVLPP8DuV948FEsYGoaGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.surf3d.html",
+          "hash": "1LUuw/fPaNw9YymaL9yv5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.surf3dl.html",
+          "hash": "vUx0y4fercPE5P1j3VoJKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.svect.html",
+          "hash": "Jjnw2asV6HX2G+ftEsOAiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.xormod.html",
+          "hash": "6hDWkv7bp7KtP8wsy/CHww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gFileDevs.html",
+          "hash": "QKQm3L7mfxbHk4IxG0iTKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gDevs.html",
+          "hash": "6UP8JdRxTfyL4+1MTNUxyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sKeyEH.html",
+          "hash": "FXuJTCZWi+c7+qH62bHGoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sButtonEH.html",
+          "hash": "wyGHcH3ckj5ZdN/1UZAYLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sbopH.html",
+          "hash": "7SiaqKLUBg2IIyZhKMYIug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.seopH.html",
+          "hash": "tG0JiUtJjqn7koFlP2BItw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sexit.html",
+          "hash": "O9PS5eUp1N3AlEiKJC+4GQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sabort.html",
+          "hash": "D5sBO7s9EN1ekV65KrziMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.html",
+          "hash": "l4PC2vKkhoOC3h59MdoVyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.setcontlabelformat.html",
+          "hash": "bRnLizhKShKRzy8g+xdaMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.setcontlabelparam.html",
+          "hash": "6RRfDyYj1+OfrGxLucmavA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.adv.html",
+          "hash": "JipCKgTvD3K4co0SFYcGfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.arc.html",
+          "hash": "IXyBE6POm4dBefeHaDoplg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.axes.html",
+          "hash": "ovz27JuynaTrv0i/aLY/hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.bin.html",
+          "hash": "97L5NuW2NKXrGb51oBZtnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.btime.html",
+          "hash": "jDrAFIHGmA5xsZMb1F2BZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.bop.html",
+          "hash": "YuFhEEJ6pqCIQrkUAZ6kbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.box.html",
+          "hash": "2q6x2RP4C13yBxmTJhNZbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.box3.html",
+          "hash": "RD6WmEzOEbgQnHJSFjuq4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.calc_world.html",
+          "hash": "nO+9sM3olU/FPkmEFR31BA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.clear.html",
+          "hash": "lZBF/mHiRVFNJzWwmq1d3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.col0.html",
+          "hash": "Zd1nhKndfVJP24BUH1191g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.col1.html",
+          "hash": "0+N1yLt2SJkdCwF4807Ymg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.configtime.html",
+          "hash": "Dl9gSegZiJG8lr8uud6eUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.cont.html",
+          "hash": "5MZLG94qGkRKd5cLD/EQ/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.cpstrm.html",
+          "hash": "HK9ZE3E7uDjUx+I8urYtzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.ctime.html",
+          "hash": "/7VBkO/9hd9Ap07usBaDLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.did2pc.html",
+          "hash": "EcW/u6KITEsitrBS/BHZzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.dip2dc.html",
+          "hash": "CER+t3mEtfmGOx38lO/Xtw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.end.html",
+          "hash": "Zo0LLG4es/ahTaRZHmWLYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.end1.html",
+          "hash": "zYQpzhCZcph7dMOxTqj6CQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.env.html",
+          "hash": "emcChtqCkJz60y2Ii+vEcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.env0.html",
+          "hash": "ntx/8swer6LgLPLvl+7oTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.eop.html",
+          "hash": "zBxYw6TF2PvxFPii0yijHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.errx.html",
+          "hash": "wFNweA1JeUKBMRQyvvTNnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.erry.html",
+          "hash": "dartVGARkTLUgc32qX3wVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.famadv.html",
+          "hash": "b/EO33IBrfunSaWkcQng7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.fill.html",
+          "hash": "8MAgi39a341r2YXoM73HSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.fill3.html",
+          "hash": "h2F7sYhG1Pca1y6vm08aOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.flush.html",
+          "hash": "DDrIyD7vfxN4e5nGjumJvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.font.html",
+          "hash": "AUHg91+qiyUsfEnPrsTnjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.fontld.html",
+          "hash": "Xmc3uiO4psbtAMVqQ2qskg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gchr.html",
+          "hash": "00n03UeaQ4kcsoU719UCvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gcol0.html",
+          "hash": "li5at30v1Tl41Oxann7FfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gcol0a.html",
+          "hash": "58Gh6P+hjNMkSfwxtt11cQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gcolbg.html",
+          "hash": "tFgBjld9NF2QMENU/eJd5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gcolbga.html",
+          "hash": "G4RRXHtwBLgUMIhrgw0fzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gcompression.html",
+          "hash": "um3c320Jx1/4N4MzxL7deA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gdev.html",
+          "hash": "NgwsC+K4G6LpK8KiqE42eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gdidev.html",
+          "hash": "kdWXSlRjrql/JG/VrXkCyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gdiori.html",
+          "hash": "nFud1UxsFvkvhOj3VJE3Sg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gdiplt.html",
+          "hash": "EONKJDuOFR5kopb6UgKTlg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gdrawmode.html",
+          "hash": "n3diZSm9tiIg7C453j0UIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gfci.html",
+          "hash": "O0t6FXQn+MuG4eJrw6nnEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gfam.html",
+          "hash": "qwt41MkBVbO408nPgqLUcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gfnam.html",
+          "hash": "XHZfN0j3Gfc2wuTWU4maLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gfont.html",
+          "hash": "UPuSf3F9YFe3yn7zvMrAfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.glevel.html",
+          "hash": "E1tUNi2bVEauv7CWOMnQxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gpage.html",
+          "hash": "WWSLr++QLxPNq0r41s0RkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gra.html",
+          "hash": "GnO7nGNyIYhG/JZPnb9DGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gradient.html",
+          "hash": "EY7M0oI8wNIo+TFgK3r1lQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.griddata.html",
+          "hash": "hWJerqX8Oo2GEPt0k5OUTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gspa.html",
+          "hash": "+9nZZbJGqhk5KJMKk5Q2PQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gstrm.html",
+          "hash": "wTSMRqG9C1M2Pd0KOXRxYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gver.html",
+          "hash": "Tti+gy3armc2LRqkGYPPzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gvpd.html",
+          "hash": "6aE5wyDvA7BC6IW+o4wEQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gvpw.html",
+          "hash": "gBT5+IXsEL1uqalCuWZpYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gxax.html",
+          "hash": "88neU6DVVL72DbcHqEPA1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gyax.html",
+          "hash": "4qH3QgRGyP+mroP9/V404A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gzax.html",
+          "hash": "aRpaCBUQbRZT8i8JXE6x3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.hist.html",
+          "hash": "ZUuHVQWfvRStutV/mvwq7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.hlsrgb.html",
+          "hash": "OBL4457AenP6K2f5Y6x5fQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.init.html",
+          "hash": "/sk0k1PJfwSXU4e4+LoTLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.join.html",
+          "hash": "TI256GBKZcmyFdeKSK+G/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.lab.html",
+          "hash": "MPzY7BEcTvvOPTKkm4QnLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.legend.html",
+          "hash": "LrvFQc0udLmpMENMOFv5YQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.colorbar.html",
+          "hash": "2SJyiRQzik/x7RTuFKfhlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.lightsource.html",
+          "hash": "1VgZ95JYte39TsRQRWMImA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.line.html",
+          "hash": "Som26vai3N7k0OyO1N2QSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.line3.html",
+          "hash": "YDt9ArdcnlD3VFz6rIiDog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.lsty.html",
+          "hash": "N88R6wHxVrhHv0WD/AUt0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.map.html",
+          "hash": "OU00j/bo6uJveWwXYIYKrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.mapline.html",
+          "hash": "AXVziLOHYfxi+pOnCWNhmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.mapstring.html",
+          "hash": "4Kx29Wp5HslLq0kfHUAM0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.maptex.html",
+          "hash": "uMcCl1/PjeNF0QMcNSkbXg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.mapfill.html",
+          "hash": "xGUT9vTvuYwZpDgs1ad0yQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.meridians.html",
+          "hash": "VOo59aryIbvjE+6OliRmjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.mesh.html",
+          "hash": "aXbv+ORoltl3N5wrx6VDiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.meshc.html",
+          "hash": "HDjge6NP+6mdUUhEawQVHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.mkstrm.html",
+          "hash": "Mt0cQO84BZIswwE9f+Grxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.mtex.html",
+          "hash": "D4wMsVPaP55q/j6cAcKQPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.mtex3.html",
+          "hash": "x8XdhWPGyQOCinrbtHjMfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.plot3d.html",
+          "hash": "XDa2ismKL7EreF1f3zuCww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.plot3dc.html",
+          "hash": "6EOvHuJyYGhEFdANdDYKHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.plot3dcl.html",
+          "hash": "tQ+4/Y0QopmjbC6RxXo72g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.pat.html",
+          "hash": "/JLLKyw93UJT6KWkIckpmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.path.html",
+          "hash": "MOJGjRWoZ2HDWh9Q1RnqNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.poin.html",
+          "hash": "aBDC/EvMWlWON//f61iWgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.poin3.html",
+          "hash": "1+0/anqPIAuU9Gutd7fnQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.poly3.html",
+          "hash": "Hfyhf7aQyccNKpqVMNk1ew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.prec.html",
+          "hash": "nVIhvQBCpBL5Sg8i5ma6SA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.psty.html",
+          "hash": "hy3TFgEl5cE+Oc8fi4i0ig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.ptex.html",
+          "hash": "Z1K/nem17TWe4GORnJdRqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.ptex3.html",
+          "hash": "T0kaoZQpjCYe1smf8LhMlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.randd.html",
+          "hash": "Excbau+DiNBVvFAEZS4mTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.replot.html",
+          "hash": "wTeOmNcPT5rm3zw943WNow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.rgbhls.html",
+          "hash": "rUrit2eHPfj6ITbwqb0Yew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.schr.html",
+          "hash": "GuMp58eID1RhygetCRN7VQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.scmap0.html",
+          "hash": "pC4zmAwyU71hHmJ+XUTBKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.scmap0a.html",
+          "hash": "W6+pk0XFeNZSF23xUdMstw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.scmap0n.html",
+          "hash": "ACpGCnM5VoPJMDVBlA4uRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.scmap1.html",
+          "hash": "QPPuwIVrMcxsItJ5G5e6rA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.scmap1a.html",
+          "hash": "JbYAocSYtAEFPJBOYMAGeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.scmap1l.html",
+          "hash": "3WhanfoltFk0qCJhlwJu9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.scmap1la.html",
+          "hash": "Wa2vChGI4Ro2pw7gqYdS1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.scmap1n.html",
+          "hash": "frbb7KUjeKzD6Gf7Mp0EKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.scmap1_range.html",
+          "hash": "nL2jopwhgnzEaYgZwFAopQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.gcmap1_range.html",
+          "hash": "XzbDy7315uOXRMsWhficUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.scol0.html",
+          "hash": "LTM79UGQl85YPZDpSwtdQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.scol0a.html",
+          "hash": "EVngA32viHoBGknyG+C+6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.scolbg.html",
+          "hash": "yzOcAaa/T88YpKC8Lmd/jQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.scolbga.html",
+          "hash": "velKQSdQxQwsiV4X+4207Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.scolor.html",
+          "hash": "e8IiAMXv99VwSqB8MjBxzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.scompression.html",
+          "hash": "gdX85xZJhlkPiMkQnLozAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sdev.html",
+          "hash": "UVSGtlAO3dLW/QmSs8pfuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sdidev.html",
+          "hash": "M2O+a+kSNrl9EV5Z4sxwCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sdimap.html",
+          "hash": "fqJl+gPy4R5kAuw8wDtKlg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sdiori.html",
+          "hash": "49U1z69mtZPBpR0ljKVIVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sdiplt.html",
+          "hash": "1hcXoE4g5ic29/5ekfyWPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sdiplz.html",
+          "hash": "x+e70c2XUEEiNcbqOnPmxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.seed.html",
+          "hash": "yav5iQ4z3/UhsKhwtPATXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sesc.html",
+          "hash": "zck5kyt2iqi2OfsTpOk6eA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sfam.html",
+          "hash": "f9iLVMn6Lxh+1U04cdQH7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sfci.html",
+          "hash": "AgwSyJzEpoxc9NLgVubdYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sfnam.html",
+          "hash": "x03gYA3cenv1t6rqIDAQKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sfont.html",
+          "hash": "wKh9CEsC5FS1sotFdWqxAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.shade.html",
+          "hash": "HUxVxtAYrlj6wERopWkwHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.shades.html",
+          "hash": "OWK6wW5uq/VLu35LC9ezKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.slabelfunc.html",
+          "hash": "eBM7Yuf1rGuYR+vPDD+qnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.smaj.html",
+          "hash": "Z821QYMZr0zBsfow6y7Gew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.smem.html",
+          "hash": "h8+5qqRolyhUfaB23vNaxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.smema.html",
+          "hash": "+oapUPfPqho3kx8mbNPVKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.smin.html",
+          "hash": "uJ6AP3nN5WyVoYhajxTcMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sdrawmode.html",
+          "hash": "cxiO10GA4DbEiUochgkvDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sori.html",
+          "hash": "NybsvZDz4uubmHKIYjelSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.spage.html",
+          "hash": "gTXp/bNI+rtZHDiA5CxHwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.spal0.html",
+          "hash": "xoaqHKNAdHcNTbTrKgOmrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.spal1.html",
+          "hash": "ZyN9hgW37n2NvxAdq3D8TQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.spause.html",
+          "hash": "aIMx46kt6cYtNnyAjSuTaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sstrm.html",
+          "hash": "KiSdcS0v5RXNc3EbJUIIOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.svpa.html",
+          "hash": "crFqrv/HwdR1N3J49izXCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sxax.html",
+          "hash": "BjFRHDW3B6O1qX10HE5M4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sxwin.html",
+          "hash": "wPjkGKSh5K52zOyE80aOuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.syax.html",
+          "hash": "KIHsV01tYsYKuW4suUTkqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.sym.html",
+          "hash": "Ys6dm9HwZrFYaWNL8eBA+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.szax.html",
+          "hash": "Emjy22TdGuq7S2GWgrtPvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.text.html",
+          "hash": "cwQfuV029ti3TIdRqHQdrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.timefmt.html",
+          "hash": "GhhAssxrOEJocHr/bEGe+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.vasp.html",
+          "hash": "weS84+lywjo6mVR9shldBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.vect.html",
+          "hash": "t/Wi3Foc/mIFoB7Enh3ePg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.vpas.html",
+          "hash": "7zi2SkeERG6bQVeBEvg3/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.vpor.html",
+          "hash": "VPivukJuJhOb4BHwKhdDPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.vsta.html",
+          "hash": "Ucrx6XXitFn3uDy5Ei6CCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.w3d.html",
+          "hash": "i1/5HZsnESTOD1dM32hE7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.width.html",
+          "hash": "2xYdOf4eQdWFH+9E+ksQRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Native.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Native.wind.html",
+          "hash": "KrFWxQ3M8eXujqHf1P453w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Orientation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Orientation.html",
+          "hash": "VnSmRyBZdynZKfjBjlWBCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.-ctor.html",
+          "hash": "1piTdq8AiUcUz7iiOYcF7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.Finalize.html",
+          "hash": "097le0GtslOFiaVp3YOalQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.System-IDisposable-Dispose.html",
+          "hash": "LoFKQSaAdkCbgVMkxBxYyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.Id.html",
+          "hash": "9FdWKSI8w1jZOI3B9Vdh+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.ToString.html",
+          "hash": "Q5YrGoO2PbGQ9OEThS/+FQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.cpstrm.html",
+          "hash": "s//CtgbIDfx5ZXBak6g8KQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.setcontlabelformat.html",
+          "hash": "EUSHkuCG0fbEBv56QuZ1kQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.setcontlabelparam.html",
+          "hash": "HpcbZ/DCZPgbjXUF+LjhtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.adv.html",
+          "hash": "OAX2ghWkzCMGzxNzBLYHYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.arc.html",
+          "hash": "U28+4uTIprZ+JaCMNFTgqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.axes.html",
+          "hash": "bIHGS0pxAstopWW9kiz/pw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.bin.html",
+          "hash": "j2Hqr3gjwbzUA0OdCQrCQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.btime.html",
+          "hash": "vtvA0y5dZozeS7IX6lJcWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.bop.html",
+          "hash": "a9FgXBCyDBvX3YY9h9XkcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.box.html",
+          "hash": "C1HQbgcEweaxaGrrCehk2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.box3.html",
+          "hash": "LVC2HzNN0Ll2SRxr52sKpQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.calc_world.html",
+          "hash": "BtKYHDZJJrC7/LbkDXBW2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.clear.html",
+          "hash": "N+Aoe6lAvY9889oC1cuPxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.col0.html",
+          "hash": "EiEfNRW370+3X1p1/m6f3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.col1.html",
+          "hash": "in+lfbtDu/pHNn52J1t+BQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.configtime.html",
+          "hash": "hWoSOE+NJ5I10C8wrFtDxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.cont.html",
+          "hash": "XdoBw1yFGuU4cKY/A1P7tQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.ctime.html",
+          "hash": "Cbef8yACRjM8M2ZqTZBgnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.did2pc.html",
+          "hash": "zLqUkgBrBqW8t00Rp4DviQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.dip2dc.html",
+          "hash": "oGi37j2yABVr805CESlfhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.env.html",
+          "hash": "0XxjknC+wa9aDCV7Tzt5Mw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.env0.html",
+          "hash": "HrtDv9CWBy55PtMaALc8Rg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.eop.html",
+          "hash": "xSdnZkVBkI3nHhHyIdsdFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.errx.html",
+          "hash": "+dRIIHjgivt1Wdhk9at5yg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.erry.html",
+          "hash": "cY4PTVVa8knkoAuIWElDGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.famadv.html",
+          "hash": "BQapwh6uVRJ1swW7RMzWrg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.fill.html",
+          "hash": "MGMR0ByrsbYEs7NXcbsj8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.fill3.html",
+          "hash": "kapFGy3j+8Mrhw4q/INuWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.flush.html",
+          "hash": "+REuseK8egG32IxuOWxG1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.font.html",
+          "hash": "K91AHu+lEgDgEGNpBrSiVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.fontld.html",
+          "hash": "wqkGBPAV/PqzX+8qFKorwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gchr.html",
+          "hash": "TxGt5IlMWsmzntXgPtlVgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gcol0.html",
+          "hash": "RtRs76W5fdSGox3VfW0E7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gcol0a.html",
+          "hash": "3E6om0kO17fPL8UlzfgTfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gcolbg.html",
+          "hash": "363srL4IaotQtFbGmhQi4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gcolbga.html",
+          "hash": "CmVB4mVzMf8brD48onYe7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gcompression.html",
+          "hash": "/YqoM+YV1iD+6OgjzPzT4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gdev.html",
+          "hash": "6ZXxDIe0eY9wsuYLSw5axw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gdidev.html",
+          "hash": "LxPG25OY2tjWtO7mWQmZpQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gdiori.html",
+          "hash": "oHq3YprZZdF65rCV9YDrEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gdiplt.html",
+          "hash": "i6Hhiun7pmF5FYLg/2sgtw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gdrawmode.html",
+          "hash": "D+qyAGD/fU14V45udoaN+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gfci.html",
+          "hash": "fmLnHYJD/u3G29JDPiurRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gfam.html",
+          "hash": "r+GjmkcoNXt6aJuaV6wdcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gfnam.html",
+          "hash": "v18v8bT59u0Crns8up0EXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gfont.html",
+          "hash": "1/EmnSbcNAcxJW7SQEDVog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.glevel.html",
+          "hash": "ZEogkd5xXBv5EpCO924spA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gpage.html",
+          "hash": "w09uTFv/SXapIO15Nplvmg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gra.html",
+          "hash": "MUnSrUoi5TCeVcn9MBXCSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gradient.html",
+          "hash": "VYxEU/I0a2JFBlowNieEXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.griddata.html",
+          "hash": "x1bil7+imeenqWgQ7T1zNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gspa.html",
+          "hash": "4rnDBqmvXgcNp9hmd9chqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gstrm.html",
+          "hash": "L9fYxCpK8gB7QU1OQrb7eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gver.html",
+          "hash": "i6qZ3fg5Xtus8YIvrqvWMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gvpd.html",
+          "hash": "oGeJMIxLX+C28Rr2cSB6sA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gvpw.html",
+          "hash": "yW/mvK02LgTpar622czAYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gxax.html",
+          "hash": "MKro9BOsb43FsTwh9MhryA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gyax.html",
+          "hash": "Eg7nNBcYU6ZnSLGz/Ua7qA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gzax.html",
+          "hash": "bFhFp885XdH1G856gT1ejA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.hist.html",
+          "hash": "fpq3aSRHPMBDV37P0D2u6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.hlsrgb.html",
+          "hash": "mxGyk6rbZPqvHcraLKIv2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.init.html",
+          "hash": "LHNPQX9OfhvcQXxWZQ/D0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.join.html",
+          "hash": "RHjKW8zP1VqWpgA+YppfSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.lab.html",
+          "hash": "rzxruUQ27GFszkLfJobsYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.legend.html",
+          "hash": "ElFsF+IXD+FUHONQPtsT5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.colorbar.html",
+          "hash": "+uwDtM77O80cqV50uWO2sg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.lightsource.html",
+          "hash": "CCcsojsSUOQennsZFHOm8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.line.html",
+          "hash": "dP7evZbjxUca7U2rEFtPOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.line3.html",
+          "hash": "G9ekZ7w+mx0sCFouvXo1kw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.lsty.html",
+          "hash": "Fpq3TpYTHS2h+aCQBr52IQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.map.html",
+          "hash": "CysnlvHdyJdWVRdB20ffHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.mapline.html",
+          "hash": "pR4NycqKOolW52/7TaCZdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.mapstring.html",
+          "hash": "IHrBStHojXKfWBXCT9Lcug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.maptex.html",
+          "hash": "8Bjf3uEBDARTah4g7+9aEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.mapfill.html",
+          "hash": "lrO+Of+yW9NSCy94ukA9IQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.meridians.html",
+          "hash": "KqUdBunlIDUFnmg/zUX1zQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.mesh.html",
+          "hash": "tdl9qo2YpCnKbrwjoyVuvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.meshc.html",
+          "hash": "k1hEgkRoyujm83/gYfGc5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.mtex.html",
+          "hash": "7n9gt1xFl6lW00Obmy3sKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.mtex3.html",
+          "hash": "UOwMnQFYNpVwpLzxYaJnDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.plot3d.html",
+          "hash": "IDpYoXhyczH1G5/OX0EVSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.plot3dc.html",
+          "hash": "/AgnthidwowLkElvj+XLVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.plot3dcl.html",
+          "hash": "DXJZFFZwRmirj+xOH/wnig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.pat.html",
+          "hash": "B5ibvotCpzzb9lvBiNEFLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.path.html",
+          "hash": "/iGabcAFAA//H+8p4ebs5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.poin.html",
+          "hash": "dphGslCmZFFbg7I2j2EFuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.poin3.html",
+          "hash": "8xyulomRq95v9wopLYsFCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.poly3.html",
+          "hash": "kUu8Of9CNZ1tIOJwZCTtJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.prec.html",
+          "hash": "xXuD9jWEkQmI6C9WRd63sA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.psty.html",
+          "hash": "1lROy1Yq1ynw47y11rVNkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.ptex.html",
+          "hash": "E1onr0rvEZ24G4qlxNqNKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.ptex3.html",
+          "hash": "T4dDlyEnI487sZm+O101Sg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.randd.html",
+          "hash": "jcR39d6DA8QGo5pi6mBDXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.replot.html",
+          "hash": "nQDH7EtOPHuEZd8bdXIMOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.rgbhls.html",
+          "hash": "ZQXmh/EZXM3hcuNjhiP5Fw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.schr.html",
+          "hash": "EXqLPTYrE7udtd+PWLqlCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.scmap0.html",
+          "hash": "3rpBVrwziqAi2ngBoV50KA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.scmap0a.html",
+          "hash": "btL5/0UNqeKCPIZn5nnvuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.scmap0n.html",
+          "hash": "p7RRcgnlFDP3rCZsZyQ5NQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.scmap1.html",
+          "hash": "Qpdv6xovy+/C2Ph5dqDuOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.scmap1a.html",
+          "hash": "WFpxUIc4k1xaIwbaV9+Nkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.scmap1l.html",
+          "hash": "gTt+LekrlaxOyUei5Yzd4A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.scmap1la.html",
+          "hash": "CTqnA3ibqrzFgFmjeWjp3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.scmap1n.html",
+          "hash": "gMNFJOaOjIugDynwFEJhGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.scmap1_range.html",
+          "hash": "zK7wsMWf7gh81EkZnS7dCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gcmap1_range.html",
+          "hash": "B0aIHgtvZC2Q+xkBshkUuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.scol0.html",
+          "hash": "KQWzbDNVl76thAcUiT7FlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.scol0a.html",
+          "hash": "5BGkkksprldWGWNoP5K3IA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.scolbg.html",
+          "hash": "gtlVAFo3YchZUWnZnKdMNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.scolbga.html",
+          "hash": "3R7BlYDxQmDLH0nj+yhuaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.scolor.html",
+          "hash": "pCiFx6TgCFGBEqCxVmI+QQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.scompression.html",
+          "hash": "gtstnkrvqbQUWgumOuMS7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sdev.html",
+          "hash": "CbD0F2m/Vsj3edI3Tm/gPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sdidev.html",
+          "hash": "6YO8IPoDyfS06n1/PI1Odg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sdimap.html",
+          "hash": "wMUF0ueg8CQ3TBAj1ojUxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sdiori.html",
+          "hash": "OIMeppqYLueSfOQ8prTQZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sdiplt.html",
+          "hash": "5L7zvCdtF+DVglGzgIss2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sdiplz.html",
+          "hash": "LAeVGdG5StzO9BQaJAFz7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.seed.html",
+          "hash": "sJu/AplMHqKwITHw6wLC/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sesc.html",
+          "hash": "IRIHyzCSpI/WuFBFIYzdzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sfam.html",
+          "hash": "LDKbXJpaJFFFF8z/dG32Rg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sfci.html",
+          "hash": "bjMQ4FoYNv8jpAkXlU5seQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sfnam.html",
+          "hash": "Yzi8/5SRG9+oQc7kXLt3pA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sfont.html",
+          "hash": "Sc8MRV/rGm2s3OLHNpH0uw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.shade.html",
+          "hash": "YzExs16qIhjDBfjgPHo0Rw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.shades.html",
+          "hash": "UPQ7Q7bMHrBYNn84bTIj3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.slabelfunc.html",
+          "hash": "UDk4A8haqY/N1tFxouFaLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.smaj.html",
+          "hash": "40AqJeq2nQnQvyBuwsbitA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.smem.html",
+          "hash": "tPJcXAMW0v240vwlTw+glg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.smema.html",
+          "hash": "Sko0Y2JBHLOuXT094CbfjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.smin.html",
+          "hash": "anlAeqStAtPJnfgLB/qiwQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sdrawmode.html",
+          "hash": "75ihWJBmx5S36QMNPdAgVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sori.html",
+          "hash": "vGT2C4ydQZi8E8Z5DfjyBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.spage.html",
+          "hash": "ELv3Eta6OxIBye/L7HRBdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.spal0.html",
+          "hash": "vfL+p51kBiWGPS2Xludxqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.spal1.html",
+          "hash": "cdjHS0ss+RmNL0b2HkQHXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.spause.html",
+          "hash": "UbXinlXPAEsfmxvWev04XA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.ssub.html",
+          "hash": "Z8uCA5h18GgLyNHVergq8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.ssym.html",
+          "hash": "nC5VLWLQfsIYvOZoMPi6EQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.star.html",
+          "hash": "D8z39jnGhX711xDaGRoj+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.start.html",
+          "hash": "fLTFqCiYqRL0qbaziTesFw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.stransform.html",
+          "hash": "yIwSFw72EcccJRF2rSGQhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.string2.html",
+          "hash": "F8CI39zJbfFJLPVhdLZraw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.string3.html",
+          "hash": "s5oK2pjmNGr0dNVA3/GcBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.stripa.html",
+          "hash": "TqfiVNZyVPO3ZZjLOafqGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.stripc.html",
+          "hash": "/6u/+sZPRuj2APUYKjSZ1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.stripd.html",
+          "hash": "r3fPoSe7W/u6v0lo7LlBvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.imagefr.html",
+          "hash": "S5mEXOhYAddsq9PqsAQJYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.image.html",
+          "hash": "fEU5T8uuj2aNev6NUlpp8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.styl.html",
+          "hash": "Moj6JP7qMR2aooRVk9PXnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.surf3d.html",
+          "hash": "HholBIunjGi0tfhizLbPtg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.surf3dl.html",
+          "hash": "aGkw50bT4lrXnhpMrxVCag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.svect.html",
+          "hash": "6Jpo94FAuWiFvA1qfCCEIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.svpa.html",
+          "hash": "ufu4edTcywjda641r1ovfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sxax.html",
+          "hash": "sB8qzJFn38ygN/ZIweg4dA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sxwin.html",
+          "hash": "coPOZ2DCf+ePjJ70mFAp1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.syax.html",
+          "hash": "Plr+JtT62J4AGkSInjEaEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sym.html",
+          "hash": "YeBRXIVFx14Gn+d3A9uRKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.szax.html",
+          "hash": "DIrfho3N1XCK0UkvrXN7bQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.text.html",
+          "hash": "Xq5yE62a8v58uOhXYVFyCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.timefmt.html",
+          "hash": "hbXq4JZwn6ABI4Zw435tEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.vasp.html",
+          "hash": "gchtsbo6uUTYyPsZpn5LfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.vect.html",
+          "hash": "TqN6KKZ2WTkimRI7fHZQOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.vpas.html",
+          "hash": "yu/xj4ZImbGXCFSkZU+0tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.vpor.html",
+          "hash": "H+CsTEsvAv7sX7QUfOAroA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.vsta.html",
+          "hash": "VX1OiBD/sbG4NW3LVS0DzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.w3d.html",
+          "hash": "oTbSA4YocJcqk3UZ2ZzAJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.width.html",
+          "hash": "Edqf0iSyMHtppXmEM+D3+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.wind.html",
+          "hash": "zywfE8RsKMa9zH1x1AbOTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.xormod.html",
+          "hash": "MJ/m+HHJ3Efk/FMFUnZX7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gFileDevs.html",
+          "hash": "BZCz+yByAkRXFRITT1s6XQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gDevs.html",
+          "hash": "c0PJXcxI8sZh4W6TzzTH/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sKeyEH.html",
+          "hash": "zUvKE5P3my7tAPxoJevQJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sButtonEH.html",
+          "hash": "iT6np3lzc7FBuL3i5qE3pg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sbopH.html",
+          "hash": "KzMx0Bb4zoZnh87HISqDFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.seopH.html",
+          "hash": "81u6ryJL39ILKIZEUrDpsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sexit.html",
+          "hash": "tpq6oRd2A99Nz3z9NdU+AQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sabort.html",
+          "hash": "pOhvArNQn+VBgBu59ii/2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.tr0.html",
+          "hash": "+sxNVi/HrlXUrfaQ94KHiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.tr1.html",
+          "hash": "3KHZkxdiYpAtwX8G0qr7mA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.tr2.html",
+          "hash": "Y73njwb0fiSAYDe+mKO2ow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.setopt.html",
+          "hash": "YW7LlqpqR9xTV1vJmyZyLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.parseopts.html",
+          "hash": "2rD0JyHt7Qzfw4lJkXOk5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.OptUsage.html",
+          "hash": "sFRqhav7k+isWWFADaKYrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.gesc.html",
+          "hash": "Fu05j9zNVvmsv2uVvaGSkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.cmd.html",
+          "hash": "VMCvUsfv4GIVyn1NyexAGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.GetCursor.html",
+          "hash": "W6jVtkZyrtVRpvF5sDb0+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.TranslateCursor.html",
+          "hash": "TNpRSphnu92Xo/6OMfrrbQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.sdevdata.html",
+          "hash": "ghdDsIQa1f6suyl15XV6YQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.PLStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.PLStream.html",
+          "hash": "3nG6lmFLp+F3ea8LO9Nfkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ParseOpts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ParseOpts.html",
+          "hash": "1w3qUdpApmd0rOzqBDDu7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Pattern.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Pattern.html",
+          "hash": "rHIaLngf15dqiBhEGFMEnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Pen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Pen.html",
+          "hash": "dfmTBadbJeyXS9DJAmrogg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Position.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Position.html",
+          "hash": "lL1OR5cYHz7ea4CbWaF/Jg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.RunLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.RunLevel.html",
+          "hash": "thjk01UI3rtJ5iCStY8Reg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Side.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Side.html",
+          "hash": "rydrmsw2Bhkjh3mfMD1b4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Side.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Side.BottomParallel.html",
+          "hash": "N8qj4VHS6sV2j6UyrmASzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Side.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Side.BottomPerpendicular.html",
+          "hash": "kAX5h//Fhqv0g30s4xEWPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Side.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Side.LeftParallel.html",
+          "hash": "Pi68M3QtUa34SXkZfV+3Dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Side.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Side.LeftPerpendicular.html",
+          "hash": "i3Bjhefs9iVBQ/BHYWYHoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Side.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Side.RightParallel.html",
+          "hash": "D/sdncdtUT84bVjlcBYARA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Side.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Side.RightPerpendicular.html",
+          "hash": "5Vyx4/2UbG5PRNbstKjdvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Side.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Side.TopParallel.html",
+          "hash": "eT1j1dNMnum6DwAky50srA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Side.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Side.TopPerpendicular.html",
+          "hash": "sCKQZJZfkwOUu9s/4Eay8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Side3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Side3.html",
+          "hash": "oKCs8PTC4sZaOy7RDMyTSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Side3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Side3.XAxis.html",
+          "hash": "ygmYy5Mz43tHp+nW4mzEWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Side3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Side3.YAxis.html",
+          "hash": "8Chsf/9B8GdD9u04EhfKmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Side3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Side3.ZAxis.html",
+          "hash": "To9Qh3RMLKb2uwLWzFhENQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Side3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Side3.PrimaryAxis.html",
+          "hash": "opI7x1F1ABGsG0u+JG5uvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Side3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Side3.SecondaryAxis.html",
+          "hash": "Mg9wQU/h/Ki6cEDi5+K/Eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Side3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Side3.Perpendicular.html",
+          "hash": "3TRprJj6xL2RCQ/0SWAz9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Surf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Surf.html",
+          "hash": "oG/dAkfK9/Mmwy0pcWvyRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Symbol.Dot.html",
+          "hash": "Vf2uuksOmPAGalDDSwyWkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Symbol.Plus.html",
+          "hash": "khSYbw7vo6e+G6OkY2U2YQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Symbol.Multiply.html",
+          "hash": "YUmoTxGeenoDlvGQm7pP7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Symbol.Circle.html",
+          "hash": "O88S3VHSKk1DbGE5SVhX+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Symbol.Times.html",
+          "hash": "3XaoFpVLQllQMjJEyvcnug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Symbol.Box.html",
+          "hash": "j2dbVkg99MdNFuE9BFFgYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Symbol.Triangle.html",
+          "hash": "o2asenCIE51bHRJm0vtqBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Symbol.PlusCircle.html",
+          "hash": "nu9z4LunrjhPRIWaedhEWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Symbol.DotCircle.html",
+          "hash": "btf5t1JtW4h9VFOporIJmg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Symbol.FilledBox.html",
+          "hash": "TUiJTAoHWgVbWQ1Hr55PHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Symbol.Bullet.html",
+          "hash": "D2V6uQAprYy6pmMuLFOmFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Symbol.Star.html",
+          "hash": "rABAARJsmNTDA6ES6dpAPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Symbol.LeftArrow.html",
+          "hash": "zkhYbSa+J/YM33EW5kXkDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Symbol.RightArrow.html",
+          "hash": "3UrhZZwcVaUcRLybF/qYFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Symbol.UpArrow.html",
+          "hash": "6Tn1B9r8PNqzuM5w9seJiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Symbol.DownArrow.html",
+          "hash": "xAlFQSR0C3ZnJ0o4B2908A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.Symbol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.Symbol.html",
+          "hash": "ChBHRFupXH8KkdQnekfhsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.TransformFunc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.TransformFunc.html",
+          "hash": "WrgtkmoGys3xqRDxKny33A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.None.html",
+          "hash": "zsCLxchTKTxP+kpNKPPnKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.DrawAxis.html",
+          "hash": "LIKG780uSkqBZREqexiWFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.DrawLeft.html",
+          "hash": "944lb/qjFj3L0Yps68P/GQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.DrawBottom.html",
+          "hash": "Hcd+dPQXEybG5+M0te1FPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.DrawTop.html",
+          "hash": "Fd10uvQW6rdZ6At1iCF7lQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.DrawRight.html",
+          "hash": "60zlAsYIJ5mRZKybZw4Prg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.DateTime.html",
+          "hash": "s7V6esoGXFR+P0z8iFVo9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.FixedPoint.html",
+          "hash": "TTayQwgy9iB9f6bbhBBniQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.MajorGrid.html",
+          "hash": "pjoqeKWmCJII8/JYA6I1jQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.MinorGrid.html",
+          "hash": "o8PbCMH8XjyJLqh2RxtPng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.InvertTickMarks.html",
+          "hash": "RK6NgSML1Mdb0JU74hrtXg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.Log.html",
+          "hash": "lmlkG6A7xN/H5LJIDOCupg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.UnconventionalLabels.html",
+          "hash": "e4U3RPXsxK5CwyRffiRH/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.ConventionalLabels.html",
+          "hash": "4dApBqsVimWhskv6oawD/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.CustomLabels.html",
+          "hash": "12x8ovdbXcQxWdR1gGUkUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.SubTicks.html",
+          "hash": "Sb3Ee/rTNWVPiZHpHf/alQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.MajorTicks.html",
+          "hash": "23i/3G4SgiOno7E+K53x0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.DrawLeftWithoutEdgeLine.html",
+          "hash": "RwY28Mk9US5MIwi8MNq2fQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.DrawBottomWithoutEdgeLine.html",
+          "hash": "H+z75p32MBu9ObcgkcIyBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.DrawTopWithoutEdgeLine.html",
+          "hash": "0zkxOFuyJQvOvJspdsJI0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.DrawRightWithoutEdgeLine.html",
+          "hash": "0q3takSaZoiXkH9QL5Ouwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.MajorTicksWithoutMarks.html",
+          "hash": "C+V3sDCJSEatVGw55yPbsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.BaseParallelLabels.html",
+          "hash": "x08Y5Lo/yHSugLPAdnSRkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.XYAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.XYAxisOpt.html",
+          "hash": "W3s1+FlqBB0/csUFk/qQFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ZAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ZAxisOpt.html",
+          "hash": "7t7XJYcc7Gn5/j9kdJryJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ZAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ZAxisOpt.None.html",
+          "hash": "5bcALYbo3GA2qSVptaqnPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ZAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ZAxisOpt.DrawLeft.html",
+          "hash": "NYG7VmQaFpu2Dy7uqoAZAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ZAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ZAxisOpt.DrawRight.html",
+          "hash": "XYfqfvOUEcbeZfwUkwVy4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ZAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ZAxisOpt.Grid.html",
+          "hash": "/vby/vljEJ86VmpbPLh7cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ZAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ZAxisOpt.DateTime.html",
+          "hash": "Bw2mjYkbmxvOfSQhjX+1Ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ZAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ZAxisOpt.FixedPoint.html",
+          "hash": "tQe+aGdwMY9b9AJLCVHWOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ZAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ZAxisOpt.InvertTickMarks.html",
+          "hash": "yKczLaQ1N9pMa/YQdWwDnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ZAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ZAxisOpt.Log.html",
+          "hash": "D6npMJx+8ObVQSapMWsHlg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ZAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ZAxisOpt.RightHandLabels.html",
+          "hash": "k0yKFwEc7SYFAIEyqoiJgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ZAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ZAxisOpt.LeftHandLabels.html",
+          "hash": "ZkYTJSjfJn+vl+yrHYP+3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ZAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ZAxisOpt.CustomLabels.html",
+          "hash": "H6iLhDhJ77mKMU9o1Qvu6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ZAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ZAxisOpt.SubTicks.html",
+          "hash": "KmL95VE1ZQPhNLNg3kDswg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ZAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ZAxisOpt.MajorTicks.html",
+          "hash": "eebYKTiL7GYWBIl4//jS2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ZAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ZAxisOpt.LabelLeft.html",
+          "hash": "jgUh+Ub2+cl1m+baIhJhWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.ZAxisOpt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.ZAxisOpt.LabelRight.html",
+          "hash": "qWYIRaJIscSDZCBB89s/8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PLplot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PLplot.html",
+          "hash": "F8I/L0EeXXulvf5OnRylrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "RzHg39UlMlp2a+oZpbGePQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/00.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/00.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/22_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/22_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "0WOQupyOkaVanqlmNFjfpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "vXxRTbWHAHejvbTIotsvtg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

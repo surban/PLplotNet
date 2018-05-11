@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Method vect
+   | PLplot for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Method vect
+   | PLplot for .NET ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLplot.PLStream.vect*">
+
+<h1 id="PLplot_PLStream_vect_" data-uid="PLplot.PLStream.vect*">Method vect
+</h1>
+<div class="markdown level0 summary"></div>
+<div class="markdown level0 conceptual"></div>
+
+<span class="small pull-right mobile-hide">
+  <span class="divider">|</span>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_vect_System_Double_0__0___System_Double_0__0___System_Double_PLplot_TransformFunc_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.vect(System.Double%5B0%3A%2C0%3A%5D%2CSystem.Double%5B0%3A%2C0%3A%5D%2CSystem.Double%2CPLplot.TransformFunc)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+</span>
+<span class="small pull-right mobile-hide">
+  <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L2387">View Source</a>
+</span>
+<a id="PLplot_PLStream_vect_" data-uid="PLplot.PLStream.vect*"></a>
+<h4 id="PLplot_PLStream_vect_System_Double_0__0___System_Double_0__0___System_Double_PLplot_TransformFunc_" data-uid="PLplot.PLStream.vect(System.Double[0:,0:],System.Double[0:,0:],System.Double,PLplot.TransformFunc)">vect(Double[,], Double[,], Double, TransformFunc)</h4>
+<div class="markdown level1 summary"><p>plvect: Vector plot</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void vect(double[, ] u, double[, ] v, double scale, TransformFunc pltr)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Double</span>[,]</td>
+      <td><span class="parametername">u</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span>[,]</td>
+      <td><span class="parametername">v</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">scale</span></td>
+      <td><p>Parameter to control the scaling factor of the vectors for plotting. If scale = 0  then the scaling factor is automatically calculated for the data. If scale lt 0 then the scaling factor is automatically calculated for the data and then multiplied by -scale. If scale gt 0 then the scaling factor is set to scale.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="PLplot.TransformFunc.html">TransformFunc</a></td>
+      <td><span class="parametername">pltr</span></td>
+      <td><p>A callback function that defines the transformation between the zero-based indices of the matrices u and v and world coordinates.For the C case, transformation functions are provided in the PLplot library: pltr0 for the identity mapping, and pltr1 and pltr2 for arbitrary mappings respectively defined by vectors and matrices. In addition, C callback routines for the transformation can be supplied by the user such as the mypltr function in examples/c/x09c.c which provides a general linear transformation between index coordinates and world coordinates.For languages other than C you should consult  for the details concerning how PLTRANSFORM_callback arguments are interfaced. However, in general, a particular pattern of callback-associated arguments such as a tr vector with 6 elements; xg and yg vectors; or xg and yg matrices are respectively interfaced to a linear-transformation routine similar to the above mypltr function; pltr1; and pltr2. Furthermore, some of our more sophisticated bindings (see, e.g., ) support native language callbacks for handling index to world-coordinate transformations. Examples of these various approaches are given in examples/ltlanguagegtx09*, examples/ltlanguagegtx16*, examples/ltlanguagegtx20*, examples/ltlanguagegtx21*, and examples/ltlanguagegtx22*, for all our supported languages.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 id="PLplot_PLStream_vect_System_Double_0__0___System_Double_0__0___System_Double_PLplot_TransformFunc__remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p>Draws a plot of vector data contained in the matrices  (u[nx][ny],v[nx][ny]) . The scaling factor for the vectors is given by scale. A transformation routine pointed to by pltr with a pointer pltr_data for additional data required by the transformation routine to map indices within the matrices to the world coordinates. The style of the vector arrow may be set using plsvect.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_vect_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.vect*%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L2387" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

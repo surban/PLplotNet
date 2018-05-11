@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Method shades
+   | PLplot for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Method shades
+   | PLplot for .NET ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLplot.Native.shades*">
+
+<h1 id="PLplot_Native_shades_" data-uid="PLplot.Native.shades*">Method shades
+</h1>
+<div class="markdown level0 summary"></div>
+<div class="markdown level0 conceptual"></div>
+
+<span class="small pull-right mobile-hide">
+  <span class="divider">|</span>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_Native_shades_System_Double_0__0___PLplot_DefinedFunc_System_Double_System_Double_System_Double_System_Double_System_Double___System_Double_System_Int32_System_Double_System_Boolean_PLplot_TransformFunc_.md&amp;value=---%0Auid%3A%20PLplot.Native.shades(System.Double%5B0%3A%2C0%3A%5D%2CPLplot.DefinedFunc%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%5B%5D%2CSystem.Double%2CSystem.Int32%2CSystem.Double%2CSystem.Boolean%2CPLplot.TransformFunc)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+</span>
+<span class="small pull-right mobile-hide">
+  <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/NativeGenerated.cs/#L1690">View Source</a>
+</span>
+<a id="PLplot_Native_shades_" data-uid="PLplot.Native.shades*"></a>
+<h4 id="PLplot_Native_shades_System_Double_0__0___PLplot_DefinedFunc_System_Double_System_Double_System_Double_System_Double_System_Double___System_Double_System_Int32_System_Double_System_Boolean_PLplot_TransformFunc_" data-uid="PLplot.Native.shades(System.Double[0:,0:],PLplot.DefinedFunc,System.Double,System.Double,System.Double,System.Double,System.Double[],System.Double,System.Int32,System.Double,System.Boolean,PLplot.TransformFunc)">shades(Double[,], DefinedFunc, Double, Double, Double, Double, Double[], Double, Int32, Double, Boolean, TransformFunc)</h4>
+<div class="markdown level1 summary"><p>plshades: Shade regions on the basis of value</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static void shades(double[, ] a, DefinedFunc defined, double xmin, double xmax, double ymin, double ymax, double[] clevel, double fill_width, int cont_color, double cont_width, bool rectangular, TransformFunc pltr)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Double</span>[,]</td>
+      <td><span class="parametername">a</span></td>
+      <td><p>A matrix containing function values to plot. Should have dimensions of nx by ny.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="PLplot.DefinedFunc.html">DefinedFunc</a></td>
+      <td><span class="parametername">defined</span></td>
+      <td><p>Callback function specifying the region that should be plotted in the shade plot. This function accepts x and y coordinates as input arguments and must return 1 if the point is to be included in the shade plot and 0 otherwise. If you want to plot the entire shade plot (the usual case), this argument should be set to NULL.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">xmin</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">xmax</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">ymin</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">ymax</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="parametername">clevel</span></td>
+      <td><p>A vector containing the data levels corresponding to the edges of each shaded region that will be plotted by this function. To work properly the levels should be monotonic.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">fill_width</span></td>
+      <td><p>Defines the line width used by the fill pattern.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Int32</span></td>
+      <td><span class="parametername">cont_color</span></td>
+      <td><p>Defines cmap0 pen color used for contours defining edges of shaded regions. The pen color is only temporary set for the contour drawing. Set this value to zero or less if no shade edge contours are wanted.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">cont_width</span></td>
+      <td><p>Defines line width used for contours defining edges of shaded regions. This value may not be honored by all drivers. The pen width is only temporary set for the contour drawing. Set this value to zero or less if no shade edge contours are wanted.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Boolean</span></td>
+      <td><span class="parametername">rectangular</span></td>
+      <td><p>Set rectangular to true if rectangles map to rectangles after coordinate transformation with pltrl. Otherwise, set rectangular to false. If rectangular is set to true, plshade tries to save time by filling large rectangles. This optimization fails if the coordinate transformation distorts the shape of rectangles. For example a plot in polar coordinates has to have rectangular set to false.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="PLplot.TransformFunc.html">TransformFunc</a></td>
+      <td><span class="parametername">pltr</span></td>
+      <td><p>A callback function that defines the transformation between the zero-based indices of the matrix a and world coordinates. If pltr is not supplied (e.g., is set to NULL in the C case), then the x indices of a are mapped to the range xmin through xmax and the y indices of a are mapped to the range ymin through ymax.For the C case, transformation functions are provided in the PLplot library: pltr0 for the identity mapping, and pltr1 and pltr2 for arbitrary mappings respectively defined by vectors and matrices. In addition, C callback routines for the transformation can be supplied by the user such as the mypltr function in examples/c/x09c.c which provides a general linear transformation between index coordinates and world coordinates.For languages other than C you should consult  for the details concerning how PLTRANSFORM_callback arguments are interfaced. However, in general, a particular pattern of callback-associated arguments such as a tr vector with 6 elements; xg and yg vectors; or xg and yg matrices are respectively interfaced to a linear-transformation routine similar to the above mypltr function; pltr1; and pltr2. Furthermore, some of our more sophisticated bindings (see, e.g., ) support native language callbacks for handling index to world-coordinate transformations. Examples of these various approaches are given in examples/ltlanguagegtx09*, examples/ltlanguagegtx16*, examples/ltlanguagegtx20*, examples/ltlanguagegtx21*, and examples/ltlanguagegtx22*, for all our supported languages.</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 id="PLplot_Native_shades_System_Double_0__0___PLplot_DefinedFunc_System_Double_System_Double_System_Double_System_Double_System_Double___System_Double_System_Int32_System_Double_System_Boolean_PLplot_TransformFunc__remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p>Shade regions on the basis of value. This is the high-level routine for making continuous color shaded plots with cmap1 while plshade should be used to plot individual shaded regions using either cmap0 or cmap1. examples/;ltlanguagegt/x16* shows how to use plshades for each of our supported languages.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_Native_shades_.md&amp;value=---%0Auid%3A%20PLplot.Native.shades*%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/NativeGenerated.cs/#L1690" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

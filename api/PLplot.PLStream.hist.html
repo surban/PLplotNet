@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Method hist
+   | PLplot for .NET </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Method hist
+   | PLplot for .NET ">
+    <meta name="generator" content="docfx 2.35.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="PLplot.PLStream.hist*">
+
+<h1 id="PLplot_PLStream_hist_" data-uid="PLplot.PLStream.hist*">Method hist
+</h1>
+<div class="markdown level0 summary"></div>
+<div class="markdown level0 conceptual"></div>
+
+<span class="small pull-right mobile-hide">
+  <span class="divider">|</span>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_hist_System_Double___System_Double_System_Double_System_Int32_PLplot_Hist_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.hist(System.Double%5B%5D%2CSystem.Double%2CSystem.Double%2CSystem.Int32%2CPLplot.Hist)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+</span>
+<span class="small pull-right mobile-hide">
+  <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L850">View Source</a>
+</span>
+<a id="PLplot_PLStream_hist_" data-uid="PLplot.PLStream.hist*"></a>
+<h4 id="PLplot_PLStream_hist_System_Double___System_Double_System_Double_System_Int32_PLplot_Hist_" data-uid="PLplot.PLStream.hist(System.Double[],System.Double,System.Double,System.Int32,PLplot.Hist)">hist(Double[], Double, Double, Int32, Hist)</h4>
+<div class="markdown level1 summary"><p>plhist: Plot a histogram from unbinned data</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+<h5 class="decalaration">Declaration</h5>
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public void hist(double[] data, double datmin, double datmax, int nbin, Hist opt)</code></pre>
+</div>
+<h5 class="parameters">Parameters</h5>
+<table class="table table-bordered table-striped table-condensed">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="parametername">data</span></td>
+      <td><p>A vector containing the values of the n data points.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">datmin</span></td>
+      <td><p>Left-hand edge of lowest-valued bin.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Double</span></td>
+      <td><span class="parametername">datmax</span></td>
+      <td><p>Right-hand edge of highest-valued bin.</p>
+</td>
+    </tr>
+    <tr>
+      <td><span class="xref">System.Int32</span></td>
+      <td><span class="parametername">nbin</span></td>
+      <td><p>Number of (equal-sized) bins into which to divide the interval xmin to xmax.</p>
+</td>
+    </tr>
+    <tr>
+      <td><a class="xref" href="PLplot.Hist.html">Hist</a></td>
+      <td><span class="parametername">opt</span></td>
+      <td><p>Is a combination of several flags: opt=PL_HIST_DEFAULT: The axes are automatically rescaled to fit the histogram data, the outer bins are expanded to fill up the entire x-axis, data outside the given extremes are assigned to the outer bins and bins of zero height are simply drawn. opt=PL_HIST_NOSCALING|...: The existing axes are not rescaled to fit the histogram data, without this flag, plenv is called to set the world coordinates. opt=PL_HIST_IGNORE_OUTLIERS|...: Data outside the given extremes are not taken into account. This option should probably be combined with opt=PL_HIST_NOEXPAND|..., so as to properly present the data. opt=PL_HIST_NOEXPAND|...: The outer bins are drawn with equal size as the ones inside. opt=PL_HIST_NOEMPTY|...: Bins with zero height are not drawn (there is a gap for such bins).</p>
+</td>
+    </tr>
+  </tbody>
+</table>
+<h5 id="PLplot_PLStream_hist_System_Double___System_Double_System_Double_System_Int32_PLplot_Hist__remarks">Remarks</h5>
+<div class="markdown level1 remarks"><p>Plots a histogram from n data points stored in the data vector. This routine bins the data into nbin bins equally spaced between datmin and datmax, and calls plbin to draw the resulting histogram. Parameter opt allows, among other things, the histogram either to be plotted in an existing window or causes plhist to call plenv with suitable limits before plotting the histogram.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_hist_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.hist*%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L850" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
