@@ -22,7 +22,7 @@
      
   deploy:
     provider: NuGet
-    auth_token:
+    api_key:
       secure: JwbH3IZTbXNoH4tC9N3vqXHw1OeluIa7OHNaoEQR/LEy6c3DL/hU79sHFLVlz+mm
     on:
       appveyor_repo_tag: true        
