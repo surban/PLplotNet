@@ -1,4 +1,4 @@
-$ErrorActionPreference = "Stop"
+#$ErrorActionPreference = "Stop"
 
 if ($env:APPVEYOR_REPO_BRANCH -ne "master") {
     Write-Host "Only uploading docs on master branch."
