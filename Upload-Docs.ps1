@@ -10,7 +10,7 @@ git config --global credential.helper store
 git config --global user.name "Appveyor CI"
 git config --global user.email "appveyor@surban.net"
 
-git clone -b gh-pages https://github.com/surban/PLplot.git web_old
+git clone -b gh-pages https://github.com/surban/PLplotNet.git web_old
 Move-Item $PSScriptRoot/Docs/_site web
 Move-Item web_old/.git web
 
