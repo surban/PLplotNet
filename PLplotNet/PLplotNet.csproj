@@ -28,10 +28,11 @@ bar charts and pie charts. Multiple graphs (of the same or different sizes)
 may be placed on a single page, and multiple pages are allowed for those 
 device formats that support them.
 
-The native PLplot library (x64) for Windows is included in this package.
-For Linux, PLplot must be already installed on your system and 
-we expect to find libplplot.so.15 in your LD_LIBRARY_PATH. 
+The native PLplot library for Windows (x64) is included in this package.
+For Linux and MacOS, PLplot must be already installed on your system and 
+we expect to find libplplot.so.15 or libplplot.dylib in your LD_LIBRARY_PATH.
 
+Supported operating systems: Linux, MacOS, Windows
 Output file formats: PDF, PNG, SVG, Xfig and others
 
 Documentation: https://surban.github.io/PLplotNet
