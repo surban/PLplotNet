@@ -76,20 +76,30 @@
 <p><a href="http://plplot.sourceforge.net/">PLplot</a> is a cross-platform software package for creating scientific plots whose (UTF-8) plot symbols and text are limited in practice only by what Unicode-aware system fonts are installed on a user's computer.
 The open-source PLplot software is primarily licensed under the <a href="http://www.gnu.org/licenses/lgpl.html">LGPL</a>.</p>
 <p>The PLplot core library can be used to create standard x-y plots, semi-log plots, log-log plots, contour plots, 3D surface plots, mesh plots, bar charts and pie charts. Multiple graphs (of the same or different sizes) may be placed on a single page, and multiple pages are allowed for those device formats that support them.</p>
-<p>The following output file formats are supported: PDF, PNG, JPEG, PostScript.</p>
+<p>The following output file formats are supported: PDF, PNG, JPEG, PostScript.<br>
+Supported operating systems: Linux, MacOS, Windows.</p>
 <p><a href="http://plplot.sourceforge.net/examples.php">Click here to see a full gallery of PLplot's abilities.</a></p>
 <p><img src="images/22_4.png" alt="Example plot"></p>
 <h2 id="net-standard-20-bindings">.NET Standard 2.0 bindings</h2>
 <p>This project provides a complete, but unofficial, .NET binding for PLplot.
 It allows you to use PLplot from C#, F#, Visual Basic or any other .NET language.
-We are targeting .NET Standard 2.0 and have tested the bindings on Linux and Windows.</p>
+We are targeting .NET Standard 2.0 and have tested the bindings on Linux, MacOS and Windows.</p>
 <p>The simplest way of installing the package is to run the following command from inside your project directory.</p>
 <p><code>dotnet add package PLplot</code></p>
 <p>Alternatively you can download the NuGet package from <a href="https://www.nuget.org/packages/PLplot">https://www.nuget.org/packages/PLplot</a>.</p>
-<p>The native libraries (x64) for Windows are included, so you don't have to worry about them.
-The only requirement is the <a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads">Microsoft Visual C++ Redistributable 2017</a>.</p>
-<p>For Linux, PLplot must be preinstalled on your system, i.e. we are expecting to find <code>libplplot.so.15</code> in your <code>LD_LIBRARY_PATH</code>.
-Usually a recent package from your favorite distribution will work fine.</p>
+<h3 id="linux">Linux</h3>
+<p>For Linux, PLplot must be pre-installed on your system, i.e. we are expecting to find <code>libplplot.so.15</code> in your <code>LD_LIBRARY_PATH</code>.
+Usually a recent package from your favorite distribution will work fine.
+On Ubuntu you can run the following command to install the necessary dependencies.</p>
+<p><code>sudo apt install libplplot15 plplot-driver-cairo</code></p>
+<h3 id="macos">MacOS</h3>
+<p>On MacOS, PLplot must also be pre-installed on your system.
+We are expecting to find <code>libplplot.dylib</code> in your <code>LD_LIBRARY_PATH</code>.
+Using <a href="https://brew.sh/">Homebrew</a> the necessary dependencies can be installed by running the following command.</p>
+<p><code>brew install plplot</code></p>
+<h3 id="windows">Windows</h3>
+<p>The native libraries for Windows (x64) are included, so you don't have to worry about them.
+The only requirement is that the <a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads">Microsoft Visual C++ Redistributable 2017</a> is installed on your system.</p>
 <h2 id="documentation">Documentation</h2>
 <p>Check out <a href="Examples.html">the introductory examples</a> to get started.</p>
 <p>The <a href="http://plplot.sourceforge.net/docbook-manual/plplot-html-5.13.0/">official PLplot manual</a> explains how to use the library in great detail.
@@ -98,6 +108,9 @@ All principles described therein also apply to the .NET library.</p>
 <h2 id="source-code">Source code</h2>
 <p>Source code is available at <a href="https://github.com/surban/PLplotNet">https://github.com/surban/PLplotNet</a>.
 Please use GitHub to report trouble with the library and send me your pull request.</p>
+<h2 id="authors">Authors</h2>
+<p><a href="http://www.surban.net">Sebastian Urban</a> (.NET bindings)<br>
+<a href="http://plplot.sourceforge.net/credits.php">PLplot developers</a></p>
 <hr>
 </article>
           </div>
