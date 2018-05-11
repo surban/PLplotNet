@@ -27,5 +27,5 @@
     on:
       appveyor_repo_tag: true        
 
-  after_success:
+  on_success:
     - ps: .\Upload-Docs.ps1
