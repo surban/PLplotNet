@@ -1,11 +1,16 @@
 -
   image: Visual Studio 2017
 
+  environment:
+    GITHUB_TOKEN:
+      secure: eqPY/dxZGj9A0OPR5TsdTi9WZcsQQsaMR6kv5iqrtC1Thr8OgnVQbqVcq6nWnw9I
+
   before_build:
     - ps: .\Fetch-Native.ps1
 
   build_script:
     - dotnet pack -c Release PLplotNet
+    - ps: .\Docs\build.ps1
 
   test_script:
     - dotnet run -c Release -p Samples/DevList
@@ -21,3 +26,6 @@
       secure: JwbH3IZTbXNoH4tC9N3vqXHw1OeluIa7OHNaoEQR/LEy6c3DL/hU79sHFLVlz+mm
     on:
       appveyor_repo_tag: true        
+
+  after_deploy:
+    - ps: .\Upload-Docs.ps1
