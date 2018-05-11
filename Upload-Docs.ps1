@@ -5,12 +5,12 @@ if ($env:APPVEYOR_REPO_BRANCH -ne "master") {
     exit 0
 }
 
-Add-Content "$env:USERPROFILE.git-credentials" "https://$($env:GITHUB_TOKEN):x-oauth-basic@github.com`n"
-git config --global credential.helper store
+#Add-Content "$env:USERPROFILE.git-credentials" "https://$($env:GITHUB_TOKEN):x-oauth-basic@github.com`n"
+#git config --global credential.helper store
 git config --global user.name "Appveyor CI"
 git config --global user.email "appveyor@surban.net"
 
-git clone -b gh-pages https://github.com/surban/PLplotNet.git web_old
+git clone -b gh-pages https://$($env:GITHUB_TOKEN)@github.com/surban/PLplotNet.git web_old
 Move-Item $PSScriptRoot/Docs/_site web
 Move-Item web_old/.git web
 
