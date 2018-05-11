@@ -11,7 +11,7 @@ Output File Formats: PDF, PNG, JPEG, PostScript
 
 This package provides a complete, but unofficial, .NET binding for PLplot.
 
-Documentation is available at <https://surban.github.io/PLplot>.
+Documentation is available at <https://surban.github.io/PLplotNet>.
 
 Obtain the NuGet package from <https://www.nuget.org/packages/PLplot>.
 
