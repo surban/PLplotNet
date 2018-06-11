@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_Native_gradient_System_Double___System_Double___System_Double_.md&amp;value=---%0Auid%3A%20PLplot.Native.gradient(System.Double%5B%5D%2CSystem.Double%5B%5D%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_Native_gradient_Double___Double___Double_.md&amp;value=---%0Auid%3A%20PLplot.Native.gradient(Double%5B%5D%2CDouble%5B%5D%2CDouble)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/NativeGenerated.cs/#L530">View Source</a>
 </span>
 <a id="PLplot_Native_gradient_" data-uid="PLplot.Native.gradient*"></a>
-<h4 id="PLplot_Native_gradient_System_Double___System_Double___System_Double_" data-uid="PLplot.Native.gradient(System.Double[],System.Double[],System.Double)">gradient(Double[], Double[], Double)</h4>
+<h4 id="PLplot_Native_gradient_Double___Double___Double_" data-uid="PLplot.Native.gradient(Double[],Double[],Double)">gradient(Double[], Double[], Double)</h4>
 <div class="markdown level1 summary"><p>plgradient: Draw linear gradient inside polygon</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void gradient(double[] x, double[] y, double angle)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void gradient(Double[] x, Double[] y, Double angle)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,26 +112,26 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">x</span></td>
       <td><p>A vector containing the x coordinates of vertices.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">y</span></td>
       <td><p>A vector containing the y coordinates of vertices.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">angle</span></td>
       <td><p>Angle (degrees) of gradient vector from x axis.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_gradient_System_Double___System_Double___System_Double__remarks">Remarks</h5>
+<h5 id="PLplot_Native_gradient_Double___Double___Double__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Draw a linear gradient using cmap1 inside the polygon defined by the n points (x[i], y[i]). Interpretation of the polygon is the same as for plfill. The polygon coordinates and the gradient angle are all expressed in world coordinates. The angle from the x axis for both the rotated coordinate system and the gradient vector is specified by angle. The magnitude of the gradient vector is the difference between the maximum and minimum values of x for the vertices in the rotated coordinate system. The origin of the gradient vector can be interpreted as being anywhere on the line corresponding to the minimum x value for the vertices in the rotated coordinate system. The distance along the gradient vector is linearly transformed to the independent variable of color map 1 which ranges from 0. at the tail of the gradient vector to 1. at the head of the gradient vector. What is drawn is the RGBA color corresponding to the independent variable of cmap1. For more information about cmap1 (see ).</p>
 </div>
 </article>

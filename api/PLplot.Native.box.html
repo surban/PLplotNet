@@ -88,13 +88,13 @@
 
 
 <a id="PLplot_Native_box_" data-uid="PLplot.Native.box*"></a>
-<h4 id="PLplot_Native_box_System_String_System_Double_System_Int32_System_String_System_Double_System_Int32_" data-uid="PLplot.Native.box(System.String,System.Double,System.Int32,System.String,System.Double,System.Int32)">box(String, Double, Int32, String, Double, Int32)</h4>
+<h4 id="PLplot_Native_box_System_String_Double_Int32_System_String_Double_Int32_" data-uid="PLplot.Native.box(System.String,Double,Int32,System.String,Double,Int32)">box(String, Double, Int32, String, Double, Int32)</h4>
 <div class="markdown level1 summary"><p>plbox: Draw a box with axes, etc</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void box(string xopt, double xtick, int nxsub, string yopt, double ytick, int nysub)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void box(string xopt, Double xtick, Int32 nxsub, string yopt, Double ytick, Int32 nysub)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -113,13 +113,13 @@
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">xtick</span></td>
       <td><p>World coordinate interval between major ticks on the x axis. If it is set to zero, PLplot automatically generates a suitable tick interval.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">nxsub</span></td>
       <td><p>Number of subintervals between major x axis ticks for minor ticks. If it is set to zero, PLplot automatically generates a suitable minor tick interval.</p>
 </td>
@@ -131,20 +131,20 @@
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">ytick</span></td>
       <td><p>World coordinate interval between major ticks on the y axis. If it is set to zero, PLplot automatically generates a suitable tick interval.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">nysub</span></td>
       <td><p>Number of subintervals between major y axis ticks for minor ticks. If it is set to zero, PLplot automatically generates a suitable minor tick interval.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_box_System_String_System_Double_System_Int32_System_String_System_Double_System_Int32__remarks">Remarks</h5>
+<h5 id="PLplot_Native_box_System_String_Double_Int32_System_String_Double_Int32__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Draws a box around the currently defined viewport, and labels it with world coordinate values appropriate to the window. Thus plbox should only be called after defining both viewport and window. The ascii character strings xopt and yopt specify how the box should be drawn as described below. If ticks and/or subticks are to be drawn for a particular axis, the tick intervals and number of subintervals may be specified explicitly, or they may be defaulted by setting the appropriate arguments to zero.</p>
 </div>
 </article>

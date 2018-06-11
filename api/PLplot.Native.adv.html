@@ -88,13 +88,13 @@
 
 
 <a id="PLplot_Native_adv_" data-uid="PLplot.Native.adv*"></a>
-<h4 id="PLplot_Native_adv_System_Int32_" data-uid="PLplot.Native.adv(System.Int32)">adv(Int32)</h4>
+<h4 id="PLplot_Native_adv_Int32_" data-uid="PLplot.Native.adv(Int32)">adv(Int32)</h4>
 <div class="markdown level1 summary"><p>pladv: Advance the (sub-)page</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void adv(int page)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void adv(Int32 page)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -107,14 +107,14 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">page</span></td>
       <td><p>Specifies the subpage number (starting from 1 in the top left corner and increasing along the rows) to which to advance. Set to zero to advance to the next subpage (or to the next page if subpages are not being used).</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_adv_System_Int32__remarks">Remarks</h5>
+<h5 id="PLplot_Native_adv_Int32__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Advances to the next subpage if sub=0, performing a page advance if there are no remaining subpages on the current page. If subpages aren't being used, pladv(0) will always advance the page. If pagegt0, PLplot switches to the specified subpage. Note that this allows you to overwrite a plot on the specified subpage; if this is not what you intended, use pleop followed by plbop to first advance the page. This routine is called automatically (with page=0) by plenv, but if plenv is not used, pladv must be called after initializing PLplot but before defining the viewport.</p>
 </div>
 </article>

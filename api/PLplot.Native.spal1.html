@@ -88,13 +88,13 @@
 
 
 <a id="PLplot_Native_spal1_" data-uid="PLplot.Native.spal1*"></a>
-<h4 id="PLplot_Native_spal1_System_String_System_Boolean_" data-uid="PLplot.Native.spal1(System.String,System.Boolean)">spal1(String, Boolean)</h4>
+<h4 id="PLplot_Native_spal1_System_String_Boolean_" data-uid="PLplot.Native.spal1(System.String,Boolean)">spal1(String, Boolean)</h4>
 <div class="markdown level1 summary"><p>plspal1: Set the cmap1 palette using the specified cmap1*.pal format file</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void spal1(string filename, bool interpolate)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void spal1(string filename, Boolean interpolate)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -113,14 +113,14 @@
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Boolean</span></td>
+      <td><span class="xref">Boolean</span></td>
       <td><span class="parametername">interpolate</span></td>
       <td><p>If this parameter is true, the columns containing the intensity index, r, g, b, alpha and alt_hue_path in the cmap1*.pal file are used to set the cmap1 palette with a call to plscmap1la. (The cmap1*.pal header contains a flag which controls whether the r, g, b data sent to plscmap1la are interpreted as HLS or RGB.)  If this parameter is false, the intensity index and alt_hue_path columns are ignored and the r, g, b (interpreted as RGB), and alpha columns of the cmap1*.pal file are used instead to set the cmap1 palette directly with a call to plscmap1a.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_spal1_System_String_System_Boolean__remarks">Remarks</h5>
+<h5 id="PLplot_Native_spal1_System_String_Boolean__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Set the cmap1 palette using the specified cmap1*.pal format file.</p>
 </div>
 </article>

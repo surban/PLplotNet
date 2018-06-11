@@ -88,13 +88,13 @@
 
 
 <a id="PLplot_Native_mtex3_" data-uid="PLplot.Native.mtex3*"></a>
-<h4 id="PLplot_Native_mtex3_System_String_System_Double_System_Double_System_Double_System_String_" data-uid="PLplot.Native.mtex3(System.String,System.Double,System.Double,System.Double,System.String)">mtex3(String, Double, Double, Double, String)</h4>
+<h4 id="PLplot_Native_mtex3_System_String_Double_Double_Double_System_String_" data-uid="PLplot.Native.mtex3(System.String,Double,Double,Double,System.String)">mtex3(String, Double, Double, Double, String)</h4>
 <div class="markdown level1 summary"><p>plmtex3: Write text relative to viewport boundaries in 3D plots</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void mtex3(string side, double disp, double pos, double just, string text)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void mtex3(string side, Double disp, Double pos, Double just, string text)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -113,19 +113,19 @@
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">disp</span></td>
       <td><p>Position of the reference point of string, measured outwards from the specified viewport edge in units of the current character height. Use negative disp to write within the viewport.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">pos</span></td>
       <td><p>Position of the reference point of string along the specified edge, expressed as a fraction of the length of the edge.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">just</span></td>
       <td><p>Specifies the position of the string relative to its reference point. If just=0. , the reference point is at the left and if just=1. , it is at the right of the string. Other values of just give intermediate justifications.</p>
 </td>
@@ -138,7 +138,7 @@
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_mtex3_System_String_System_Double_System_Double_System_Double_System_String__remarks">Remarks</h5>
+<h5 id="PLplot_Native_mtex3_System_String_Double_Double_Double_System_String__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Writes text at a specified position relative to the viewport boundaries. Text may be written inside or outside the viewport, but is clipped at the subpage boundaries. The reference point of a string lies along a line passing through the string at half the height of a capital letter. The position of the reference point along this line is determined by just, and the position of the reference point relative to the viewport is set by disp and pos.</p>
 </div>
 </article>

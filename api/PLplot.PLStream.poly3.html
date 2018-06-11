@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_poly3_System_Double___System_Double___System_Double___System_Boolean___System_Boolean_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.poly3(System.Double%5B%5D%2CSystem.Double%5B%5D%2CSystem.Double%5B%5D%2CSystem.Boolean%5B%5D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_poly3_Double___Double___Double___Boolean___Boolean_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.poly3(Double%5B%5D%2CDouble%5B%5D%2CDouble%5B%5D%2CBoolean%5B%5D%2CBoolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L1334">View Source</a>
 </span>
 <a id="PLplot_PLStream_poly3_" data-uid="PLplot.PLStream.poly3*"></a>
-<h4 id="PLplot_PLStream_poly3_System_Double___System_Double___System_Double___System_Boolean___System_Boolean_" data-uid="PLplot.PLStream.poly3(System.Double[],System.Double[],System.Double[],System.Boolean[],System.Boolean)">poly3(Double[], Double[], Double[], Boolean[], Boolean)</h4>
+<h4 id="PLplot_PLStream_poly3_Double___Double___Double___Boolean___Boolean_" data-uid="PLplot.PLStream.poly3(Double[],Double[],Double[],Boolean[],Boolean)">poly3(Double[], Double[], Double[], Boolean[], Boolean)</h4>
 <div class="markdown level1 summary"><p>plpoly3: Draw a polygon in 3 space</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void poly3(double[] x, double[] y, double[] z, bool[] draw, bool ifcc)</code></pre>
+  <pre><code class="lang-csharp hljs">public void poly3(Double[] x, Double[] y, Double[] z, Boolean[] draw, Boolean ifcc)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,38 +112,38 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">x</span></td>
       <td><p>A vector containing n x coordinates of points.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">y</span></td>
       <td><p>A vector containing n y coordinates of points.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">z</span></td>
       <td><p>A vector containing n z coordinates of points.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Boolean</span>[]</td>
+      <td><span class="xref">Boolean</span>[]</td>
       <td><span class="parametername">draw</span></td>
       <td><p>A vector containing n-1 Boolean values which control drawing the segments of the polygon. If draw[i] is true, then the polygon segment from index [i] to [i+1] is drawn, otherwise, not.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Boolean</span></td>
+      <td><span class="xref">Boolean</span></td>
       <td><span class="parametername">ifcc</span></td>
       <td><p>If ifcc is true the directionality of the polygon is determined by assuming the points are laid out in a counter-clockwise order. Otherwise, the directionality of the polygon is determined by assuming the points are laid out in a clockwise order.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_PLStream_poly3_System_Double___System_Double___System_Double___System_Boolean___System_Boolean__remarks">Remarks</h5>
+<h5 id="PLplot_PLStream_poly3_Double___Double___Double___Boolean___Boolean__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Draws a polygon in 3 space defined by n points in x, y, and z. Setup like plline3, but differs from that function in that plpoly3 attempts to determine if the polygon is viewable depending on the order of the points within the vector and the value of ifcc. If the back of polygon is facing the viewer, then it isn't drawn. If this isn't what you want, then use plline3 instead.</p>
 </div>
 </article>

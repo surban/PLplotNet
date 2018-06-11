@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_path_System_Int32_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.path(System.Int32%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_path_Int32_Double_Double_Double_Double_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.path(Int32%2CDouble%2CDouble%2CDouble%2CDouble)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L1289">View Source</a>
 </span>
 <a id="PLplot_PLStream_path_" data-uid="PLplot.PLStream.path*"></a>
-<h4 id="PLplot_PLStream_path_System_Int32_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.PLStream.path(System.Int32,System.Double,System.Double,System.Double,System.Double)">path(Int32, Double, Double, Double, Double)</h4>
+<h4 id="PLplot_PLStream_path_Int32_Double_Double_Double_Double_" data-uid="PLplot.PLStream.path(Int32,Double,Double,Double,Double)">path(Int32, Double, Double, Double, Double)</h4>
 <div class="markdown level1 summary"><p>plpath: Draw a line between two points, accounting for coordinate transforms</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void path(int n, double x1, double y1, double x2, double y2)</code></pre>
+  <pre><code class="lang-csharp hljs">public void path(Int32 n, Double x1, Double y1, Double x2, Double y2)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,38 +112,38 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">n</span></td>
       <td><p>number of points to use to approximate the path.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">x1</span></td>
       <td><p>x coordinate of first point.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">y1</span></td>
       <td><p>y coordinate of first point.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">x2</span></td>
       <td><p>x coordinate of second point.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">y2</span></td>
       <td><p>y coordinate of second point.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_PLStream_path_System_Int32_System_Double_System_Double_System_Double_System_Double__remarks">Remarks</h5>
+<h5 id="PLplot_PLStream_path_Int32_Double_Double_Double_Double__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Joins the point  (x1, y1)  to  (x2, y2) . If a global coordinate transform is defined then the line is broken in to n segments to approximate the path. If no transform is defined then this simply acts like a call to pljoin.</p>
 </div>
 </article>

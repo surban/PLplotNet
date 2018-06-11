@@ -88,13 +88,13 @@
 
 
 <a id="PLplot_Native_szax_" data-uid="PLplot.Native.szax*"></a>
-<h4 id="PLplot_Native_szax_System_Int32_System_Int32_" data-uid="PLplot.Native.szax(System.Int32,System.Int32)">szax(Int32, Int32)</h4>
+<h4 id="PLplot_Native_szax_Int32_Int32_" data-uid="PLplot.Native.szax(Int32,Int32)">szax(Int32, Int32)</h4>
 <div class="markdown level1 summary"><p>plszax: Set z axis parameters</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void szax(int digmax, int digits)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void szax(Int32 digmax, Int32 digits)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -107,20 +107,20 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">digmax</span></td>
       <td><p>Variable to set the maximum number of digits for the z axis. If nonzero, the printed label will be switched to a floating-point representation when the number of digits exceeds digmax.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">digits</span></td>
       <td><p>Field digits value. Currently, changing its value here has no effect since it is set only by plbox or plbox3. However, the user may obtain its value after a call to either of these functions by calling plgzax.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_szax_System_Int32_System_Int32__remarks">Remarks</h5>
+<h5 id="PLplot_Native_szax_Int32_Int32__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Identical to plsxax, except that arguments are flags for z axis. See the description of plsxax for more detail.</p>
 </div>
 </article>

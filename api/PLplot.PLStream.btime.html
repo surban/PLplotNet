@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_btime_System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__System_Double__System_Double_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.btime(System.Int32%40%2CSystem.Int32%40%2CSystem.Int32%40%2CSystem.Int32%40%2CSystem.Int32%40%2CSystem.Double%40%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_btime_Int32__Int32__Int32__Int32__Int32__Double__Double_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.btime(Int32%40%2CInt32%40%2CInt32%40%2CInt32%40%2CInt32%40%2CDouble%40%2CDouble)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L125">View Source</a>
 </span>
 <a id="PLplot_PLStream_btime_" data-uid="PLplot.PLStream.btime*"></a>
-<h4 id="PLplot_PLStream_btime_System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__System_Double__System_Double_" data-uid="PLplot.PLStream.btime(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Double@,System.Double)">btime(out Int32, out Int32, out Int32, out Int32, out Int32, out Double, Double)</h4>
+<h4 id="PLplot_PLStream_btime_Int32__Int32__Int32__Int32__Int32__Double__Double_" data-uid="PLplot.PLStream.btime(Int32@,Int32@,Int32@,Int32@,Int32@,Double@,Double)">btime(out Int32, out Int32, out Int32, out Int32, out Int32, out Double, Double)</h4>
 <div class="markdown level1 summary"><p>plbtime: Calculate broken-down time from continuous time for the current stream</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void btime(out int year, out int month, out int day, out int hour, out int min, out double sec, double ctime)</code></pre>
+  <pre><code class="lang-csharp hljs">public void btime(out Int32 year, out Int32 month, out Int32 day, out Int32 hour, out Int32 min, out Double sec, Double ctime)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,50 +112,50 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">year</span></td>
       <td><p>Returned value of years with positive values corresponding to CE (i.e., 1 = 1 CE, etc.) and non-negative values corresponding to BCE (e.g., 0 = 1 BCE, -1 = 2 BCE, etc.)</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">month</span></td>
       <td><p>Returned value of month within the year in the range from 0 (January) to 11 (December).</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">day</span></td>
       <td><p>Returned value of day within the month in the range from 1 to 31.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">hour</span></td>
       <td><p>Returned value of hour within the day in the range from 0 to 23.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">min</span></td>
       <td><p>Returned value of minute within the hour in the range from 0 to 59</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">sec</span></td>
       <td><p>Returned value of second within the minute in range from 0. to 60.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">ctime</span></td>
       <td><p>Continuous time from which the broken-down time is calculated.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_PLStream_btime_System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__System_Double__System_Double__remarks">Remarks</h5>
+<h5 id="PLplot_PLStream_btime_Int32__Int32__Int32__Int32__Int32__Double__Double__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Calculate broken-down time; year, month, day, hour, min, sec; from continuous time, ctime for the current stream. This function is the inverse of plctime.</p>
 </div>
 </article>

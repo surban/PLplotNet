@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_vpas_System_Double_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.vpas(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_vpas_Double_Double_Double_Double_Double_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.vpas(Double%2CDouble%2CDouble%2CDouble%2CDouble)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L2403">View Source</a>
 </span>
 <a id="PLplot_PLStream_vpas_" data-uid="PLplot.PLStream.vpas*"></a>
-<h4 id="PLplot_PLStream_vpas_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.PLStream.vpas(System.Double,System.Double,System.Double,System.Double,System.Double)">vpas(Double, Double, Double, Double, Double)</h4>
+<h4 id="PLplot_PLStream_vpas_Double_Double_Double_Double_Double_" data-uid="PLplot.PLStream.vpas(Double,Double,Double,Double,Double)">vpas(Double, Double, Double, Double, Double)</h4>
 <div class="markdown level1 summary"><p>plvpas: Specify viewport using coordinates and aspect ratio</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void vpas(double xmin, double xmax, double ymin, double ymax, double aspect)</code></pre>
+  <pre><code class="lang-csharp hljs">public void vpas(Double xmin, Double xmax, Double ymin, Double ymax, Double aspect)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,38 +112,38 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">xmin</span></td>
       <td><p>The normalized subpage coordinate of the left-hand edge of the viewport.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">xmax</span></td>
       <td><p>The normalized subpage coordinate of the right-hand edge of the viewport.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">ymin</span></td>
       <td><p>The normalized subpage coordinate of the bottom edge of the viewport.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">ymax</span></td>
       <td><p>The normalized subpage coordinate of the top edge of the viewport.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">aspect</span></td>
       <td><p>Ratio of length of y axis to length of x axis.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_PLStream_vpas_System_Double_System_Double_System_Double_System_Double_System_Double__remarks">Remarks</h5>
+<h5 id="PLplot_PLStream_vpas_Double_Double_Double_Double_Double__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Device-independent routine for setting up the viewport. The viewport is chosen to be the largest with the given aspect ratio that fits within the specified region (in terms of normalized subpage coordinates). This routine is functionally equivalent to plvpor when a ``natural'' aspect ratio (0.0) is chosen. Unlike plvasp, this routine reserves no extra space at the edges for labels.</p>
 </div>
 </article>

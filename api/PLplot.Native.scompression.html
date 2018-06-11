@@ -88,13 +88,13 @@
 
 
 <a id="PLplot_Native_scompression_" data-uid="PLplot.Native.scompression*"></a>
-<h4 id="PLplot_Native_scompression_System_Int32_" data-uid="PLplot.Native.scompression(System.Int32)">scompression(Int32)</h4>
+<h4 id="PLplot_Native_scompression_Int32_" data-uid="PLplot.Native.scompression(Int32)">scompression(Int32)</h4>
 <div class="markdown level1 summary"><p>plscompression: Set device-compression level</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void scompression(int compression)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void scompression(Int32 compression)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -107,14 +107,14 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">compression</span></td>
       <td><p>The desired compression level. This is a device-dependent value. Currently only the jpeg and png devices use these values. For jpeg value is the jpeg quality which should normally be in the range 0-95. Higher values denote higher quality and hence larger image sizes. For png values are in the range -1 to 99. Values of 0-9 are taken as the compression level for zlib. A value of -1 denotes the default zlib compression level. Values in the range 10-99 are divided by 10 and then used as the zlib compression level. Higher compression levels correspond to greater compression and small file sizes at the expense of more computation.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_scompression_System_Int32__remarks">Remarks</h5>
+<h5 id="PLplot_Native_scompression_Int32__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Set device-compression level. Only used for drivers that provide compression. This function, if used, should be invoked before a call to plinit.</p>
 </div>
 </article>

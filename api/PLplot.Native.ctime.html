@@ -88,13 +88,13 @@
 
 
 <a id="PLplot_Native_ctime_" data-uid="PLplot.Native.ctime*"></a>
-<h4 id="PLplot_Native_ctime_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Double_System_Double__" data-uid="PLplot.Native.ctime(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Double,System.Double@)">ctime(Int32, Int32, Int32, Int32, Int32, Double, out Double)</h4>
+<h4 id="PLplot_Native_ctime_Int32_Int32_Int32_Int32_Int32_Double_Double__" data-uid="PLplot.Native.ctime(Int32,Int32,Int32,Int32,Int32,Double,Double@)">ctime(Int32, Int32, Int32, Int32, Int32, Double, out Double)</h4>
 <div class="markdown level1 summary"><p>plctime: Calculate continuous time from broken-down time for the current stream</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void ctime(int year, int month, int day, int hour, int min, double sec, out double ctime)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void ctime(Int32 year, Int32 month, Int32 day, Int32 hour, Int32 min, Double sec, out Double ctime)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -107,50 +107,50 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">year</span></td>
       <td><p>Input year.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">month</span></td>
       <td><p>Input month in range from 0 (January) to 11 (December).</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">day</span></td>
       <td><p>Input day in range from 1 to 31.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">hour</span></td>
       <td><p>Input hour in range from 0 to 23</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">min</span></td>
       <td><p>Input minute in range from 0 to 59.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">sec</span></td>
       <td><p>Input second in range from 0. to 60.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">ctime</span></td>
       <td><p>Returned value of the continuous time calculated from the broken-down time specified by the previous parameters.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_ctime_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Double_System_Double___remarks">Remarks</h5>
+<h5 id="PLplot_Native_ctime_Int32_Int32_Int32_Int32_Int32_Double_Double___remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Calculate continuous time, ctime, from broken-down time for the current stream. The broken-down time is specified by the following parameters: year, month, day, hour, min, and sec. This function is the inverse of plbtime.</p>
 </div>
 </article>

@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_xormod_System_Boolean_System_Boolean__.md&amp;value=---%0Auid%3A%20PLplot.PLStream.xormod(System.Boolean%2CSystem.Boolean%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_xormod_Boolean_Boolean__.md&amp;value=---%0Auid%3A%20PLplot.PLStream.xormod(Boolean%2CBoolean%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L2491">View Source</a>
 </span>
 <a id="PLplot_PLStream_xormod_" data-uid="PLplot.PLStream.xormod*"></a>
-<h4 id="PLplot_PLStream_xormod_System_Boolean_System_Boolean__" data-uid="PLplot.PLStream.xormod(System.Boolean,System.Boolean@)">xormod(Boolean, out Boolean)</h4>
+<h4 id="PLplot_PLStream_xormod_Boolean_Boolean__" data-uid="PLplot.PLStream.xormod(Boolean,Boolean@)">xormod(Boolean, out Boolean)</h4>
 <div class="markdown level1 summary"><p>plxormod: Enter or leave xor mode</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void xormod(bool mode, out bool status)</code></pre>
+  <pre><code class="lang-csharp hljs">public void xormod(Boolean mode, out Boolean status)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,20 +112,20 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Boolean</span></td>
+      <td><span class="xref">Boolean</span></td>
       <td><span class="parametername">mode</span></td>
       <td><p>mode is true means enter xor mode and mode is false means leave xor mode.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Boolean</span></td>
+      <td><span class="xref">Boolean</span></td>
       <td><span class="parametername">status</span></td>
       <td><p>Returned value of the status. modestatus of true (false) means driver is capable (incapable) of xor mode.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_PLStream_xormod_System_Boolean_System_Boolean___remarks">Remarks</h5>
+<h5 id="PLplot_PLStream_xormod_Boolean_Boolean___remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Enter (when mode is true) or leave (when mode is false) xor mode for those drivers (e.g., the xwin driver) that support it. Enables erasing plots by drawing twice the same line, symbol, etc. If driver is not capable of xor operation it returns a status of false.</p>
 </div>
 </article>

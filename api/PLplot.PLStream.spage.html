@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_spage_System_Double_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.spage(System.Double%2CSystem.Double%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_spage_Double_Double_Int32_Int32_Int32_Int32_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.spage(Double%2CDouble%2CInt32%2CInt32%2CInt32%2CInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L1992">View Source</a>
 </span>
 <a id="PLplot_PLStream_spage_" data-uid="PLplot.PLStream.spage*"></a>
-<h4 id="PLplot_PLStream_spage_System_Double_System_Double_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="PLplot.PLStream.spage(System.Double,System.Double,System.Int32,System.Int32,System.Int32,System.Int32)">spage(Double, Double, Int32, Int32, Int32, Int32)</h4>
+<h4 id="PLplot_PLStream_spage_Double_Double_Int32_Int32_Int32_Int32_" data-uid="PLplot.PLStream.spage(Double,Double,Int32,Int32,Int32,Int32)">spage(Double, Double, Int32, Int32, Int32, Int32)</h4>
 <div class="markdown level1 summary"><p>plspage: Set page parameters</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void spage(double xp, double yp, int xleng, int yleng, int xoff, int yoff)</code></pre>
+  <pre><code class="lang-csharp hljs">public void spage(Double xp, Double yp, Int32 xleng, Int32 yleng, Int32 xoff, Int32 yoff)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,44 +112,44 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">xp</span></td>
       <td><p>Number of pixels per inch (DPI), x. Used only by raster drivers, ignored by drivers which use &quot;real world&quot; units (e.g. mm).</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">yp</span></td>
       <td><p>Number of pixels per inch (DPI), y. Used only by raster drivers, ignored by drivers which use &quot;real world&quot; units (e.g. mm).</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">xleng</span></td>
       <td><p>Page length, x.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">yleng</span></td>
       <td><p>Page length, y.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">xoff</span></td>
       <td><p>Page offset, x.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">yoff</span></td>
       <td><p>Page offset, y.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_PLStream_spage_System_Double_System_Double_System_Int32_System_Int32_System_Int32_System_Int32__remarks">Remarks</h5>
+<h5 id="PLplot_PLStream_spage_Double_Double_Int32_Int32_Int32_Int32__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Sets the page configuration (optional). If an individual parameter is zero then that parameter value is not updated. Not all parameters are recognized by all drivers and the interpretation is device-dependent. The X-window driver uses the length and offset parameters to determine the window size and location. The length and offset values are expressed in units that are specific to the current driver. For instance: screen drivers will usually interpret them as number of pixels, whereas printer drivers will usually use mm.</p>
 </div>
 </article>

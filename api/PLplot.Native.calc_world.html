@@ -88,13 +88,13 @@
 
 
 <a id="PLplot_Native_calc_world_" data-uid="PLplot.Native.calc_world*"></a>
-<h4 id="PLplot_Native_calc_world_System_Double_System_Double_System_Double__System_Double__System_Int32__" data-uid="PLplot.Native.calc_world(System.Double,System.Double,System.Double@,System.Double@,System.Int32@)">calc_world(Double, Double, out Double, out Double, out Int32)</h4>
+<h4 id="PLplot_Native_calc_world_Double_Double_Double__Double__Int32__" data-uid="PLplot.Native.calc_world(Double,Double,Double@,Double@,Int32@)">calc_world(Double, Double, out Double, out Double, out Int32)</h4>
 <div class="markdown level1 summary"><p>plcalc_world: Calculate world coordinates and corresponding window index from relative device coordinates</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void calc_world(double rx, double ry, out double wx, out double wy, out int window)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void calc_world(Double rx, Double ry, out Double wx, out Double wy, out Int32 window)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -107,38 +107,38 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">rx</span></td>
       <td><p>Input relative device coordinate (0.0-1.0) for the x coordinate.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">ry</span></td>
       <td><p>Input relative device coordinate (0.0-1.0) for the y coordinate.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">wx</span></td>
       <td><p>Returned value of the x world coordinate corresponding to the relative device coordinates rx and ry.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">wy</span></td>
       <td><p>Returned value of the y world coordinate corresponding to the relative device coordinates rx and ry.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">window</span></td>
       <td><p>Returned value of the last defined window index that corresponds to the input relative device coordinates (and the returned world coordinates). To give some background on the window index, for each page the initial window index is set to zero, and each time plwind is called within the page, world and device coordinates are stored for the window and the window index is incremented. Thus, for a simple page layout with non-overlapping viewports and one window per viewport, window corresponds to the viewport index (in the order which the viewport/windows were created) of the only viewport/window corresponding to rx and ry. However, for more complicated layouts with potentially overlapping viewports and possibly more than one window (set of world coordinates) per viewport, window and the corresponding output world coordinates corresponds to the last window created that fulfills the criterion that the relative device coordinates are inside it. Finally, in all cases where the input relative device coordinates are not inside any viewport/window, then the returned value of the last defined window index is set to -1.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_calc_world_System_Double_System_Double_System_Double__System_Double__System_Int32___remarks">Remarks</h5>
+<h5 id="PLplot_Native_calc_world_Double_Double_Double__Double__Int32___remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Calculate world coordinates, wx and wy, and corresponding window index from relative device coordinates, rx and ry.</p>
 </div>
 </article>

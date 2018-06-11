@@ -88,13 +88,13 @@
 
 
 <a id="PLplot_Native_scmap1_range_" data-uid="PLplot.Native.scmap1_range*"></a>
-<h4 id="PLplot_Native_scmap1_range_System_Double_System_Double_" data-uid="PLplot.Native.scmap1_range(System.Double,System.Double)">scmap1_range(Double, Double)</h4>
+<h4 id="PLplot_Native_scmap1_range_Double_Double_" data-uid="PLplot.Native.scmap1_range(Double,Double)">scmap1_range(Double, Double)</h4>
 <div class="markdown level1 summary"><p>plscmap1_range: Set the cmap1 argument range for continuous color plots</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void scmap1_range(double min_color, double max_color)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void scmap1_range(Double min_color, Double max_color)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -107,20 +107,20 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">min_color</span></td>
       <td><p>The minimum cmap1 argument. If less than 0.0, then 0.0 is used instead.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">max_color</span></td>
       <td><p>The maximum cmap1 argument. If greater than 1.0, then 1.0 is used instead.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_scmap1_range_System_Double_System_Double__remarks">Remarks</h5>
+<h5 id="PLplot_Native_scmap1_range_Double_Double__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Set the cmap1 argument range for continuous color plots that corresponds to the range of data values. The maximum range corresponding to the entire cmap1 palette is 0.0-1.0, and the smaller the cmap1 argument range that is specified with this routine, the smaller the subset of the cmap1 color palette that is used to represent the continuous data being plotted. If min_color is greater than max_color or max_color is greater than 1.0 or min_color is less than 0.0 then no change is made to the cmap1 argument range. (Use plgcmap1_range to get the cmap1 argument range.)</p>
 </div>
 </article>

@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_vect_System_Double_0__0___System_Double_0__0___System_Double_PLplot_TransformFunc_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.vect(System.Double%5B0%3A%2C0%3A%5D%2CSystem.Double%5B0%3A%2C0%3A%5D%2CSystem.Double%2CPLplot.TransformFunc)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_vect_Double_0__0___Double_0__0___Double_PLplot_TransformFunc_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.vect(Double%5B0%3A%2C0%3A%5D%2CDouble%5B0%3A%2C0%3A%5D%2CDouble%2CPLplot.TransformFunc)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L2387">View Source</a>
 </span>
 <a id="PLplot_PLStream_vect_" data-uid="PLplot.PLStream.vect*"></a>
-<h4 id="PLplot_PLStream_vect_System_Double_0__0___System_Double_0__0___System_Double_PLplot_TransformFunc_" data-uid="PLplot.PLStream.vect(System.Double[0:,0:],System.Double[0:,0:],System.Double,PLplot.TransformFunc)">vect(Double[,], Double[,], Double, TransformFunc)</h4>
+<h4 id="PLplot_PLStream_vect_Double_0__0___Double_0__0___Double_PLplot_TransformFunc_" data-uid="PLplot.PLStream.vect(Double[0:,0:],Double[0:,0:],Double,PLplot.TransformFunc)">vect(Double[,], Double[,], Double, TransformFunc)</h4>
 <div class="markdown level1 summary"><p>plvect: Vector plot</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void vect(double[, ] u, double[, ] v, double scale, TransformFunc pltr)</code></pre>
+  <pre><code class="lang-csharp hljs">public void vect(Double[, ] u, Double[, ] v, Double scale, TransformFunc pltr)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,17 +112,17 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span>[,]</td>
+      <td><span class="xref">Double</span>[,]</td>
       <td><span class="parametername">u</span></td>
       <td></td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span>[,]</td>
+      <td><span class="xref">Double</span>[,]</td>
       <td><span class="parametername">v</span></td>
       <td></td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">scale</span></td>
       <td><p>Parameter to control the scaling factor of the vectors for plotting. If scale = 0  then the scaling factor is automatically calculated for the data. If scale lt 0 then the scaling factor is automatically calculated for the data and then multiplied by -scale. If scale gt 0 then the scaling factor is set to scale.</p>
 </td>
@@ -135,7 +135,7 @@
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_PLStream_vect_System_Double_0__0___System_Double_0__0___System_Double_PLplot_TransformFunc__remarks">Remarks</h5>
+<h5 id="PLplot_PLStream_vect_Double_0__0___Double_0__0___Double_PLplot_TransformFunc__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Draws a plot of vector data contained in the matrices  (u[nx][ny],v[nx][ny]) . The scaling factor for the vectors is given by scale. A transformation routine pointed to by pltr with a pointer pltr_data for additional data required by the transformation routine to map indices within the matrices to the world coordinates. The style of the vector arrow may be set using plsvect.</p>
 </div>
 </article>

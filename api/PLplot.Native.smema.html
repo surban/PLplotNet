@@ -88,13 +88,13 @@
 
 
 <a id="PLplot_Native_smema_" data-uid="PLplot.Native.smema*"></a>
-<h4 id="PLplot_Native_smema_System_Int32_System_Int32_System_IntPtr_" data-uid="PLplot.Native.smema(System.Int32,System.Int32,System.IntPtr)">smema(Int32, Int32, IntPtr)</h4>
+<h4 id="PLplot_Native_smema_Int32_Int32_IntPtr_" data-uid="PLplot.Native.smema(Int32,Int32,IntPtr)">smema(Int32, Int32, IntPtr)</h4>
 <div class="markdown level1 summary"><p>plsmema: Set the memory area to be plotted (RGBA)</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void smema(int maxx, int maxy, IntPtr plotmem)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void smema(Int32 maxx, Int32 maxy, IntPtr plotmem)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -107,26 +107,26 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">maxx</span></td>
       <td><p>Size of memory area in the X coordinate.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">maxy</span></td>
       <td><p>Size of memory area in the Y coordinate.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.IntPtr</span></td>
+      <td><span class="xref">IntPtr</span></td>
       <td><span class="parametername">plotmem</span></td>
       <td><p>Pointer to the beginning of a user-supplied writeable memory area.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_smema_System_Int32_System_Int32_System_IntPtr__remarks">Remarks</h5>
+<h5 id="PLplot_Native_smema_Int32_Int32_IntPtr__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Set the memory area to be plotted (with the memcairo driver) as the dev member of the stream structure. Also set the number of pixels in the memory passed in plotmem, which is a block of memory maxy by maxx by 4 bytes long, say: 480 x 640 x 4 (Y, X, RGBA)</p>
 </div>
 </article>

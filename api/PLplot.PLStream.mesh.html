@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_mesh_System_Double___System_Double___System_Double_0__0___PLplot_Mesh_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.mesh(System.Double%5B%5D%2CSystem.Double%5B%5D%2CSystem.Double%5B0%3A%2C0%3A%5D%2CPLplot.Mesh)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_mesh_Double___Double___Double_0__0___PLplot_Mesh_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.mesh(Double%5B%5D%2CDouble%5B%5D%2CDouble%5B0%3A%2C0%3A%5D%2CPLplot.Mesh)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L1161">View Source</a>
 </span>
 <a id="PLplot_PLStream_mesh_" data-uid="PLplot.PLStream.mesh*"></a>
-<h4 id="PLplot_PLStream_mesh_System_Double___System_Double___System_Double_0__0___PLplot_Mesh_" data-uid="PLplot.PLStream.mesh(System.Double[],System.Double[],System.Double[0:,0:],PLplot.Mesh)">mesh(Double[], Double[], Double[,], Mesh)</h4>
+<h4 id="PLplot_PLStream_mesh_Double___Double___Double_0__0___PLplot_Mesh_" data-uid="PLplot.PLStream.mesh(Double[],Double[],Double[0:,0:],PLplot.Mesh)">mesh(Double[], Double[], Double[,], Mesh)</h4>
 <div class="markdown level1 summary"><p>plmesh: Plot surface mesh</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void mesh(double[] x, double[] y, double[, ] z, Mesh opt)</code></pre>
+  <pre><code class="lang-csharp hljs">public void mesh(Double[] x, Double[] y, Double[, ] z, Mesh opt)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,19 +112,19 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">x</span></td>
       <td><p>A vector containing the x coordinates at which the function is evaluated.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">y</span></td>
       <td><p>A vector containing the y coordinates at which the function is evaluated.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span>[,]</td>
+      <td><span class="xref">Double</span>[,]</td>
       <td><span class="parametername">z</span></td>
       <td><p>A matrix containing function values to plot. Should have dimensions of nx by ny.</p>
 </td>
@@ -137,7 +137,7 @@
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_PLStream_mesh_System_Double___System_Double___System_Double_0__0___PLplot_Mesh__remarks">Remarks</h5>
+<h5 id="PLplot_PLStream_mesh_Double___Double___Double_0__0___PLplot_Mesh__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Plots a surface mesh within the environment set up by plw3d. The surface is defined by the matrix z[nx][ny] , the point z[i][j] being the value of the function at (x[i], y[j]). Note that the points in vectors x and y do not need to be equally spaced, but must be stored in ascending order. The parameter opt controls the way in which the surface is displayed. For further details see .</p>
 </div>
 </article>

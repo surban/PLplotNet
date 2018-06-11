@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_spal1_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.spal1(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_spal1_System_String_Boolean_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.spal1(System.String%2CBoolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L2017">View Source</a>
 </span>
 <a id="PLplot_PLStream_spal1_" data-uid="PLplot.PLStream.spal1*"></a>
-<h4 id="PLplot_PLStream_spal1_System_String_System_Boolean_" data-uid="PLplot.PLStream.spal1(System.String,System.Boolean)">spal1(String, Boolean)</h4>
+<h4 id="PLplot_PLStream_spal1_System_String_Boolean_" data-uid="PLplot.PLStream.spal1(System.String,Boolean)">spal1(String, Boolean)</h4>
 <div class="markdown level1 summary"><p>plspal1: Set the cmap1 palette using the specified cmap1*.pal format file</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void spal1(string filename, bool interpolate)</code></pre>
+  <pre><code class="lang-csharp hljs">public void spal1(string filename, Boolean interpolate)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -118,14 +118,14 @@
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Boolean</span></td>
+      <td><span class="xref">Boolean</span></td>
       <td><span class="parametername">interpolate</span></td>
       <td><p>If this parameter is true, the columns containing the intensity index, r, g, b, alpha and alt_hue_path in the cmap1*.pal file are used to set the cmap1 palette with a call to plscmap1la. (The cmap1*.pal header contains a flag which controls whether the r, g, b data sent to plscmap1la are interpreted as HLS or RGB.)  If this parameter is false, the intensity index and alt_hue_path columns are ignored and the r, g, b (interpreted as RGB), and alpha columns of the cmap1*.pal file are used instead to set the cmap1 palette directly with a call to plscmap1a.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_PLStream_spal1_System_String_System_Boolean__remarks">Remarks</h5>
+<h5 id="PLplot_PLStream_spal1_System_String_Boolean__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Set the cmap1 palette using the specified cmap1*.pal format file.</p>
 </div>
 </article>

@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_Native_scmap1a_System_Int32___System_Int32___System_Int32___System_Double___.md&amp;value=---%0Auid%3A%20PLplot.Native.scmap1a(System.Int32%5B%5D%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D%2CSystem.Double%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_Native_scmap1a_Int32___Int32___Int32___Double___.md&amp;value=---%0Auid%3A%20PLplot.Native.scmap1a(Int32%5B%5D%2CInt32%5B%5D%2CInt32%5B%5D%2CDouble%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/NativeGenerated.cs/#L1409">View Source</a>
 </span>
 <a id="PLplot_Native_scmap1a_" data-uid="PLplot.Native.scmap1a*"></a>
-<h4 id="PLplot_Native_scmap1a_System_Int32___System_Int32___System_Int32___System_Double___" data-uid="PLplot.Native.scmap1a(System.Int32[],System.Int32[],System.Int32[],System.Double[])">scmap1a(Int32[], Int32[], Int32[], Double[])</h4>
+<h4 id="PLplot_Native_scmap1a_Int32___Int32___Int32___Double___" data-uid="PLplot.Native.scmap1a(Int32[],Int32[],Int32[],Double[])">scmap1a(Int32[], Int32[], Int32[], Double[])</h4>
 <div class="markdown level1 summary"><p>plscmap1a: Set semitransparent cmap1 RGBA colors.</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void scmap1a(int[] r, int[] g, int[] b, double[] alpha)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void scmap1a(Int32[] r, Int32[] g, Int32[] b, Double[] alpha)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,32 +112,32 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Int32</span>[]</td>
+      <td><span class="xref">Int32</span>[]</td>
       <td><span class="parametername">r</span></td>
       <td><p>A vector that represents (using unsigned 8-bit integers in the range from 0-255) the degree of red in the color as a continuous function of the integer index of the vector.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span>[]</td>
+      <td><span class="xref">Int32</span>[]</td>
       <td><span class="parametername">g</span></td>
       <td><p>A vector that represents (using unsigned 8-bit integers in the range from 0-255) the degree of green in the color as a continuous function of the integer index of the vector.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span>[]</td>
+      <td><span class="xref">Int32</span>[]</td>
       <td><span class="parametername">b</span></td>
       <td><p>A vector that represents (using unsigned 8-bit integers in the range from 0-255) the degree of blue in the color as a continuous function of the integer index of the vector.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">alpha</span></td>
       <td><p>A vector that represents (using PLFLT values in the range from 0.0-1.0 where 0.0 corresponds to completely transparent and 1.0 corresponds to completely opaque) the alpha transparency of the color as a continuous function of the integer index of the vector.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_scmap1a_System_Int32___System_Int32___System_Int32___System_Double____remarks">Remarks</h5>
+<h5 id="PLplot_Native_scmap1a_Int32___Int32___Int32___Double____remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Set semitransparent cmap1 colors (see ) using RGBA vector values. This function also sets the number of cmap1 colors. N.B. Continuous cmap1 colors are indexed with a floating-point index in the range from 0.0-1.0 which is linearly transformed (e.g., by plcol1) to an integer index of these RGBA vectors in the range from 0 to ncol1-1. So in order for this continuous color model to work properly, it is the responsibility of the user of plscmap1 to insure that these RGBA vectors are continuous functions of their integer indices.</p>
 </div>
 </article>

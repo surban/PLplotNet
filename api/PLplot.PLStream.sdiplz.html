@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_sdiplz_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.sdiplz(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_sdiplz_Double_Double_Double_Double_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.sdiplz(Double%2CDouble%2CDouble%2CDouble)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L1763">View Source</a>
 </span>
 <a id="PLplot_PLStream_sdiplz_" data-uid="PLplot.PLStream.sdiplz*"></a>
-<h4 id="PLplot_PLStream_sdiplz_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.PLStream.sdiplz(System.Double,System.Double,System.Double,System.Double)">sdiplz(Double, Double, Double, Double)</h4>
+<h4 id="PLplot_PLStream_sdiplz_Double_Double_Double_Double_" data-uid="PLplot.PLStream.sdiplz(Double,Double,Double,Double)">sdiplz(Double, Double, Double, Double)</h4>
 <div class="markdown level1 summary"><p>plsdiplz: Set parameters incrementally (zoom mode) that define current plot-space window</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void sdiplz(double xmin, double ymin, double xmax, double ymax)</code></pre>
+  <pre><code class="lang-csharp hljs">public void sdiplz(Double xmin, Double ymin, Double xmax, Double ymax)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,32 +112,32 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">xmin</span></td>
       <td><p>Relative (incremental) minimum in x.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">ymin</span></td>
       <td><p>Relative (incremental) minimum in y.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">xmax</span></td>
       <td><p>Relative (incremental) maximum in x.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">ymax</span></td>
       <td><p>Relative (incremental) maximum in y.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_PLStream_sdiplz_System_Double_System_Double_System_Double_System_Double__remarks">Remarks</h5>
+<h5 id="PLplot_PLStream_sdiplz_Double_Double_Double_Double__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Set relative minima and maxima incrementally (zoom mode) that define the current plot-space window. This function has the same effect as plsdiplt if that function has not been previously called. Otherwise, this function implements zoom mode using the transformation min_used = old_min + old_length<em>min  and max_used = old_min + old_length</em>max  for each axis. For example, if min = 0.05 and max = 0.95 for each axis, repeated calls to plsdiplz will zoom in by 10 per cent for each call.</p>
 </div>
 </article>

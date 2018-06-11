@@ -90,7 +90,7 @@
   <h6><strong>Assembly</strong>: PLplotNet.dll</h6>
   <h5 id="PLplot_LabelFunc_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public delegate void LabelFunc(Axis axis, double value, out string label, int length, IntPtr data);</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate void LabelFunc(Axis axis, Double value, out string label, Int32 length, IntPtr data);</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -109,7 +109,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Double</span></td>
+        <td><span class="xref">Double</span></td>
         <td><span class="parametername">value</span></td>
         <td><p>This is the value along the axis which is being labelled.</p>
 </td>
@@ -121,13 +121,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><span class="xref">Int32</span></td>
         <td><span class="parametername">length</span></td>
         <td><p>maximum length of generated laben</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="xref">IntPtr</span></td>
         <td><span class="parametername">data</span></td>
         <td><p>Generic pointer to additional input data that may be required by the callback routine in order to generate label.</p>
 </td>

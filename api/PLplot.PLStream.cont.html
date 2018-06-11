@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_cont_System_Double_0__0___System_Int32_System_Int32_System_Int32_System_Int32_System_Double___PLplot_TransformFunc_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.cont(System.Double%5B0%3A%2C0%3A%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Double%5B%5D%2CPLplot.TransformFunc)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_cont_Double_0__0___Int32_Int32_Int32_Int32_Double___PLplot_TransformFunc_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.cont(Double%5B0%3A%2C0%3A%5D%2CInt32%2CInt32%2CInt32%2CInt32%2CDouble%5B%5D%2CPLplot.TransformFunc)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L267">View Source</a>
 </span>
 <a id="PLplot_PLStream_cont_" data-uid="PLplot.PLStream.cont*"></a>
-<h4 id="PLplot_PLStream_cont_System_Double_0__0___System_Int32_System_Int32_System_Int32_System_Int32_System_Double___PLplot_TransformFunc_" data-uid="PLplot.PLStream.cont(System.Double[0:,0:],System.Int32,System.Int32,System.Int32,System.Int32,System.Double[],PLplot.TransformFunc)">cont(Double[,], Int32, Int32, Int32, Int32, Double[], TransformFunc)</h4>
+<h4 id="PLplot_PLStream_cont_Double_0__0___Int32_Int32_Int32_Int32_Double___PLplot_TransformFunc_" data-uid="PLplot.PLStream.cont(Double[0:,0:],Int32,Int32,Int32,Int32,Double[],PLplot.TransformFunc)">cont(Double[,], Int32, Int32, Int32, Int32, Double[], TransformFunc)</h4>
 <div class="markdown level1 summary"><p>plcont: Contour plot</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void cont(double[, ] f, int kx, int lx, int ky, int ly, double[] clevel, TransformFunc pltr)</code></pre>
+  <pre><code class="lang-csharp hljs">public void cont(Double[, ] f, Int32 kx, Int32 lx, Int32 ky, Int32 ly, Double[] clevel, TransformFunc pltr)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,37 +112,37 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span>[,]</td>
+      <td><span class="xref">Double</span>[,]</td>
       <td><span class="parametername">f</span></td>
       <td><p>A matrix containing data to be contoured.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">kx</span></td>
       <td><p>Start of x indices to consider</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">lx</span></td>
       <td><p>End (exclusive) of x indices to consider</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">ky</span></td>
       <td><p>Start of y indices to consider</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">ly</span></td>
       <td><p>End (exclusive) of y indices to consider</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">clevel</span></td>
       <td><p>A vector specifying the levels at which to draw contours.</p>
 </td>
@@ -155,7 +155,7 @@
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_PLStream_cont_System_Double_0__0___System_Int32_System_Int32_System_Int32_System_Int32_System_Double___PLplot_TransformFunc__remarks">Remarks</h5>
+<h5 id="PLplot_PLStream_cont_Double_0__0___Int32_Int32_Int32_Int32_Double___PLplot_TransformFunc__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Draws a contour plot of the data in f[nx][ny], using the nlevel contour levels specified by clevel. Only the region of the matrix from kx to lx and from ky to ly is plotted out where all these index ranges are interpreted as one-based for historical reasons. A transformation routine pointed to by pltr with a generic pointer pltr_data for additional data required by the transformation routine is used to map indices within the matrix to the world coordinates.</p>
 </div>
 </article>

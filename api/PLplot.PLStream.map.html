@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_map_PLplot_MapFunc_System_String_System_Double_System_Double_System_Double_System_Double_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.map(PLplot.MapFunc%2CSystem.String%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_map_PLplot_MapFunc_System_String_Double_Double_Double_Double_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.map(PLplot.MapFunc%2CSystem.String%2CDouble%2CDouble%2CDouble%2CDouble)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L1052">View Source</a>
 </span>
 <a id="PLplot_PLStream_map_" data-uid="PLplot.PLStream.map*"></a>
-<h4 id="PLplot_PLStream_map_PLplot_MapFunc_System_String_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.PLStream.map(PLplot.MapFunc,System.String,System.Double,System.Double,System.Double,System.Double)">map(MapFunc, String, Double, Double, Double, Double)</h4>
+<h4 id="PLplot_PLStream_map_PLplot_MapFunc_System_String_Double_Double_Double_Double_" data-uid="PLplot.PLStream.map(PLplot.MapFunc,System.String,Double,Double,Double,Double)">map(MapFunc, String, Double, Double, Double, Double)</h4>
 <div class="markdown level1 summary"><p>plmap: Plot continental outline or shapefile data in world coordinates</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void map(MapFunc mapform, string name, double minx, double maxx, double miny, double maxy)</code></pre>
+  <pre><code class="lang-csharp hljs">public void map(MapFunc mapform, string name, Double minx, Double maxx, Double miny, Double maxy)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -124,32 +124,32 @@
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">minx</span></td>
       <td><p>The minimum x value of map elements to be drawn. For the built in maps this is a measure of longitude. For Shapefiles the units must match the projection. The value of minx must be less than the value of maxx. Specifying a useful limit for these limits provides a useful optimization for complex or detailed maps.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">maxx</span></td>
       <td><p>The maximum x value of map elements to be drawn</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">miny</span></td>
       <td><p>The minimum y value of map elements to be drawn. For the built in maps this is a measure of latitude. For Shapefiles the units must match the projection. The value of miny must be less than the value of maxy.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">maxy</span></td>
       <td><p>The maximum y value of map elements to be drawn.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_PLStream_map_PLplot_MapFunc_System_String_System_Double_System_Double_System_Double_System_Double__remarks">Remarks</h5>
+<h5 id="PLplot_PLStream_map_PLplot_MapFunc_System_String_Double_Double_Double_Double__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Plots continental outlines or shapefile data in world coordinates. A demonstration of how to use this function to create different projections can be found in examples/c/x19c. PLplot is provided with basic coastal outlines and USA state borders. These can be used irrespective of whether Shapefile support is built into PLplot. With Shapefile support this function can also be used with user Shapefiles, in which case it will plot the entire contents of a Shapefile joining each point of each Shapefile element with a line. Shapefiles have become a popular standard for geographical data and data in this format can be easily found from a number of online sources. Shapefile data is actually provided as three or more files with the same filename, but different extensions. The .shp and .shx files are required for plotting Shapefile data with PLplot.</p>
 </div>
 </article>

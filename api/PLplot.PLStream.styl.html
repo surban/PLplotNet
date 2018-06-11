@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_styl_System_Int32___System_Int32___.md&amp;value=---%0Auid%3A%20PLplot.PLStream.styl(System.Int32%5B%5D%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_styl_Int32___Int32___.md&amp;value=---%0Auid%3A%20PLplot.PLStream.styl(Int32%5B%5D%2CInt32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L2214">View Source</a>
 </span>
 <a id="PLplot_PLStream_styl_" data-uid="PLplot.PLStream.styl*"></a>
-<h4 id="PLplot_PLStream_styl_System_Int32___System_Int32___" data-uid="PLplot.PLStream.styl(System.Int32[],System.Int32[])">styl(Int32[], Int32[])</h4>
+<h4 id="PLplot_PLStream_styl_Int32___Int32___" data-uid="PLplot.PLStream.styl(Int32[],Int32[])">styl(Int32[], Int32[])</h4>
 <div class="markdown level1 summary"><p>plstyl: Set line style</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void styl(int[] mark, int[] space)</code></pre>
+  <pre><code class="lang-csharp hljs">public void styl(Int32[] mark, Int32[] space)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,20 +112,20 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Int32</span>[]</td>
+      <td><span class="xref">Int32</span>[]</td>
       <td><span class="parametername">mark</span></td>
       <td><p>A vector containing the lengths of the segments during which the pen is down, measured in micrometers.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span>[]</td>
+      <td><span class="xref">Int32</span>[]</td>
       <td><span class="parametername">space</span></td>
       <td><p>A vector containing the lengths of the segments during which the pen is up, measured in micrometers.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_PLStream_styl_System_Int32___System_Int32____remarks">Remarks</h5>
+<h5 id="PLplot_PLStream_styl_Int32___Int32____remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>This sets up the line style for all lines subsequently drawn. A line consists of segments in which the pen is alternately down and up. The lengths of these segments are passed in the vectors mark and space respectively. The number of mark-space pairs is specified by nms. In order to return the line style to the default continuous line, plstyl should be called with nms =0 .(see also pllsty)</p>
 </div>
 </article>

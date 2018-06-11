@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_bin_System_Double___System_Double___PLplot_Bin_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.bin(System.Double%5B%5D%2CSystem.Double%5B%5D%2CPLplot.Bin)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_bin_Double___Double___PLplot_Bin_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.bin(Double%5B%5D%2CDouble%5B%5D%2CPLplot.Bin)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L107">View Source</a>
 </span>
 <a id="PLplot_PLStream_bin_" data-uid="PLplot.PLStream.bin*"></a>
-<h4 id="PLplot_PLStream_bin_System_Double___System_Double___PLplot_Bin_" data-uid="PLplot.PLStream.bin(System.Double[],System.Double[],PLplot.Bin)">bin(Double[], Double[], Bin)</h4>
+<h4 id="PLplot_PLStream_bin_Double___Double___PLplot_Bin_" data-uid="PLplot.PLStream.bin(Double[],Double[],PLplot.Bin)">bin(Double[], Double[], Bin)</h4>
 <div class="markdown level1 summary"><p>plbin: Plot a histogram from binned data</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void bin(double[] x, double[] y, Bin opt)</code></pre>
+  <pre><code class="lang-csharp hljs">public void bin(Double[] x, Double[] y, Bin opt)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,13 +112,13 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">x</span></td>
       <td><p>A vector containing values associated with bins. These must form a strictly increasing sequence.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">y</span></td>
       <td><p>A vector containing a number which is proportional to the number of points in each bin. This is a PLFLT (instead of PLINT) vector so as to allow histograms of probabilities, etc.</p>
 </td>
@@ -131,7 +131,7 @@
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_PLStream_bin_System_Double___System_Double___PLplot_Bin__remarks">Remarks</h5>
+<h5 id="PLplot_PLStream_bin_Double___Double___PLplot_Bin__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Plots a histogram consisting of nbin bins. The value associated with the i'th bin is placed in x[i], and the number of points in the bin is placed in y[i]. For proper operation, the values in x[i] must form a strictly increasing sequence. By default, x[i] is the left-hand edge of the i'th bin. If opt=PL_BIN_CENTRED is used, the bin boundaries are placed midway between the values in the x vector. Also see plhist for drawing histograms from unbinned data.</p>
 </div>
 </article>

@@ -88,13 +88,13 @@
 
 
 <a id="PLplot_Native_gdiori_" data-uid="PLplot.Native.gdiori*"></a>
-<h4 id="PLplot_Native_gdiori_System_Double__" data-uid="PLplot.Native.gdiori(System.Double@)">gdiori(out Double)</h4>
+<h4 id="PLplot_Native_gdiori_Double__" data-uid="PLplot.Native.gdiori(Double@)">gdiori(out Double)</h4>
 <div class="markdown level1 summary"><p>plgdiori: Get plot orientation</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void gdiori(out double p_rot)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void gdiori(out Double p_rot)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -107,14 +107,14 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">p_rot</span></td>
       <td><p>Returned value of the orientation parameter.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_gdiori_System_Double___remarks">Remarks</h5>
+<h5 id="PLplot_Native_gdiori_Double___remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Get plot orientation parameter which is multiplied by 90deg to obtain the angle of rotation. Note, arbitrary rotation parameters such as 0.2 (corresponding to 18deg) are possible, but the usual values for the rotation parameter are 0., 1., 2., and 3. corresponding to 0deg (landscape mode), 90deg (portrait mode), 180deg (seascape mode), and 270deg (upside-down mode). If plsdiori has not been called the default value pointed to by p_rot will be 0.</p>
 </div>
 </article>

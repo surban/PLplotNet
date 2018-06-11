@@ -88,13 +88,13 @@
 
 
 <a id="PLplot_Native_path_" data-uid="PLplot.Native.path*"></a>
-<h4 id="PLplot_Native_path_System_Int32_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.Native.path(System.Int32,System.Double,System.Double,System.Double,System.Double)">path(Int32, Double, Double, Double, Double)</h4>
+<h4 id="PLplot_Native_path_Int32_Double_Double_Double_Double_" data-uid="PLplot.Native.path(Int32,Double,Double,Double,Double)">path(Int32, Double, Double, Double, Double)</h4>
 <div class="markdown level1 summary"><p>plpath: Draw a line between two points, accounting for coordinate transforms</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void path(int n, double x1, double y1, double x2, double y2)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void path(Int32 n, Double x1, Double y1, Double x2, Double y2)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -107,38 +107,38 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">n</span></td>
       <td><p>number of points to use to approximate the path.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">x1</span></td>
       <td><p>x coordinate of first point.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">y1</span></td>
       <td><p>y coordinate of first point.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">x2</span></td>
       <td><p>x coordinate of second point.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">y2</span></td>
       <td><p>y coordinate of second point.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_path_System_Int32_System_Double_System_Double_System_Double_System_Double__remarks">Remarks</h5>
+<h5 id="PLplot_Native_path_Int32_Double_Double_Double_Double__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Joins the point  (x1, y1)  to  (x2, y2) . If a global coordinate transform is defined then the line is broken in to n segments to approximate the path. If no transform is defined then this simply acts like a call to pljoin.</p>
 </div>
 </article>

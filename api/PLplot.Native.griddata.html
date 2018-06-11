@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_Native_griddata_System_Double___System_Double___System_Double___System_Double___System_Double___System_Double_0__0___PLplot_Grid_System_Double_.md&amp;value=---%0Auid%3A%20PLplot.Native.griddata(System.Double%5B%5D%2CSystem.Double%5B%5D%2CSystem.Double%5B%5D%2CSystem.Double%5B%5D%2CSystem.Double%5B%5D%2CSystem.Double%5B0%3A%2C0%3A%5D%2CPLplot.Grid%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_Native_griddata_Double___Double___Double___Double___Double___Double_0__0___PLplot_Grid_Double_.md&amp;value=---%0Auid%3A%20PLplot.Native.griddata(Double%5B%5D%2CDouble%5B%5D%2CDouble%5B%5D%2CDouble%5B%5D%2CDouble%5B%5D%2CDouble%5B0%3A%2C0%3A%5D%2CPLplot.Grid%2CDouble)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/NativeGenerated.cs/#L555">View Source</a>
 </span>
 <a id="PLplot_Native_griddata_" data-uid="PLplot.Native.griddata*"></a>
-<h4 id="PLplot_Native_griddata_System_Double___System_Double___System_Double___System_Double___System_Double___System_Double_0__0___PLplot_Grid_System_Double_" data-uid="PLplot.Native.griddata(System.Double[],System.Double[],System.Double[],System.Double[],System.Double[],System.Double[0:,0:],PLplot.Grid,System.Double)">griddata(Double[], Double[], Double[], Double[], Double[], Double[,], Grid, Double)</h4>
+<h4 id="PLplot_Native_griddata_Double___Double___Double___Double___Double___Double_0__0___PLplot_Grid_Double_" data-uid="PLplot.Native.griddata(Double[],Double[],Double[],Double[],Double[],Double[0:,0:],PLplot.Grid,Double)">griddata(Double[], Double[], Double[], Double[], Double[], Double[,], Grid, Double)</h4>
 <div class="markdown level1 summary"><p>plgriddata: Grid data from irregularly sampled data</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void griddata(double[] x, double[] y, double[] z, double[] xg, double[] yg, double[, ] zg, Grid type, double data)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void griddata(Double[] x, Double[] y, Double[] z, Double[] xg, Double[] yg, Double[, ] zg, Grid type, Double data)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,37 +112,37 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">x</span></td>
       <td><p>The input x vector.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">y</span></td>
       <td><p>The input y vector.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">z</span></td>
       <td><p>The input z vector. Each triple x[i], y[i], z[i] represents one data sample coordinate.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">xg</span></td>
       <td><p>A vector that specifies the grid spacing in the x direction. Usually xg has nptsx equally spaced values from the minimum to the maximum values of the x input vector.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">yg</span></td>
       <td><p>A vector that specifies the grid spacing in the y direction. Similar to the xg parameter.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span>[,]</td>
+      <td><span class="xref">Double</span>[,]</td>
       <td><span class="parametername">zg</span></td>
       <td><p>The matrix of interpolated results where data lies in the grid specified by xg and yg. Therefore the zg matrix must be dimensioned nptsx by nptsy.</p>
 </td>
@@ -154,14 +154,14 @@
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">data</span></td>
       <td><p>Some gridding algorithms require extra data, which can be specified through this argument. Currently, for algorithm: GRID_NNIDW, data specifies the number of neighbors to use, the lower the value, the noisier (more local) the approximation is. GRID_NNLI, data specifies what a thin triangle is, in the range [1. .. 2.]. High values enable the usage of very thin triangles for interpolation, possibly resulting in error in the approximation. GRID_NNI, only weights greater than data will be accepted. If 0, all weights will be accepted.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_griddata_System_Double___System_Double___System_Double___System_Double___System_Double___System_Double_0__0___PLplot_Grid_System_Double__remarks">Remarks</h5>
+<h5 id="PLplot_Native_griddata_Double___Double___Double___Double___Double___Double_0__0___PLplot_Grid_Double__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Real world data is frequently irregularly sampled, but PLplot 3D plots require data organized as a grid, i.e., with x sample point values independent of y coordinate and vice versa. This function takes irregularly sampled data from the x[npts], y[npts], and z[npts] vectors; reads the desired grid location from the input vectors xg[nptsx] and yg[nptsy]; and returns the interpolated result on that grid using the output matrix zg[nptsx][nptsy]. The algorithm used to interpolate the data to the grid is specified with the argument type which can have one parameter specified in argument data.</p>
 </div>
 </article>

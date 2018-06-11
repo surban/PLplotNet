@@ -88,13 +88,13 @@
 
 
 <a id="PLplot_Native_mkstrm_" data-uid="PLplot.Native.mkstrm*"></a>
-<h4 id="PLplot_Native_mkstrm_System_Int32__" data-uid="PLplot.Native.mkstrm(System.Int32@)">mkstrm(out Int32)</h4>
+<h4 id="PLplot_Native_mkstrm_Int32__" data-uid="PLplot.Native.mkstrm(Int32@)">mkstrm(out Int32)</h4>
 <div class="markdown level1 summary"><p>plmkstrm: Creates a new stream and makes it the default</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void mkstrm(out int p_strm)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void mkstrm(out Int32 p_strm)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -107,14 +107,14 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">p_strm</span></td>
       <td><p>Returned value of the stream number of the created stream.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_mkstrm_System_Int32___remarks">Remarks</h5>
+<h5 id="PLplot_Native_mkstrm_Int32___remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Creates a new stream and makes it the default. Differs from using plsstrm, in that a free stream number is found, and returned. Unfortunately, I have to start at stream 1 and work upward, since stream 0 is preallocated. One of the big flaws in the PLplot API is that no initial, library-opening call is required. So stream 0 must be preallocated, and there is no simple way of determining whether it is already in use or not.</p>
 </div>
 </article>

@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_Native_hist_System_Double___System_Double_System_Double_System_Int32_PLplot_Hist_.md&amp;value=---%0Auid%3A%20PLplot.Native.hist(System.Double%5B%5D%2CSystem.Double%2CSystem.Double%2CSystem.Int32%2CPLplot.Hist)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_Native_hist_Double___Double_Double_Int32_PLplot_Hist_.md&amp;value=---%0Auid%3A%20PLplot.Native.hist(Double%5B%5D%2CDouble%2CDouble%2CInt32%2CPLplot.Hist)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/NativeGenerated.cs/#L645">View Source</a>
 </span>
 <a id="PLplot_Native_hist_" data-uid="PLplot.Native.hist*"></a>
-<h4 id="PLplot_Native_hist_System_Double___System_Double_System_Double_System_Int32_PLplot_Hist_" data-uid="PLplot.Native.hist(System.Double[],System.Double,System.Double,System.Int32,PLplot.Hist)">hist(Double[], Double, Double, Int32, Hist)</h4>
+<h4 id="PLplot_Native_hist_Double___Double_Double_Int32_PLplot_Hist_" data-uid="PLplot.Native.hist(Double[],Double,Double,Int32,PLplot.Hist)">hist(Double[], Double, Double, Int32, Hist)</h4>
 <div class="markdown level1 summary"><p>plhist: Plot a histogram from unbinned data</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void hist(double[] data, double datmin, double datmax, int nbin, Hist opt)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void hist(Double[] data, Double datmin, Double datmax, Int32 nbin, Hist opt)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,25 +112,25 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">data</span></td>
       <td><p>A vector containing the values of the n data points.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">datmin</span></td>
       <td><p>Left-hand edge of lowest-valued bin.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">datmax</span></td>
       <td><p>Right-hand edge of highest-valued bin.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">nbin</span></td>
       <td><p>Number of (equal-sized) bins into which to divide the interval xmin to xmax.</p>
 </td>
@@ -143,7 +143,7 @@
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_hist_System_Double___System_Double_System_Double_System_Int32_PLplot_Hist__remarks">Remarks</h5>
+<h5 id="PLplot_Native_hist_Double___Double_Double_Int32_PLplot_Hist__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Plots a histogram from n data points stored in the data vector. This routine bins the data into nbin bins equally spaced between datmin and datmax, and calls plbin to draw the resulting histogram. Parameter opt allows, among other things, the histogram either to be plotted in an existing window or causes plhist to call plenv with suitable limits before plotting the histogram.</p>
 </div>
 </article>

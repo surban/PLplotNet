@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_Native_mapstring_PLplot_MapFunc_System_String_System_String_System_Double_System_Double_System_Double_System_Double_System_Int32___.md&amp;value=---%0Auid%3A%20PLplot.Native.mapstring(PLplot.MapFunc%2CSystem.String%2CSystem.String%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_Native_mapstring_PLplot_MapFunc_System_String_System_String_Double_Double_Double_Double_Int32___.md&amp;value=---%0Auid%3A%20PLplot.Native.mapstring(PLplot.MapFunc%2CSystem.String%2CSystem.String%2CDouble%2CDouble%2CDouble%2CDouble%2CInt32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/NativeGenerated.cs/#L960">View Source</a>
 </span>
 <a id="PLplot_Native_mapstring_" data-uid="PLplot.Native.mapstring*"></a>
-<h4 id="PLplot_Native_mapstring_PLplot_MapFunc_System_String_System_String_System_Double_System_Double_System_Double_System_Double_System_Int32___" data-uid="PLplot.Native.mapstring(PLplot.MapFunc,System.String,System.String,System.Double,System.Double,System.Double,System.Double,System.Int32[])">mapstring(MapFunc, String, String, Double, Double, Double, Double, Int32[])</h4>
+<h4 id="PLplot_Native_mapstring_PLplot_MapFunc_System_String_System_String_Double_Double_Double_Double_Int32___" data-uid="PLplot.Native.mapstring(PLplot.MapFunc,System.String,System.String,Double,Double,Double,Double,Int32[])">mapstring(MapFunc, String, String, Double, Double, Double, Double, Int32[])</h4>
 <div class="markdown level1 summary"><p>plmapstring: Plot all or a subset of Shapefile data using strings or points in world coordinates</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void mapstring(MapFunc mapform, string name, string str, double minx, double maxx, double miny, double maxy, int[] plotentries)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void mapstring(MapFunc mapform, string name, string str, Double minx, Double maxx, Double miny, Double maxy, Int32[] plotentries)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -129,38 +129,38 @@
       <td></td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">minx</span></td>
       <td><p>The minimum x value to be plotted. This must be in the same units as used by the Shapefile. You could use a very large negative number to plot everything, but you can improve performance by limiting the area drawn. The units must match those of the Shapefile projection, which may be for example longitude or distance. The value of minx must be less than the value of maxx.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">maxx</span></td>
       <td><p>The maximum x value to be plotted. You could use a very large number to plot everything, but you can improve performance by limiting the area drawn.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">miny</span></td>
       <td><p>The minimum y value to be plotted. This must be in the same units as used by the Shapefile. You could use a very large negative number to plot everything, but you can improve performance by limiting the area drawn. The units must match those of the Shapefile projection, which may be for example latitude or distance. The value of miny must be less than the value of maxy.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">maxy</span></td>
       <td><p>The maximum y value to be plotted. You could use a very large number to plot everything, but you can improve performance by limiting the area drawn.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span>[]</td>
+      <td><span class="xref">Int32</span>[]</td>
       <td><span class="parametername">plotentries</span></td>
       <td><p>A vector containing the zero-based indices of the Shapefile elements which will be drawn. Setting plotentries to NULL will plot all elements of the Shapefile.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_mapstring_PLplot_MapFunc_System_String_System_String_System_Double_System_Double_System_Double_System_Double_System_Int32____remarks">Remarks</h5>
+<h5 id="PLplot_Native_mapstring_PLplot_MapFunc_System_String_System_String_Double_Double_Double_Double_Int32____remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>As per plmapline, however the items are plotted as strings or points in the same way as plstring.</p>
 </div>
 </article>

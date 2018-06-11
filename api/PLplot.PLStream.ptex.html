@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_ptex_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.ptex(System.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.Double%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_ptex_Double_Double_Double_Double_Double_System_String_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.ptex(Double%2CDouble%2CDouble%2CDouble%2CDouble%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L1376">View Source</a>
 </span>
 <a id="PLplot_PLStream_ptex_" data-uid="PLplot.PLStream.ptex*"></a>
-<h4 id="PLplot_PLStream_ptex_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_" data-uid="PLplot.PLStream.ptex(System.Double,System.Double,System.Double,System.Double,System.Double,System.String)">ptex(Double, Double, Double, Double, Double, String)</h4>
+<h4 id="PLplot_PLStream_ptex_Double_Double_Double_Double_Double_System_String_" data-uid="PLplot.PLStream.ptex(Double,Double,Double,Double,Double,System.String)">ptex(Double, Double, Double, Double, Double, String)</h4>
 <div class="markdown level1 summary"><p>plptex: Write text inside the viewport</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void ptex(double x, double y, double dx, double dy, double just, string text)</code></pre>
+  <pre><code class="lang-csharp hljs">public void ptex(Double x, Double y, Double dx, Double dy, Double just, string text)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,31 +112,31 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">x</span></td>
       <td><p>x coordinate of reference point of string.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">y</span></td>
       <td><p>y coordinate of reference point of string.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">dx</span></td>
       <td><p>Together with dy, this specifies the inclination of the string. The baseline of the string is parallel to a line joining  (x, y)  to  (x+dx, y+dy) .</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">dy</span></td>
       <td><p>Together with dx, this specifies the inclination of the string.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">just</span></td>
       <td><p>Specifies the position of the string relative to its reference point. If just=0. , the reference point is at the left and if just=1. , it is at the right of the string. Other values of just give intermediate justifications.</p>
 </td>
@@ -149,7 +149,7 @@
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_PLStream_ptex_System_Double_System_Double_System_Double_System_Double_System_Double_System_String__remarks">Remarks</h5>
+<h5 id="PLplot_PLStream_ptex_Double_Double_Double_Double_Double_System_String__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Writes text at a specified position and inclination within the viewport. Text is clipped at the viewport boundaries. The reference point of a string lies along a line passing through the string at half the height of a capital letter. The position of the reference point along this line is determined by just, the reference point is placed at world coordinates  (x, y)  within the viewport. The inclination of the string is specified in terms of differences of world coordinates making it easy to write text parallel to a line in a graph.</p>
 </div>
 </article>

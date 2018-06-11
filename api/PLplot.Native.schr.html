@@ -88,13 +88,13 @@
 
 
 <a id="PLplot_Native_schr_" data-uid="PLplot.Native.schr*"></a>
-<h4 id="PLplot_Native_schr_System_Double_System_Double_" data-uid="PLplot.Native.schr(System.Double,System.Double)">schr(Double, Double)</h4>
+<h4 id="PLplot_Native_schr_Double_Double_" data-uid="PLplot.Native.schr(Double,Double)">schr(Double, Double)</h4>
 <div class="markdown level1 summary"><p>plschr: Set character size</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void schr(double def, double scale)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void schr(Double def, Double scale)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -107,20 +107,20 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">def</span></td>
       <td><p>The default height of a character in millimeters, should be set to zero if the default height is to remain unchanged. For rasterized drivers the dx and dy values specified in plspage are used to convert from mm to pixels (note the different unit systems used). This dpi aware scaling is not implemented for all drivers yet.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">scale</span></td>
       <td><p>Scale factor to be applied to default to get actual character height.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_schr_System_Double_System_Double__remarks">Remarks</h5>
+<h5 id="PLplot_Native_schr_Double_Double__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>This sets up the size of all subsequent characters drawn. The actual height of a character is the product of the default character size and a scaling factor.</p>
 </div>
 </article>

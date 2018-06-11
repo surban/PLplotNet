@@ -88,13 +88,13 @@
 
 
 <a id="PLplot_Native_vpas_" data-uid="PLplot.Native.vpas*"></a>
-<h4 id="PLplot_Native_vpas_System_Double_System_Double_System_Double_System_Double_System_Double_" data-uid="PLplot.Native.vpas(System.Double,System.Double,System.Double,System.Double,System.Double)">vpas(Double, Double, Double, Double, Double)</h4>
+<h4 id="PLplot_Native_vpas_Double_Double_Double_Double_Double_" data-uid="PLplot.Native.vpas(Double,Double,Double,Double,Double)">vpas(Double, Double, Double, Double, Double)</h4>
 <div class="markdown level1 summary"><p>plvpas: Specify viewport using coordinates and aspect ratio</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void vpas(double xmin, double xmax, double ymin, double ymax, double aspect)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void vpas(Double xmin, Double xmax, Double ymin, Double ymax, Double aspect)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -107,38 +107,38 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">xmin</span></td>
       <td><p>The normalized subpage coordinate of the left-hand edge of the viewport.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">xmax</span></td>
       <td><p>The normalized subpage coordinate of the right-hand edge of the viewport.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">ymin</span></td>
       <td><p>The normalized subpage coordinate of the bottom edge of the viewport.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">ymax</span></td>
       <td><p>The normalized subpage coordinate of the top edge of the viewport.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">aspect</span></td>
       <td><p>Ratio of length of y axis to length of x axis.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_vpas_System_Double_System_Double_System_Double_System_Double_System_Double__remarks">Remarks</h5>
+<h5 id="PLplot_Native_vpas_Double_Double_Double_Double_Double__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Device-independent routine for setting up the viewport. The viewport is chosen to be the largest with the given aspect ratio that fits within the specified region (in terms of normalized subpage coordinates). This routine is functionally equivalent to plvpor when a ``natural'' aspect ratio (0.0) is chosen. Unlike plvasp, this routine reserves no extra space at the edges for labels.</p>
 </div>
 </article>

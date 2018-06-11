@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_axes_System_Double_System_Double_System_String_System_Double_System_Int32_System_String_System_Double_System_Int32_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.axes(System.Double%2CSystem.Double%2CSystem.String%2CSystem.Double%2CSystem.Int32%2CSystem.String%2CSystem.Double%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_axes_Double_Double_System_String_Double_Int32_System_String_Double_Int32_.md&amp;value=---%0Auid%3A%20PLplot.PLStream.axes(Double%2CDouble%2CSystem.String%2CDouble%2CInt32%2CSystem.String%2CDouble%2CInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L93">View Source</a>
 </span>
 <a id="PLplot_PLStream_axes_" data-uid="PLplot.PLStream.axes*"></a>
-<h4 id="PLplot_PLStream_axes_System_Double_System_Double_System_String_System_Double_System_Int32_System_String_System_Double_System_Int32_" data-uid="PLplot.PLStream.axes(System.Double,System.Double,System.String,System.Double,System.Int32,System.String,System.Double,System.Int32)">axes(Double, Double, String, Double, Int32, String, Double, Int32)</h4>
+<h4 id="PLplot_PLStream_axes_Double_Double_System_String_Double_Int32_System_String_Double_Int32_" data-uid="PLplot.PLStream.axes(Double,Double,System.String,Double,Int32,System.String,Double,Int32)">axes(Double, Double, String, Double, Int32, String, Double, Int32)</h4>
 <div class="markdown level1 summary"><p>plaxes: Draw a box with axes, etc. with arbitrary origin</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void axes(double x0, double y0, string xopt, double xtick, int nxsub, string yopt, double ytick, int nysub)</code></pre>
+  <pre><code class="lang-csharp hljs">public void axes(Double x0, Double y0, string xopt, Double xtick, Int32 nxsub, string yopt, Double ytick, Int32 nysub)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,13 +112,13 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">x0</span></td>
       <td><p>World X coordinate of origin.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">y0</span></td>
       <td><p>World Y coordinate of origin.</p>
 </td>
@@ -130,13 +130,13 @@
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">xtick</span></td>
       <td><p>World coordinate interval between major ticks on the x axis. If it is set to zero, PLplot automatically generates a suitable tick interval.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">nxsub</span></td>
       <td><p>Number of subintervals between major x axis ticks for minor ticks. If it is set to zero, PLplot automatically generates a suitable minor tick interval.</p>
 </td>
@@ -148,20 +148,20 @@
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">ytick</span></td>
       <td><p>World coordinate interval between major ticks on the y axis. If it is set to zero, PLplot automatically generates a suitable tick interval.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">nysub</span></td>
       <td><p>Number of subintervals between major y axis ticks for minor ticks. If it is set to zero, PLplot automatically generates a suitable minor tick interval.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_PLStream_axes_System_Double_System_Double_System_String_System_Double_System_Int32_System_String_System_Double_System_Int32__remarks">Remarks</h5>
+<h5 id="PLplot_PLStream_axes_Double_Double_System_String_Double_Int32_System_String_Double_Int32__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Draws a box around the currently defined viewport with arbitrary world-coordinate origin specified by x0 and y0 and labels it with world coordinate values appropriate to the window. Thus plaxes should only be called after defining both viewport and window. The ascii character strings xopt and yopt specify how the box should be drawn as described below. If ticks and/or subticks are to be drawn for a particular axis, the tick intervals and number of subintervals may be specified explicitly, or they may be defaulted by setting the appropriate arguments to zero.</p>
 </div>
 </article>

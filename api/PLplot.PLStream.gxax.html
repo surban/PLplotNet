@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_gxax_System_Int32__System_Int32__.md&amp;value=---%0Auid%3A%20PLplot.PLStream.gxax(System.Int32%40%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_gxax_Int32__Int32__.md&amp;value=---%0Auid%3A%20PLplot.PLStream.gxax(Int32%40%2CInt32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L808">View Source</a>
 </span>
 <a id="PLplot_PLStream_gxax_" data-uid="PLplot.PLStream.gxax*"></a>
-<h4 id="PLplot_PLStream_gxax_System_Int32__System_Int32__" data-uid="PLplot.PLStream.gxax(System.Int32@,System.Int32@)">gxax(out Int32, out Int32)</h4>
+<h4 id="PLplot_PLStream_gxax_Int32__Int32__" data-uid="PLplot.PLStream.gxax(Int32@,Int32@)">gxax(out Int32, out Int32)</h4>
 <div class="markdown level1 summary"><p>plgxax: Get x axis parameters</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void gxax(out int p_digmax, out int p_digits)</code></pre>
+  <pre><code class="lang-csharp hljs">public void gxax(out Int32 p_digmax, out Int32 p_digits)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,20 +112,20 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">p_digmax</span></td>
       <td><p>Returned value of the maximum number of digits for the x axis. If nonzero, the printed label has been switched to a floating-point representation when the number of digits exceeds this value.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">p_digits</span></td>
       <td><p>Returned value of the actual number of digits for the numeric labels (x axis) from the last plot.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_PLStream_gxax_System_Int32__System_Int32___remarks">Remarks</h5>
+<h5 id="PLplot_PLStream_gxax_Int32__Int32___remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Returns current values of the p_digmax and p_digits flags for the x axis. p_digits is updated after the plot is drawn, so this routine should only be called after the call to plbox (or plbox3) is complete. See  for more information.</p>
 </div>
 </article>

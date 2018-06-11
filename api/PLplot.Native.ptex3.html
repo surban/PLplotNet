@@ -88,13 +88,13 @@
 
 
 <a id="PLplot_Native_ptex3_" data-uid="PLplot.Native.ptex3*"></a>
-<h4 id="PLplot_Native_ptex3_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_String_" data-uid="PLplot.Native.ptex3(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.String)">ptex3(Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, String)</h4>
+<h4 id="PLplot_Native_ptex3_Double_Double_Double_Double_Double_Double_Double_Double_Double_Double_System_String_" data-uid="PLplot.Native.ptex3(Double,Double,Double,Double,Double,Double,Double,Double,Double,Double,System.String)">ptex3(Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, String)</h4>
 <div class="markdown level1 summary"><p>plptex3: Write text inside the viewport of a 3D plot</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public static void ptex3(double wx, double wy, double wz, double dx, double dy, double dz, double sx, double sy, double sz, double just, string text)</code></pre>
+  <pre><code class="lang-csharp hljs">public static void ptex3(Double wx, Double wy, Double wz, Double dx, Double dy, Double dz, Double sx, Double sy, Double sz, Double just, string text)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -107,61 +107,61 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">wx</span></td>
       <td><p>x world coordinate of reference point of string.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">wy</span></td>
       <td><p>y world coordinate of reference point of string.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">wz</span></td>
       <td><p>z world coordinate of reference point of string.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">dx</span></td>
       <td><p>Together with dy and  dz , this specifies the inclination of the string. The baseline of the string is parallel to a line joining  (x, y, z)  to  (x+dx, y+dy, z+dz) .</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">dy</span></td>
       <td><p>Together with dx and dz, this specifies the inclination of the string.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">dz</span></td>
       <td><p>Together with dx and dy, this specifies the inclination of the string.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">sx</span></td>
       <td><p>Together with sy and  sz , this specifies the shear of the string. The string is sheared so that the characters are vertically parallel to a line joining  (x, y, z)  to  (x+sx, y+sy, z+sz) . If sx = sy = sz = 0.)  then the text is not sheared.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">sy</span></td>
       <td><p>Together with sx and sz, this specifies shear of the string.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">sz</span></td>
       <td><p>Together with sx and sy, this specifies shear of the string.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span></td>
+      <td><span class="xref">Double</span></td>
       <td><span class="parametername">just</span></td>
       <td><p>Specifies the position of the string relative to its reference point. If just=0. , the reference point is at the left and if just=1. , it is at the right of the string. Other values of just give intermediate justifications.</p>
 </td>
@@ -174,7 +174,7 @@
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_Native_ptex3_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_String__remarks">Remarks</h5>
+<h5 id="PLplot_Native_ptex3_Double_Double_Double_Double_Double_Double_Double_Double_Double_Double_System_String__remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>Writes text at a specified position and inclination and with a specified shear within the viewport. Text is clipped at the viewport boundaries. The reference point of a string lies along a line passing through the string at half the height of a capital letter. The position of the reference point along this line is determined by just, and the reference point is placed at world coordinates  (wx, wy, wz)  within the viewport. The inclination and shear of the string is specified in terms of differences of world coordinates making it easy to write text parallel to a line in a graph.</p>
 </div>
 </article>

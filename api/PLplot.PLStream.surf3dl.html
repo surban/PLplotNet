@@ -87,19 +87,19 @@
 
 <span class="small pull-right mobile-hide">
   <span class="divider">|</span>
-  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_surf3dl_System_Double___System_Double___System_Double_0__0___PLplot_Surf_System_Double___System_Int32_System_Int32___System_Int32___.md&amp;value=---%0Auid%3A%20PLplot.PLStream.surf3dl(System.Double%5B%5D%2CSystem.Double%5B%5D%2CSystem.Double%5B0%3A%2C0%3A%5D%2CPLplot.Surf%2CSystem.Double%5B%5D%2CSystem.Int32%2CSystem.Int32%5B%5D%2CSystem.Int32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  <a href="https://github.com/surban/PLplotNet/new/master/apiSpec/new?filename=PLplot_PLStream_surf3dl_Double___Double___Double_0__0___PLplot_Surf_Double___Int32_Int32___Int32___.md&amp;value=---%0Auid%3A%20PLplot.PLStream.surf3dl(Double%5B%5D%2CDouble%5B%5D%2CDouble%5B0%3A%2C0%3A%5D%2CPLplot.Surf%2CDouble%5B%5D%2CInt32%2CInt32%5B%5D%2CInt32%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
 </span>
 <span class="small pull-right mobile-hide">
   <a href="https://github.com/surban/PLplotNet/blob/master/PLplotNet/PLStreamGenerated.cs/#L2249">View Source</a>
 </span>
 <a id="PLplot_PLStream_surf3dl_" data-uid="PLplot.PLStream.surf3dl*"></a>
-<h4 id="PLplot_PLStream_surf3dl_System_Double___System_Double___System_Double_0__0___PLplot_Surf_System_Double___System_Int32_System_Int32___System_Int32___" data-uid="PLplot.PLStream.surf3dl(System.Double[],System.Double[],System.Double[0:,0:],PLplot.Surf,System.Double[],System.Int32,System.Int32[],System.Int32[])">surf3dl(Double[], Double[], Double[,], Surf, Double[], Int32, Int32[], Int32[])</h4>
+<h4 id="PLplot_PLStream_surf3dl_Double___Double___Double_0__0___PLplot_Surf_Double___Int32_Int32___Int32___" data-uid="PLplot.PLStream.surf3dl(Double[],Double[],Double[0:,0:],PLplot.Surf,Double[],Int32,Int32[],Int32[])">surf3dl(Double[], Double[], Double[,], Surf, Double[], Int32, Int32[], Int32[])</h4>
 <div class="markdown level1 summary"><p>plsurf3dl: Plot shaded 3-d surface plot for z[x][y] with y index limits</p>
 </div>
 <div class="markdown level1 conceptual"></div>
 <h5 class="decalaration">Declaration</h5>
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public void surf3dl(double[] x, double[] y, double[, ] z, Surf opt, double[] clevel, int indexxmin, int[] indexymin, int[] indexymax)</code></pre>
+  <pre><code class="lang-csharp hljs">public void surf3dl(Double[] x, Double[] y, Double[, ] z, Surf opt, Double[] clevel, Int32 indexxmin, Int32[] indexymin, Int32[] indexymax)</code></pre>
 </div>
 <h5 class="parameters">Parameters</h5>
 <table class="table table-bordered table-striped table-condensed">
@@ -112,19 +112,19 @@
   </thead>
   <tbody>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">x</span></td>
       <td><p>A vector containing the x coordinates at which the function is evaluated.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">y</span></td>
       <td><p>A vector containing the y coordinates at which the function is evaluated.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span>[,]</td>
+      <td><span class="xref">Double</span>[,]</td>
       <td><span class="parametername">z</span></td>
       <td><p>A matrix containing function values to plot. Should have dimensions of nx by ny.</p>
 </td>
@@ -136,32 +136,32 @@
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Double</span>[]</td>
+      <td><span class="xref">Double</span>[]</td>
       <td><span class="parametername">clevel</span></td>
       <td><p>A vector containing the contour levels.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span></td>
+      <td><span class="xref">Int32</span></td>
       <td><span class="parametername">indexxmin</span></td>
       <td><p>The index value (which must be ≥ 0) that corresponds to the first x index where z is defined.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span>[]</td>
+      <td><span class="xref">Int32</span>[]</td>
       <td><span class="parametername">indexymin</span></td>
       <td><p>A vector containing the y index values which all must be ≥ 0. These values are the first y index where z is defined for a particular x index in the range from indexxmin to indexxmax - 1. The dimension of indexymin is indexxmax.</p>
 </td>
     </tr>
     <tr>
-      <td><span class="xref">System.Int32</span>[]</td>
+      <td><span class="xref">Int32</span>[]</td>
       <td><span class="parametername">indexymax</span></td>
       <td><p>A vector containing the y index values which all must be ≤ ny. These values correspond (by convention) to one more than the last y index where z is defined for a particular x index in the range from indexxmin to indexxmax - 1. The dimension of indexymax is indexxmax.</p>
 </td>
     </tr>
   </tbody>
 </table>
-<h5 id="PLplot_PLStream_surf3dl_System_Double___System_Double___System_Double_0__0___PLplot_Surf_System_Double___System_Int32_System_Int32___System_Int32____remarks">Remarks</h5>
+<h5 id="PLplot_PLStream_surf3dl_Double___Double___Double_0__0___PLplot_Surf_Double___Int32_Int32___Int32____remarks">Remarks</h5>
 <div class="markdown level1 remarks"><p>This variant of plsurf3d (see that function's documentation for more details) should be suitable for the case where the area of the x, y coordinate grid where z is defined can be non-rectangular. The limits of that grid are provided by the parameters indexxmin, indexxmax, indexymin, and indexymax.</p>
 </div>
 </article>
