@@ -56,8 +56,16 @@ namespace SineWaves
             var pl = new PLStream();
 
             // use SVG backend and write to SineWaves.svg in current directory
-            pl.sdev("svg");
-            pl.sfnam("SineWaves.svg");
+            if (args.Length == 1 && args[0] == "svg") 
+            {
+                pl.sdev("svg");
+                pl.sfnam("SineWaves.svg");
+            } 
+            else 
+            {
+                pl.sdev("pngcairo");
+                pl.sfnam("SineWaves.png");
+            }
 
             // use white background with black foreground
             pl.spal0("cmap0_alternate.pal");
@@ -89,7 +97,7 @@ namespace SineWaves
             pl.col0(4);
             pl.line(x3, y3);
 
-            // end page (writes SVG to disk)
+            // end page (writes output to disk)
             pl.eop();
 
             // output version
