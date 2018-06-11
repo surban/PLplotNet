@@ -3,3 +3,5 @@ obj
 /Packages
 /Publish.sh
 /Native/windows
+Samples/CSharp/SineWaves/SineWaves.svg
+.vscode/launch.json
