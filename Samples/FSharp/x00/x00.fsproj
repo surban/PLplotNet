@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../../PLplotNet/PLplotNet.csproj" />
+    <ProjectReference Include="../../../PLplotNet/PLplotNet.csproj" />
   </ItemGroup>
 
 </Project>

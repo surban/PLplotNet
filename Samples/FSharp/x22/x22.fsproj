@@ -1,16 +1,12 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
-
+  <ItemGroup>
+    <ProjectReference Include="../../../PLplotNet/PLplotNet.csproj" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.fs" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="../../PLplotNet/PLplotNet.csproj" />
-  </ItemGroup>
-
 </Project>
