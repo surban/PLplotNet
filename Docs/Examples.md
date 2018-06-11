@@ -3,6 +3,7 @@
 ## Simple line plot
 
 The following code demonstrates how to create a simple line plot from F#.
+For an example using C#, please visit [see here](https://github.com/surban/PLplotNet/blob/master/Samples/CSharp/SineWaves/Program.cs).
 All PLplot operations are invoked through an instance of a [PLStream object](xref:PLplot.PLStream).
 
 ```fsharp
