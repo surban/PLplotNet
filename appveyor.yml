@@ -13,9 +13,10 @@
     - ps: .\Docs\build.ps1
 
   test_script:
-    - dotnet run -c Release -p Samples/DevList
-    - dotnet run -c Release -p Samples/x00 -- -dev pdfcairo -o out.pdf
-    - dotnet run -c Release -p Samples/x22 -- -dev pdfcairo -o out.pdf
+    - dotnet run -c Release -p Samples/FSharp/DevList
+    - dotnet run -c Release -p Samples/FSharp/x00 -- -dev pdfcairo -o out.pdf
+    - dotnet run -c Release -p Samples/FSharp/x22 -- -dev pdfcairo -o out.pdf
+    - dotnet run -c Release -p Samples/CSharp/SineWaves -- png
   
   artifacts:
     - path: 'Packages/Release/*.nupkg'
