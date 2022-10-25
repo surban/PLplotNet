@@ -194,8 +194,8 @@ namespace PLplot
                     throw new InvalidOperationException($"Cannot find support PLplot support files in {supPaths}.");
                 }
 
-                Console.WriteLine("Set PATH1={0}", supPaths[0]);                
-                Console.WriteLine("Set PATH2={0}", supPath[1]);                
+                //Console.WriteLine("Set PATH={0}", newPath);                
+                //Console.WriteLine("Set PLPLOT_LIB={0}", supPath);                           
             }
         }
 

@@ -1,7 +1,7 @@
 # Release Notes
 
 ##### 5.13.8
-* Fix .net 6
+* .NET Standard 2.1 Support
 
 ##### 5.13.7
 * MacOS support.
