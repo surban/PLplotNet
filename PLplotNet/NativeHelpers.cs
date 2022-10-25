@@ -182,7 +182,7 @@ namespace PLplot
                 // PLPLOT_LIB must be set accordingly.                
                 string[] supPaths = {
                     Path.Combine(libDir, "plplot"), 
-                    Path.Combine(libDir, "..", "..", "runtimes", "win-x64", "native", "plplot") 
+                    Path.Combine(libDir, "runtimes", "win-x64", "native", "plplot") 
                 };
                 string supPath = supPaths.FirstOrDefault(p => Directory.Exists(p));
                 if (supPath != null) {
@@ -195,7 +195,7 @@ namespace PLplot
                 }
 
                 //Console.WriteLine("Set PATH={0}", newPath);                
-                //Console.WriteLine("Set PLPLOT_LIB={0}", supPath);                
+                //Console.WriteLine("Set PLPLOT_LIB={0}", supPath);                           
             }
         }
 
